@@ -1,4 +1,4 @@
-import { Inter, Karla, Roboto_Flex } from "next/font/google";
+import { Inter, Karla, Merriweather, Roboto_Flex } from "next/font/google";
 import "./globals.css";
 import StyledComponentsRegistry from "@/lib/registry";
 import Header from "./shared/Header";
@@ -13,6 +13,7 @@ const inter = Inter({
 const karla = Karla({
     subsets: ["latin"],
     display: "swap",
+    weight: "700",
     variable: "--font-karla",
 });
 const robotoFlex = Roboto_Flex({
@@ -20,6 +21,13 @@ const robotoFlex = Roboto_Flex({
     display: "swap",
     variable: "--font-roboto-flex",
 });
+const merriweather = Merriweather({
+    subsets: ["latin"],
+    display: "swap",
+    weight: "700",
+    variable: "--font-merriweather",
+});
+
 
 export const metadata = {
     title: "Ian Maher",
@@ -32,13 +40,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
-            <body className={`${karla.variable} ${robotoFlex.variable} ${inter.variable}`}>
+        <html lang="en" className="bg-gradient md:bg-slice bg-fixed bg-origin-border bg-bottom bg-cover" >
+            <body className={`${karla.variable} ${merriweather.variable} ${robotoFlex.variable} ${inter.variable}`}>
                 <StyledComponentsRegistry>
                     {/* PROGRESS BAR */}
-                    <div className=" font-karla bg-gradient text-center">
+                    <div className=" font-karla text-center m-0">
                         <div className="flex flex-col justify-around">
-                            <Header className="flex items-center justify-center gap-1 outline-red-600 outline-double my-5" />
+                            <Header className="flex items-center justify-center outline-red-600 outline-double my-5 gap-5" />
                             <Navbar />
                         </div>
                         {/* CONTACT */}

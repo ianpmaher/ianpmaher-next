@@ -8,6 +8,10 @@
     }
 }
 
+/* .App {
+    background-image: url("../../public/assets/slice3.svg");
+} */
+
 @media screen and (max-width: 768px) {
     .App {
         /* background-size: 150%; */

@@ -1,4 +1,3 @@
-"use client";
 
 import { useState } from "react";
 import Button from "./Button";
@@ -25,10 +24,10 @@ const PopoverElem = (props) => {
         <Popover.Root>
             <Popover.Trigger asChild>
                 <button
-                    className=" flex flex-col flex-wrap items-center justify-center rounded-xl transition-all duration-300 ease-in-out hover:scale-110 bg-primary-yellow outline-white outline-double hover:outline-black"
+                    className=" flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-300 ease-in-out hover:scale-110 bg-primary-yellow outline-white outline-4 outline"
                     aria-label="open popover"
                 >
-                    <Image src="/assets/email.svg" alt="Email Icon" width={50} height={50} />
+                    <Image src="/assets/email.svg" title="email" alt="Email Icon" width={50} height={50} />
                 </button>
             </Popover.Trigger>
             <Popover.Portal>
@@ -37,7 +36,7 @@ const PopoverElem = (props) => {
                     sideOffset={5}
                     alignOffset={5}
                     align="center"
-                    className="bg-[rgba(0,0,0,0.3)] p-3 rounded-xl shadow-lg min-h-full min-w-full flex flex-row items-center justify-center gap-2"
+                    className="bg-[rgba(0,0,0,0.3)] p-2 rounded-xl shadow-lg min-h-full min-w-full flex flex-row items-center justify-center gap-2"
                 >
                     <IconCard variant="primary" aria-haspopup="true">
                         {/* popover */}
@@ -47,7 +46,7 @@ const PopoverElem = (props) => {
                             target="_blank"
                             rel="noreferrer noopener"
                             title="Email"
-                            className="outline-white outline-double rounded-xl hover:outline-black"
+                            className="outline-white outline-4 outline rounded-2xl"
                         >
                             <Image src="/assets/paper-plane-radix.svg" alt="paper plane Icon" width={40} height={40} />
                         </Link>
@@ -60,16 +59,18 @@ const PopoverElem = (props) => {
                             alt="copy email address"
                             width={40}
                             height={40}
+                            title="Copy Email Address"
                             onClick={handleCopy}
+                            className="outline-white outline-4 outline rounded-2xl"
                         />
                         {copySuccess && <div className="text-green-500">Copied!</div>}
                         {/* end popover */}
                     </IconCard>
                     <Popover.Close
-                        className="  rounded-full inline-flex items-center justify-center bg-white text-black hover:bg-gray-300 hover:text-black transition-all duration-300 ease-in-out p-1 rounded-xl hover:scale-110 hover:opacity-100 hover:outline-white hover:outline-solid hover:outline-1/4"
+                        className="rounded-full inline-flex items-center justify-center bg-white text-black hover:bg-gray-300 transition-all duration-300 ease-in-out p-1 hover:scale-110 hover:opacity-90"
                         aria-label="close popover"
                     >
-                        <Image src="/assets/exit.svg" alt="copy email address" width={30} height={30} />
+                        <Image src="/assets/exit.svg" alt="exit" title="close" width={30} height={30} />
                     </Popover.Close>
                     <Popover.Arrow className=" fill-white" />
                 </Popover.Content>

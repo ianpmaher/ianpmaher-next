@@ -7,14 +7,14 @@ import PopoverElem from "./PopoverElem";
 
 const Contact = (props) => {
     return (
-        <section className="flex flex-row items-center justify-center">
+        <section className="flex flex-row gap-3 items-center justify-center">
             <IconCard variant="primary">
                 <Link
                     href="https://www.github.com/ianpmaher"
                     target="_blank"
                     rel="noreferrer noopener"
                     title="GitHub"
-                    className="outline-white outline-double rounded-xl hover:outline-black"
+                    className="outline-white outline-4 outline rounded-2xl"
                 >
                     <Image src="/assets/github-icon.svg" alt="GitHub logo" width={50} height={50} />
                 </Link>
@@ -37,7 +37,7 @@ const Contact = (props) => {
                     target="_blank"
                     rel="noreferrer noopener"
                     title="LinkedIn"
-                    className="outline-white outline-double rounded-xl hover:outline-black"
+                    className="outline-white outline-4 outline rounded-2xl"
                 >
                     <Image src="/assets/linkedin.svg" alt="LinkedIn logo" width={50} height={50} />
                 </Link>
@@ -48,7 +48,7 @@ const Contact = (props) => {
                     target="_blank"
                     rel="noreferrer noopener"
                     title="Resume"
-                    className="outline-white outline-double rounded-xl hover:outline-black"
+                    className="outline-white outline-4 outline rounded-2xl"
                 >
                     <Image src="/assets/document.svg" alt="text document image" width={50} height={50} />
                 </Link>
