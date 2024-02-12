@@ -44,105 +44,105 @@ const GridIcons = (props) => {
                     key={cardImages[0]}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[0]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[0]} alt="css icon" title="css" width={65} height={65} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center "
                 >
-                    <Image src={cardImages[1]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[1]} alt="html icon" title="html" width={65} height={65} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center "
                 >
-                    <Image src={cardImages[2]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[2]} alt="JavaScript icon" title="JavaScript" width={80} height={80} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[3]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[3]} alt="React icon" title="React" width={80} height={80} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[4]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[4]} alt="NextJS icon" title="NextJS" width={80} height={80} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[5]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[5]} alt="Node.js icon" title="Node" width={80} height={80} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[6]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[6]} alt="Express icon" title="Express" width={80} height={80} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[7]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[7]} alt="MongoDB icon" title="MongoDB" width={80} height={80} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[8]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[8]} alt="PostgreSQL icon" title="PostgreSQL" width={80} height={80} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[9]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[9]} alt="git icon" title="git " width={80} height={80} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[10]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[10]} alt="github icon" title="github " width={80} height={80} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[11]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[11]} alt="Tailwind CSS icon" title="Tailwind CSS" width={80} height={80} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[12]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[12]} alt="Material UI icon" title="Material UI" width={80} height={80} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[13]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[13]} alt="Python icon" title="Python" width={80} height={80} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[14]} alt="icon" width={75} height={75} />
+                    <Image src={cardImages[14]} alt="Django icon" title="Django" width={80} height={80} />
                 </IconCard>
             </section>
         </section>

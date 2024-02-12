@@ -5,7 +5,7 @@ import styled from "styled-components";
 // import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // import { useMediaQuery } from "../../lib/useMediaQuery";
-// import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 // TODO - see if react-scroll Link is compatible with Next.js Link
 // import Link from "next/link";
 import Button from "./Button";
@@ -132,23 +132,22 @@ const Navbar = () => {
         >
             {/* DESKTOP Navbar */}
             {isDesktop && (
-                <div className="flex flex-row items-center justify-center flex-wrap">
+                <div className="flex flex-row items-center justify-center flex-wrap ">
                     {/* <FlexContainer> */}
                     <Button variant="primary" aria-label="scroll to About section">
-                        {/* <Link to="about" smooth={true} duration={0}>
+                        <Link to="about" smooth={true} duration={100}>
                             About
-                        </Link> */}
-                        About
+                        </Link>
                     </Button>
                     <Button variant="primary" aria-label="scroll to Projects section">
-                        {/* <Link to="projects" smooth={true} duration={0}>
-                        </Link> */}
+                        <Link to="projects" smooth={true} duration={1000}>
                         Projects
+                        </Link>
                     </Button>
                     <Button variant="primary" aria-label="scroll to Resume section">
-                        {/* <Link to="resume" smooth={true} duration={0}>
-                        </Link> */}
+                        <Link to="resume" smooth={true} duration={1000}>
                         Resume
+                        </Link>
                     </Button>
                     {/* </FlexContainer> */}
                 </div>
