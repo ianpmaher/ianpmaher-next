@@ -1,53 +1,150 @@
-import cssIcon from "/assets/css-3.svg";
-import htmlIcon from "/assets/html-5.svg";
-import jsIcon from "/assets/javascript.svg";
-import reactIcon from "/assets/react.svg";
-import nextIcon from "/assets/next-js.svg";
-import nodeIcon from "/assets/nodejs.svg";
-import expressIcon from "/assets/express.svg";
-import mongoIcon from "/assets/mongodb.svg";
-import postgresIcon from "/assets/postgresql.svg";
-import gitIcon from "/assets/git-icon.svg";
-import githubIcon from "/assets/github-icon.svg";
-import tailwindCssIcon from "/assets/tailwindcss.svg";
-import materialUiIcon from "/assets/material-ui.svg";
-import pythonIcon from "/assets/python.svg";
-import djangoIcon from "/assets/django.svg";
 import Image from "next/image";
-
-const cardImages = [
-    cssIcon,
-    htmlIcon,
-    jsIcon,
-    reactIcon,
-    nextIcon,
-    nodeIcon,
-    expressIcon,
-    mongoIcon,
-    postgresIcon,
-    gitIcon,
-    githubIcon,
-    tailwindCssIcon,
-    materialUiIcon,
-    pythonIcon,
-    djangoIcon,
-
-]
+import IconCard from "./IconCard";
+const cssIcon = "/assets/css-3.svg";
+const htmlIcon = "/assets/html-5.svg";
+const jsIcon = "/assets/javascript.svg";
+const reactIcon = "/assets/react.svg";
+const nextIcon = "/assets/nextjs.svg";
+const nodeIcon = "/assets/nodejs.svg";
+const expressIcon = "/assets/express.svg";
+const mongoIcon = "/assets/mongodb.svg";
+const postgresIcon = "/assets/postgresql.svg";
+const gitIcon = "/assets/git-icon.svg";
+const githubIcon = "/assets/github-icon.svg";
+const tailwindCssIcon = "/assets/tailwindcss.svg";
+const materialUiIcon = "/assets/material-ui.svg";
+const pythonIcon = "/assets/python.svg";
+const djangoIcon = "/assets/django.svg";
 
 const GridIcons = (props) => {
+    const cardImages = [
+        cssIcon,
+        htmlIcon,
+        jsIcon,
+        reactIcon,
+        nextIcon,
+        nodeIcon,
+        expressIcon,
+        mongoIcon,
+        postgresIcon,
+        gitIcon,
+        githubIcon,
+        tailwindCssIcon,
+        materialUiIcon,
+        pythonIcon,
+        djangoIcon,
+    ];
+
     return (
-        <section className=" grid sm:grid-cols-4 md:grid-cols-5 w-full gap-1 list-none place-content-center place-items-center my-0 mx-auto object-cover">
-            {cardImages.map((image, index) => {
-                return (
-                    <li key={index} className="flex flex-col flex-wrap items-center justify-center rounded-2xl shadow-lg p-2 bg-[rgba(255,255,255,0.6)] transition-all duration-300 ease-in-out hover:scale-110 bg-primary-yellow">
-                        <Image src={image} alt="icon" width={50} height={50} />
-                    </li>
-                )
-            })}
-
+        <section className="grid sm:grid-cols-3 md:grid-cols-4 gap-2 w-full h-full p-4 list-none place-content-center place-items-center m-0 object-cover">
+            {/* {cardImages.map((cardImages) => { */}
+            <IconCard
+                variant="secondary"
+                key={cardImages[0]}
+                className=" flex flex-col flex-wrap items-center justify-center"
+            >
+                <Image src={cardImages[0]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center "
+            >
+                <Image src={cardImages[1]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center "
+            >
+                <Image src={cardImages[2]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center"
+            >
+                <Image src={cardImages[3]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center"
+            >
+                <Image src={cardImages[4]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center"
+            >
+                <Image src={cardImages[5]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center"
+            >
+                <Image src={cardImages[6]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center"
+            >
+                <Image src={cardImages[7]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center"
+            >
+                <Image src={cardImages[8]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center"
+            >
+                <Image src={cardImages[9]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center"
+            >
+                <Image src={cardImages[10]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center"
+            >
+                <Image src={cardImages[11]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center"
+            >
+                <Image src={cardImages[12]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center"
+            >
+                <Image src={cardImages[13]} alt="icon" width={75} height={75} />
+            </IconCard>
+            <IconCard
+                variant="secondary"
+                key={cardImages}
+                className=" flex flex-col flex-wrap items-center justify-center"
+            >
+                <Image src={cardImages[14]} alt="icon" width={75} height={75} />
+            </IconCard>
         </section>
-    )
-
-}
+    );
+};
 
 export default GridIcons;

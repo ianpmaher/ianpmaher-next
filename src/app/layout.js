@@ -3,6 +3,7 @@ import "./globals.css";
 import StyledComponentsRegistry from "@/lib/registry";
 import Header from "./shared/Header";
 import Navbar from "./components/NavBar";
+import Footer from "./shared/Footer";
 
 // https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 const inter = Inter({
@@ -28,7 +29,6 @@ const merriweather = Merriweather({
     variable: "--font-merriweather",
 });
 
-
 export const metadata = {
     title: "Ian Maher",
     description: "Portfolio site, web development, software engineering",
@@ -40,23 +40,31 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en" className="bg-gradient md:bg-slice bg-fixed bg-origin-border bg-bottom bg-cover" >
+        <html lang="en" className="bg-gradient md:bg-slice bg-fixed bg-origin-border bg-bottom bg-cover">
             <body className={`${karla.variable} ${merriweather.variable} ${robotoFlex.variable} ${inter.variable}`}>
                 <StyledComponentsRegistry>
                     {/* PROGRESS BAR */}
-                    <div className=" font-karla text-center m-0">
+                    <div className=" font-karla text-center min-h-screen flex flex-col">
                         <div className="flex flex-col justify-around">
-                            <Header className="flex items-center justify-center outline-red-600 outline-double my-5 gap-5" />
+                            <Header className="flex flex-col items-center justify-center my-5 gap-5" />
                             <Navbar />
                         </div>
                         {/* CONTACT */}
-                        <main className="flex flex-1 flex-col">
-                            {children}
-                            {/* ABOUT */}
-                            {/* PROJECTS */}
-                            {/* RESUME */}
-                        </main>
-                        {/* FOOTER */}
+                        <div className="flex-1 flex flex-col sm:flex-row">
+                            <main className="flex-1">
+                                {children}
+                                {/* ABOUT */}
+                                {/* PROJECTS */}
+                                {/* RESUME */}
+                            </main>
+                            <nav className="order-first sm:w-32">
+                                {/* <h1>stuff</h1> */}
+                            </nav>
+                            <aside className="sm:w-32">
+                                {/* <h1>more stuff</h1> */}
+                            </aside>
+                        </div>
+                        <Footer className="my-2" />
                     </div>
                 </StyledComponentsRegistry>
             </body>
