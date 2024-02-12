@@ -35,14 +35,14 @@ const Projects = (props) => {
                             target="__blank"
                             rel="noreferrer noopener"
                         >
-                            <Button>
+                            <Button variant="projects">
                                 Frontend
                                 <Image
                                     src={githubIcon}
-                                    width={50}
-                                    height={50}
+                                    width={30}
+                                    height={30}
                                     alt="github"
-                                    className="hover:transform hover:scale-110 transition-all duration-300"
+                                    className="hover:transform hover:scale-110 transition-all duration-300 ease-in-out"
                                 />
                             </Button>
                         </Link>
@@ -55,14 +55,14 @@ const Projects = (props) => {
                                 rel="noreferrer noopener"
                                 className=""
                             >
-                                <Button>
+                                <Button variant="projects">
                                     Backend
                                     <Image
                                         src={githubIcon}
-                                        width={50}
-                                        height={50}
+                                        width={30}
+                                        height={30}
                                         alt="github icon"
-                                        className="hover:transform hover:scale-110 transition-all duration-300"
+                                        className="hover:transform hover:scale-110 transition-all duration-300 ease-in-out hover:blur-"
                                     />
                                 </Button>
                             </Link>
@@ -74,15 +74,15 @@ const Projects = (props) => {
                             target="__blank"
                             rel="noreferrer noopener"
                         >
-                            <Button>
+                            <Button variant="projects">
                                 Live Site
                                 <Image
                                     src={newWindowIcon}
-                                    width={50}
-                                    height={50}
+                                    width={30}
+                                    height={30}
                                     alt="open in new window"
                                     title="deployment"
-                                    className="hover:transform hover:scale-110 transition-all duration-300"
+                                    className="hover:transform hover:scale-110 transition-all ease-in-out duration-300"
                                 />
                             </Button>
                         </Link>
