@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
             <body className={`${karla.variable} ${merriweather.variable} ${robotoFlex.variable} ${inter.variable}`}>
                 <StyledComponentsRegistry>
                     {/* PROGRESS BAR */}
-                    <div className=" font-karla text-center min-h-screen flex flex-col">
+                    <div className=" font-karla text-center min-h-screen flex flex-col max-w-[90vw] my-1 mx-auto">
                         <div className="flex flex-col justify-around">
                             <Header className="flex flex-col items-center justify-center my-5 gap-5" />
                             {/* <Navbar /> */}

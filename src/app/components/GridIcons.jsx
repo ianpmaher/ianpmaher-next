@@ -37,7 +37,7 @@ const GridIcons = (props) => {
 
     return (
         <section className="flex flex-col flex-wrap">
-            <section className="grid grid-cols-3 md:grid-cols-4 gap-2 w-full h-full p-4 list-none place-content-center place-items-center m-0 object-cover">
+            <section className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:w-[70vw] lg:w-full h-full p-3 list-none place-content-center place-items-center mx-auto my-0 object-cover">
                 {/* {cardImages.map((cardImages) => { */}
                 <IconCard
                     variant="secondary"
@@ -72,7 +72,7 @@ const GridIcons = (props) => {
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[4]} alt="NextJS icon" title="NextJS" width={80} height={80} />
+                    <Image src={cardImages[4]} alt="NextJS icon" title="NextJS" width={100} height={100} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
@@ -86,14 +86,14 @@ const GridIcons = (props) => {
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[6]} alt="Express icon" title="Express" width={80} height={80} />
+                    <Image src={cardImages[6]} alt="Express icon" title="Express" width={90} height={90} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[7]} alt="MongoDB icon" title="MongoDB" width={80} height={80} />
+                    <Image src={cardImages[7]} alt="MongoDB icon" title="MongoDB" width={100} height={100} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
@@ -121,7 +121,7 @@ const GridIcons = (props) => {
                     key={cardImages}
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
-                    <Image src={cardImages[11]} alt="Tailwind CSS icon" title="Tailwind CSS" width={80} height={80} />
+                    <Image src={cardImages[11]} alt="Tailwind CSS icon" title="Tailwind CSS" width={100} height={100} />
                 </IconCard>
                 <IconCard
                     variant="secondary"
