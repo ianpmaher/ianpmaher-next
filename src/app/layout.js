@@ -30,12 +30,13 @@ const merriweather = Merriweather({
 });
 
 export const metadata = {
-    title: "Ian Maher",
+    title: "Portfolio: Ian Maher - web dev and engineer",
     description: "Portfolio site, web development, software engineering",
     // https://github.com/vercel/next.js/discussions/14806#discussioncomment-6584048
     verification: {
         google: "n7UivYL9MEcQRy-dWTsQWaDJMsZEBJb4vtseGX71JH4",
     },
+    
 };
 
 export default function RootLayout({ children }) {
