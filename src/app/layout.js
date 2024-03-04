@@ -4,7 +4,7 @@ import StyledComponentsRegistry from "@/lib/registry";
 import Header from "./shared/Header";
 import Navbar from "./components/NavBar";
 import Footer from "./shared/Footer";
-import Providers from "./shared/Providers";
+import Providers from "./Providers";
 
 // https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 const inter = Inter({
@@ -47,8 +47,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en" className="bg-gradient md:bg-slice bg-fixed bg-origin-border bg-bottom bg-cover">
-            <body className={`${karla.variable} ${merriweather.variable} ${robotoFlex.variable} ${inter.variable}`}>
+        <html lang="en" className="dark:bg-gradient md:bg-slice bg-fixed bg-origin-border bg-bottom bg-cover">
+            <body className={`${karla.variable} ${merriweather.variable} ${robotoFlex.variable} ${inter.variable}`} suppressHydrationWarning>
                 <StyledComponentsRegistry>
                     <Providers>
                         {/* <ProgressBar /> */}

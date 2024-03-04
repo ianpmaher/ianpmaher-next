@@ -6,7 +6,7 @@ module.exports = {
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
-    darkMode: "selector", // or 'media' or 'class'
+    darkMode: "class", // or 'media' or 'class'
     theme: {
         typography: (theme) => ({}),
         extend: {
