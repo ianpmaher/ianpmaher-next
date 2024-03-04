@@ -24,7 +24,7 @@ const Projects = (props) => {
                 <IconCard variant="projects">
                     <h2 className=" text-3xl font-bold">{project.title}</h2>
                     <br />
-                    <p>{project.description}</p>
+                    <p className="">{project.description}</p>
                     <ProjectTags tags={project.tags} />
                     <br />
                     <span className="flex flex-row items-normal justify-center text-center">
