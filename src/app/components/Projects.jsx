@@ -93,7 +93,6 @@ const Projects = (props) => {
     ));
     return (
         <div id="projects" className="flex flex-col justify-normal items-center">
-            <h1>Projects</h1>
             <ul className="flex flex-col sm:grid md:grid-cols-2 w-full place-items-center gap-5">{listItems}</ul>
         </div>
     );

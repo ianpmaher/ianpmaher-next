@@ -7,6 +7,9 @@
         text-wrap: balance;
     }
 }
+* {
+    scroll-behavior: smooth;
+}
 
 /* .App {
     background-image: url("../../public/assets/slice3.svg");
