@@ -6,7 +6,6 @@ import Image from "next/image";
 
 const DarkMode = (props) => {
     const { theme, setTheme } = useTheme();
-    const [value, setValue] = useState("dark");
     const [mounted, setMounted] = useState(false);
 
     // useEffect to set mounted to true https://github.com/pacocoursey/next-themes?tab=readme-ov-file#avoid-hydration-mismatch
@@ -26,28 +25,28 @@ const DarkMode = (props) => {
         },
     };
 
-    const handleSliderChange = (event) => {
-        setValue(event.target.value);
-        setTheme(options[event.target.value].name);
+    const handleSwitchChange = (event) => {
+        setTheme(event.target.checked ? "dark" : "light")
         console.log("theme", theme);
     };
 
     return (
-        <div className="flex flex-row justify-center gap-1 mx-0 my-auto">
-            <input
-                type="range"
-                className="w-8 h-8"
-                value={value}
-                step="1"
-                min="1"
-                max="2"
-                onChange={handleSliderChange}
-            />
-            {theme == "dark" ? (
-                <Image alt={options[2].name} src={options[2].url} width={16} height={16} />
-            ) : (
-                <Image alt={options[1].name} src={options[1].url} width={16} height={16} />
-            )}
+        <div className="flex flex-row justify-center items-center mx-auto my-0 absolute right-1 top-1">
+            <label className="switchbox flex justify-center items-center w-10 h-10 rounded-xl outline outline-white">
+                <input
+                    type="checkbox"
+                    className="w-10 h-10 mx-auto my-0 opacity-0 absolute checked:bg-blue-400 transition-all duration-300 ease-in-out"
+                    checked={theme == "dark"}
+                    onChange={handleSwitchChange}
+                />
+                {theme == "dark" ? (
+                    <Image alt={options[2].name} src={options[2].url} width={32} height={32} />
+                ) : (
+                    <Image alt={options[1].name} src={options[1].url} width={32} height={32} />
+                )}
+                {/* slider */}
+                <span className="slider absolute top-0 right-0 bottom-0 left-0 cursor-pointer "></span>
+            </label>
         </div>
     );
 };

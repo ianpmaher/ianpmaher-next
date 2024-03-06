@@ -53,8 +53,8 @@ export default function RootLayout({ children }) {
                     <Providers>
                         {/* <ProgressBar /> */}
                         <div className=" font-karla text-center min-h-screen flex flex-col max-w-[90vw] my-1 mx-auto">
-                            <div className="flex flex-col justify-around">
-                                <Header className="flex flex-col items-center justify-center my-0 gap-3" />
+                            <div className="flex flex-col justify-center">
+                                <Header className="flex flex-col items-center justify-center mx-auto my-0 gap-1" />
                                 {/* <Navbar /> */}
                             </div>
                             {/* CONTACT */}
