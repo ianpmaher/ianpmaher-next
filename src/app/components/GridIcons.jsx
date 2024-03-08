@@ -19,7 +19,7 @@ const djangoIcon = "/assets/django.svg";
 const GridIcons = (props) => {
     const cardImages = [
         cssIcon,
-        htmlIcon,
+        // htmlIcon,
         jsIcon,
         reactIcon,
         nextIcon,
@@ -37,7 +37,7 @@ const GridIcons = (props) => {
 
     return (
         <section className="flex flex-col flex-wrap">
-            <section className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:w-[70vw] lg:w-full h-full p-3 list-none place-content-center place-items-center mx-auto my-0 object-cover">
+            <section className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:w-[70vw] lg:w-full h-full p-3 list-none place-content-center place-items-center mx-auto my-0 object-cover">
                 {/* {cardImages.map((cardImages) => { */}
                 <IconCard
                     variant="secondary"
@@ -143,6 +143,13 @@ const GridIcons = (props) => {
                     className=" flex flex-col flex-wrap items-center justify-center"
                 >
                     <Image src={cardImages[14]} alt="Django icon" title="Django" width={80} height={80} />
+                </IconCard>
+                <IconCard
+                    variant="secondary"
+                    key={cardImages}
+                    className=" flex flex-col flex-wrap items-center justify-center"
+                >
+                    <Image src="/assets/figma.svg" alt="Figma icon" title="Figma" width={80} height={80} />
                 </IconCard>
             </section>
         </section>

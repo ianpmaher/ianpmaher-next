@@ -31,11 +31,11 @@ const merriweather = Merriweather({
 });
 
 export const metadata = {
-    title: "Portfolio: Ian Maher - web dev and engineer",
-    description: "Portfolio site, web development, software engineering",
+    title: "Ian Maher - web dev and engineer",
+    description: "frontend, backend, fullstack, software engineering",
     // https://github.com/vercel/next.js/discussions/14806#discussioncomment-6584048
     property: {
-        "og:title": "Portfolio: Ian Maher - web dev and engineer",
+        "og:title": "Ian Maher - web dev and engineer",
         "og:description": "Portfolio site, web development, software engineering",
         "og:type": "website",
         "og:url": "https://ianpmaher.com",
