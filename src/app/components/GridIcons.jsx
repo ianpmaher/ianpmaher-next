@@ -37,7 +37,7 @@ const GridIcons = (props) => {
 
     return (
         <section className="flex flex-col flex-wrap">
-            <section className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:w-[70vw] lg:w-full h-full p-3 list-none place-content-center place-items-center mx-auto my-0 object-cover">
+            <section className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:w-[70vw] sm:h-[70%] lg:w-full h-full p-3 list-none place-content-center place-items-center mx-auto my-0 object-cover">
                 {/* {cardImages.map((cardImages) => { */}
                 <IconCard
                     variant="secondary"

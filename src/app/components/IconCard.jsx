@@ -4,7 +4,7 @@ const IconCard = ({ variant, description, children, className }) => {
     const variantStyle = {
         primary: "bg-primary-yellow hover:scale-110",
         secondary: "bg-[rgba(255,255,255,1)] hover:scale-125 p-0 hover:outline hover:outline-blue-400 shadow-2xl md:w-32 md:h-32 w-24 h-24 transition-all duration-300 ease-out",
-        projects: "rounded-2xl text-lg bg-black text-white dark:bg-white dark:text-black shadow-xl p-2 flex-grow flex flex-col items-center justify-center",
+        projects: "rounded-2xl text-lg bg-white dark:bg-black text-black dark:text-white shadow-xl p-2 flex-grow flex flex-col items-center justify-center",
         container: "rounded-2xl bg-[#4A4C60] shadow-xl p-2 flex flex-col items-center justify-center",
     };
     

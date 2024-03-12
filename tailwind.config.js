@@ -26,7 +26,11 @@ module.exports = {
                 primary: {
                     yellow: "#FFD040",
                     turquoise: "rgb(105,255,255)",
+                    dracula: "hsl(231, 15%, 18%)",
                 },
+            },
+            boxShadow: {
+                "custom": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
             },
         },
     },

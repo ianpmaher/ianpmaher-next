@@ -1,6 +1,6 @@
 const ProjectTags = (props) => {
     const tagsList = props.tags.map((tag) => 
-        <div key={tag} className="bg-white text-black mx-[0.1rem] my-[0.3rem] rounded-lg shadow-xl cursor-default transition-all duration-300 ease-out hover:bg-black hover:text-white">
+        <div key={tag} className="bg-white text-black m-[0.1rem] rounded-lg border border-gray-400 cursor-default transition-all duration-500 ease-out hover:bg-black hover:text-white dark:hover:bg-primary-turquoise dark:hover:text-black">
             <p className=" text-sm m-[0.2rem] p-[0.1rem] font-bold">{tag}</p>
         </div>
     );

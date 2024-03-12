@@ -14,7 +14,7 @@ const Projects = (props) => {
     const listItems = jsonData.map((project) => (
         <li key={project.id} className="min-h-fit min-w-fit">
             <IconCard variant="container">
-                <div className="w-auto h-auto mx-auto my-0">
+                <div className="w-auto h-auto mx-auto mb-1">
                     <Image
                         src={project.image}
                         alt={project.title}
@@ -22,12 +22,13 @@ const Projects = (props) => {
                     />
                 </div>
                 <IconCard variant="projects">
-                    <h2 className=" text-3xl font-bold">{project.title}</h2>
-                    <br />
+                    <h2 className=" text-2xl font-bold">{project.title}</h2>
+                    <div className="m-2" />
                     <p className="">{project.description}</p>
+                    <div className="m-2" />
                     <ProjectTags tags={project.tags} />
-                    <br />
-                    <span className="flex flex-row items-normal justify-center text-center">
+                    <div className="m-2" />
+                    <span className="flex flex-row items-normal justify-center text-center text-black">
                         <Link
                             href={project.github}
                             aria-label="GitHub"

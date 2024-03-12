@@ -47,7 +47,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en" className="dark:bg-gradient md:bg-slice bg-fixed bg-origin-border bg-bottom bg-cover">
+        <html lang="en" className="bg-gradient md:bg-slice bg-fixed bg-origin-border bg-bottom bg-cover">
             <body className={`${karla.variable} ${merriweather.variable} ${robotoFlex.variable} ${inter.variable}`} suppressHydrationWarning>
                 <StyledComponentsRegistry>
                     <Providers>
