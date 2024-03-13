@@ -31,8 +31,8 @@ const DarkMode = (props) => {
     };
 
     return (
-        <div className="flex flex-row justify-center items-center mx-auto my-0 absolute right-1 top-1">
-            <label className="switchbox flex justify-center items-center w-10 h-10 rounded-xl outline outline-white">
+        <div className="flex flex-row justify-center items-center mx-auto my-0 ">
+            <label className="switchbox flex justify-center items-center w-10 h-10 rounded-xl outline outline-white text-black bg-white dark:bg-primary-charcoal">
                 <input
                     type="checkbox"
                     className="w-10 h-10 mx-auto my-0 opacity-0 absolute checked:bg-blue-400 transition-all duration-300 ease-in-out"

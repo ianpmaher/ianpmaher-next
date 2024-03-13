@@ -27,6 +27,7 @@ module.exports = {
                     yellow: "#FFD040",
                     turquoise: "rgb(105,255,255)",
                     dracula: "hsl(231, 15%, 18%)",
+                    charcoal: "rgb(41,39,42)"
                 },
             },
             boxShadow: {

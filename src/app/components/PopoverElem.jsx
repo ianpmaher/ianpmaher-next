@@ -24,10 +24,10 @@ const PopoverElem = (props) => {
         <Popover.Root>
             <Popover.Trigger asChild>
                 <button
-                    className=" flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-300 ease-in-out hover:scale-110 bg-primary-yellow outline-white outline-4 outline"
+                    className=" flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-300 ease-in-out hover:scale-110 bg-primary-yellow outline-white outline-2 outline"
                     aria-label="open popover"
                 >
-                    <Image src="/assets/email.svg" title="email" alt="Email Icon" width={50} height={50} />
+                    <Image src="/assets/email.svg" title="email" alt="Email Icon" width={40} height={40} />
                 </button>
             </Popover.Trigger>
             <Popover.Portal>
@@ -46,7 +46,7 @@ const PopoverElem = (props) => {
                             target="_blank"
                             rel="noreferrer noopener"
                             title="Email"
-                            className="outline-white outline-4 outline rounded-2xl"
+                            className="outline-white outline-2 outline rounded-2xl"
                         >
                             <Image src="/assets/paper-plane-radix.svg" alt="paper plane Icon" width={40} height={40} />
                         </Link>
@@ -61,9 +61,9 @@ const PopoverElem = (props) => {
                             height={40}
                             title="Copy Email Address"
                             onClick={handleCopy}
-                            className="outline-white outline-4 outline rounded-2xl"
+                            className="outline-white outline-2 outline rounded-2xl"
                         />
-                        {copySuccess && <div className="text-green-500">Copied!</div>}
+                        {copySuccess && <div className="text-green-500 p-2">Copied!</div>}
                         {/* end popover */}
                     </IconCard>
                     <Popover.Close

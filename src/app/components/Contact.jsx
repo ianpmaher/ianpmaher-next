@@ -14,9 +14,9 @@ const Contact = (props) => {
                     target="_blank"
                     rel="noreferrer noopener"
                     title="GitHub"
-                    className="outline-white outline-4 outline rounded-2xl"
+                    className="outline-white outline-2 outline rounded-2xl"
                 >
-                    <Image src="/assets/github-icon.svg" alt="GitHub logo" width={50} height={50} />
+                    <Image src="/assets/github-icon.svg" alt="GitHub logo" width={40} height={40} />
                 </Link>
             </IconCard>
             {/* <IconCard variant="primary"> */}
@@ -37,9 +37,9 @@ const Contact = (props) => {
                     target="_blank"
                     rel="noreferrer noopener"
                     title="LinkedIn"
-                    className="outline-white outline-4 outline rounded-2xl"
+                    className="outline-white outline-2 outline rounded-2xl"
                 >
-                    <Image src="/assets/linkedin.svg" alt="LinkedIn logo" width={50} height={50} />
+                    <Image src="/assets/linkedin.svg" alt="LinkedIn logo" width={40} height={40} />
                 </Link>
             </IconCard>
             <IconCard variant="primary">
@@ -48,9 +48,9 @@ const Contact = (props) => {
                     target="_blank"
                     rel="noreferrer noopener"
                     title="Resume"
-                    className="outline-white outline-4 outline rounded-2xl"
+                    className="outline-white outline-2 outline rounded-2xl"
                 >
-                    <Image src="/assets/document.svg" alt="text document image" width={50} height={50} />
+                    <Image src="/assets/document.svg" alt="text document image" width={40} height={40} />
                 </Link>
             </IconCard>
         </section>
