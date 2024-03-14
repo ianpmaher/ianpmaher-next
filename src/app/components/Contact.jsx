@@ -6,8 +6,13 @@ import Image from "next/image";
 import PopoverElem from "./PopoverElem";
 
 const Contact = (props) => {
+    // conditional rendering, if user is on mobile and if Contact is in the footer, flex row, else flex column
+
+    const isFooter = props.location === "footer";
+
     return (
-        <section className="flex flex-row gap-3 items-center justify-center">
+        // <section className="flex gap-3 items-center justify-center md:flex-row flex-col">
+        <section className={`flex gap-3 items-center justify-center ${isFooter ? 'md:flex-row flex-row' : 'md:flex-row flex-col'}`}>
             <IconCard variant="primary">
                 <Link
                     href="https://www.github.com/ianpmaher"

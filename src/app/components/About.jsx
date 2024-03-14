@@ -5,7 +5,7 @@ const aboutMe3 = "I love to find creative solutions for novel problems, individu
 const About = (props) => {
     return (
         <div className="flex flex-col justify-center items-center gap-1 p-0.5">
-            <div className="bg-white dark:bg-black p-1 text-black outline outline-primary-dracula outline-2 dark:text-white rounded-lg text-base md:text-lg w-[70vw] md:w-[70vw] ">
+            <div className="bg-white md:bg-slate-100 dark:bg-black p-1 text-black outline outline-primary-dracula outline-2 dark:text-white rounded-lg text-base md:text-lg w-[70vw] md:w-[70vw] ">
                 <p className="p-2">
                     {aboutMe}
                 </p>

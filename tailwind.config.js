@@ -26,6 +26,7 @@ module.exports = {
                 primary: {
                     yellow: "#FFD040",
                     turquoise: "rgb(105,255,255)",
+                    mint: "rgb(155,236,200)",
                     dracula: "hsl(231, 15%, 18%)",
                     charcoal: "rgb(41,39,42)"
                 },

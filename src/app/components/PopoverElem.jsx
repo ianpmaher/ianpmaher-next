@@ -24,7 +24,7 @@ const PopoverElem = (props) => {
         <Popover.Root>
             <Popover.Trigger asChild>
                 <button
-                    className=" flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-300 ease-in-out hover:scale-110 bg-primary-yellow outline-white outline-2 outline"
+                    className=" flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 bg-white hover:bg-primary-turquoise outline-white outline-2 outline"
                     aria-label="open popover"
                 >
                     <Image src="/assets/email.svg" title="email" alt="Email Icon" width={40} height={40} />
