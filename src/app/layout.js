@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
                 <StyledComponentsRegistry>
                     <Providers>
                         {/* <ProgressBar /> */}
-                        <div className="dark:bg-primary-charcoal md:bg-teal-400 dark:bg-opacity-80 rounded-2xl font-karla text-center min-h-screen flex flex-col max-w-[80vw] my-1 mx-auto">
+                        <div className="dark:bg-primary-charcoal md:bg-teal-400 dark:bg-opacity-80 rounded-2xl font-karla text-center min-h-screen flex flex-col max-w-[80vw] md:max-w-[70vw] my-0 mx-auto">
                             <div className="flex flex-col justify-center">
                                 <Header className=" flex flex-row items-center justify-center mx-auto my-2 gap-4" />
                                 {/* <Navbar /> */}
