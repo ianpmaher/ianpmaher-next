@@ -18,7 +18,7 @@ module.exports = {
                 merriweather: ["Merriweather", "serif"],
             },
             backgroundImage: {
-                gradient:
+                gradientlight:
                     "radial-gradient(circle at 100%, rgba(82,84,164,1) 10%, rgba(247,160,130,1) 40%, rgba(178,166,215,1) 55%)",
                 slice: "url(/assets/slice3.svg)",
             },
@@ -28,8 +28,21 @@ module.exports = {
                     turquoise: "rgb(105,255,255)",
                     mint: "rgb(155,236,200)",
                     dracula: "hsl(231, 15%, 18%)",
-                    charcoal: "rgb(41,39,42)"
+                    charcoal: "rgb(41,39,42)",
                 },
+                dracula: {
+                    bg: "#282a36",
+                    purple: "#bd93f9",
+                    sub: "#6272a4",
+                    subalt: "#20222c",
+                    text: "#f8f8f2",
+                    error: "#ff5555",
+                    yellow: "#f1fa8c",
+                    green: "#50fa7b",
+                    orange: "#ffb86c",
+                    pink: "#ec75c4",
+                    blue: "#8be9fd",
+                }
             },
             boxShadow: {
                 "custom": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
