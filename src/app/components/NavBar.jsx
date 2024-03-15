@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 // import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // import { useMediaQuery } from "../../lib/useMediaQuery";
@@ -11,13 +11,13 @@ import { Link } from "react-scroll";
 import Button from "./Button";
 // context
 
-const FlexContainer = styled.div`
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    color: white;
-`;
+// const FlexContainer = styled.div`
+//     display: flex;
+//     flex-flow: row wrap;
+//     justify-content: center;
+//     align-items: center;
+//     color: white;
+// `;
 
 // ========================= //
 // FRAMER variants

@@ -9,7 +9,21 @@ const DarkMode = (props) => {
     const [mounted, setMounted] = useState(false);
 
     // useEffect to set mounted to true https://github.com/pacocoursey/next-themes?tab=readme-ov-file#avoid-hydration-mismatch
-    useEffect(() => setMounted(true), []);
+    // use useEffect to set the theme to the user's preference
+    useEffect(() => {
+        setMounted(true);
+        // if (theme === "dark") {
+        //     // window.localStorage.setItem("theme", "dark");
+        //     console.log(window.localStorage.getItem("theme"));
+        //     // console.log("dark");
+        // }
+        
+        // if (theme === "light") {
+        //     console.log(window.localStorage.getItem("theme"));
+        //     // document.documentElement.classList.remove("dark");
+        //     // console.log("light");
+        // }
+    }, []);
 
     if (!mounted) return null;
 
@@ -26,8 +40,9 @@ const DarkMode = (props) => {
     };
 
     const handleSwitchChange = (event) => {
-        setTheme(event.target.checked ? "dark" : "light")
-        console.log("theme", theme);
+        setTheme(event.target.checked ? "dark" : "light");
+        // console.log(window.localStorage.getItem("theme"));
+        // console.log("theme", theme);
     };
 
     return (

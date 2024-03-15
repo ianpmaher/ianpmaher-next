@@ -1,6 +1,6 @@
 import { Inter, Karla, Merriweather, Roboto_Flex } from "next/font/google";
 import "./globals.css";
-import StyledComponentsRegistry from "@/lib/registry";
+// import StyledComponentsRegistry from "@/lib/registry";
 import Header from "./shared/Header";
 import Navbar from "./components/NavBar";
 import Footer from "./shared/Footer";
@@ -53,10 +53,11 @@ export default function RootLayout({ children }) {
                 className={`${karla.variable} ${merriweather.variable} ${robotoFlex.variable} ${inter.variable}`}
                 suppressHydrationWarning
             >
-                <StyledComponentsRegistry>
+                {/* <StyledComponentsRegistry> */}
                     <Providers>
                         {/* <ProgressBar /> */}
-                        <div className="bg-slate-300 dark:bg-dracula-subalt">
+                        {/* <div className="bg-slate-300 dark:bg-dracula-subalt"> */}
+                        <div className="bg-gradientlight dark:bg-slice dark:bg-fixed dark:bg-origin-border dark:bg-bottom dark:bg-cover">
                             <div className="dark:bg-dracula-bg bg-paper-bg rounded-2xl font-karla text-center min-h-screen flex flex-col max-w-[80vw] md:max-w-[65vw] my-0 mx-auto">
                                 <div className="flex flex-col justify-center">
                                     <Header className=" flex flex-row items-center justify-center mx-auto my-2 gap-4" />
@@ -77,7 +78,7 @@ export default function RootLayout({ children }) {
                             </div>
                         </div>
                     </Providers>
-                </StyledComponentsRegistry>
+                {/* </StyledComponentsRegistry> */}
             </body>
         </html>
     );
