@@ -4,13 +4,12 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 const Seal = (props) => {
-
-    const {theme} = useTheme();
-    let svgColor
+    const { theme } = useTheme();
+    let svgColor;
     const [mounted, setMounted] = useState(false);
 
     // useEffect to set mounted to true
-    // this is to avoid hydration mismatch // but results in a flash of unstyled content 
+    // this is to avoid hydration mismatch // but results in a flash of unstyled content
     useEffect(() => setMounted(true), []);
     if (!mounted) return null;
 

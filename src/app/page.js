@@ -5,12 +5,14 @@ import GridIcons from "./components/GridIcons";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import About from "./components/About";
+import Landing from "./components/Landing";
 
 
 export default function Home() {
     return (
         <main className="" id="top">
-            <section className= "mx-auto my-0">
+            <section className= "mx-auto my-0 ">
+                <Landing />
                 <About />
                 <GridIcons />
                 <Projects />
