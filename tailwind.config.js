@@ -42,6 +42,14 @@ module.exports = {
                     orange: "#ffb86c",
                     pink: "#ec75c4",
                     blue: "#8be9fd",
+                },
+                paper: {
+                    bg: "#eeeeee",
+                    main: "#444444",
+                    sub: "#b2b2b2",
+                    subalt: "#dddddd",
+                    text: "#444444",
+                    error: "#d70000",
                 }
             },
             boxShadow: {

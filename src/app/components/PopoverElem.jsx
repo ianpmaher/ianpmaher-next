@@ -1,5 +1,7 @@
+"use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 import Button from "./Button";
 import { CopyIcon, PaperPlaneIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
@@ -20,11 +22,27 @@ const PopoverElem = (props) => {
         }, 2000);
     };
 
+    const { theme } = useTheme();
+    let isDark;
+    if (theme === "dark") {
+        isDark = true;
+    } else {
+        isDark = false;
+    }
+
+    const [mounted, setMounted] = useState(false);
+
+    // useEffect to set mounted to true
+    // this is to avoid hydration mismatch // but results in a flash of unstyled content 
+    useEffect(() => setMounted(true), []);
+    if (!mounted) return null;
+
     return (
         <Popover.Root>
             <Popover.Trigger asChild>
                 <button
-                    className=" flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 bg-white hover:bg-primary-turquoise outline-white outline-2 outline"
+                    variant={`${isDark ? "darkColors" : "lightColors"}`}
+                    className={`flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 bg-white outline-white outline-2 outline object-contain hover:transform hover:rotate-12 hover:shadow-2xl ${isDark ? "bg-dracula-text hover:bg-dracula-green" : "bg-paper-subalt hover:bg-dracula-orange"}`}
                     aria-label="open popover"
                 >
                     <Image src="/assets/email.svg" title="email" alt="Email Icon" width={40} height={40} />

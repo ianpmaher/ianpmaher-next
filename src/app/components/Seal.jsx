@@ -1,7 +1,6 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useMediaQuery } from "@/lib/useMediaQuery";
 import { useEffect, useState } from "react";
 
 const Seal = (props) => {
