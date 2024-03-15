@@ -18,7 +18,7 @@ const Projects = (props) => {
                     <Image
                         src={project.image}
                         alt={project.title}
-                        className="hover:scale-125 transition-all duration-1000 ease-in-out hover:shadow-2xl md:max-h-96 md:w-auto w-64"
+                        className="hover:scale-150 transition-all duration-1000 ease-in-out hover:shadow-2xl md:max-h-96 md:w-auto w-64"
                     />
                 </div>
                 <IconCard variant="projects">

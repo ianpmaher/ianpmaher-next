@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Button from "./Button";
-import { CopyIcon, PaperPlaneIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import Image from "next/image";
 import * as Popover from "@radix-ui/react-popover";
@@ -33,7 +32,7 @@ const PopoverElem = (props) => {
     const [mounted, setMounted] = useState(false);
 
     // useEffect to set mounted to true
-    // this is to avoid hydration mismatch // but results in a flash of unstyled content 
+    // this is to avoid hydration mismatch // but results in a flash of unstyled content
     useEffect(() => setMounted(true), []);
     if (!mounted) return null;
 
@@ -42,7 +41,9 @@ const PopoverElem = (props) => {
             <Popover.Trigger asChild>
                 <button
                     variant={`${isDark ? "darkColors" : "lightColors"}`}
-                    className={`flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 bg-white outline-white outline-2 outline object-contain hover:transform hover:rotate-12 hover:shadow-2xl ${isDark ? "bg-dracula-text hover:bg-dracula-green" : "bg-paper-subalt hover:bg-dracula-orange"}`}
+                    className={`flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 bg-dracula-blue bg-opacity-70 p-1 object-contain hover:transform hover:rotate-12 hover:shadow-2xl ${
+                        isDark ? "bg-dracula-purple hover:bg-dracula-green" : "bg-paper-subalt hover:bg-dracula-orange"
+                    }`}
                     aria-label="open popover"
                 >
                     <Image src="/assets/email.svg" title="email" alt="Email Icon" width={40} height={40} />
@@ -64,9 +65,13 @@ const PopoverElem = (props) => {
                             target="_blank"
                             rel="noreferrer noopener"
                             title="Email"
-                            className="outline-white outline-2 outline rounded-2xl"
+                            className={`flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 bg-dracula-blue bg-opacity-70 p-1 object-contain hover:transform hover:rotate-12 hover:shadow-2xl ${
+                                isDark
+                                    ? "bg-dracula-purple hover:bg-dracula-green"
+                                    : "bg-paper-subalt hover:bg-dracula-orange"
+                            }`}
                         >
-                            <Image src="/assets/paper-plane-radix.svg" alt="paper plane Icon" width={40} height={40} />
+                            <Image src="/assets/paper-plane-radix.svg" alt="paper plane Icon" width={30} height={30} />
                         </Link>
                     </IconCard>
                     <IconCard variant="primary" aria-haspopup="true">
@@ -79,7 +84,11 @@ const PopoverElem = (props) => {
                             height={40}
                             title="Copy Email Address"
                             onClick={handleCopy}
-                            className="outline-white outline-2 outline rounded-2xl"
+                            className={`flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 bg-dracula-blue bg-opacity-70 p-1 object-contain hover:transform hover:rotate-12 hover:shadow-2xl ${
+                                isDark
+                                    ? "bg-dracula-purple hover:bg-dracula-green"
+                                    : "bg-paper-subalt hover:bg-dracula-orange"
+                            }`}
                         />
                         {copySuccess && <div className="text-green-500 p-2">Copied!</div>}
                         {/* end popover */}
