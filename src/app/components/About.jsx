@@ -1,3 +1,5 @@
+import Seal from '../components/Seal'
+
 const aboutMe = "Hi! I'm a software engineer with a background in education and a passion for learning."
 const aboutMe2 = "I'm a graduate of General Assembly's Software Engineering Immersive Bootcamp, and I'm always learning something new!"
 const aboutMe3 = "I love to find creative solutions for novel problems, individually and especially within a team environment."
@@ -15,6 +17,7 @@ const About = (props) => {
                 <p className="p-2">
                     {aboutMe3}
                 </p>
+                <Seal />
             </div>
         </div>
     );

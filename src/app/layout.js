@@ -47,28 +47,34 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en" className="bg-gradient md:bg-slice bg-fixed bg-origin-border bg-bottom bg-cover">
-            <body className={`${karla.variable} ${merriweather.variable} ${robotoFlex.variable} ${inter.variable}`} suppressHydrationWarning>
+        // <html lang="en" className="bg-gradient md:bg-slice bg-fixed bg-origin-border bg-bottom bg-cover">
+        <html lang="en" className="">
+            <body
+                className={`${karla.variable} ${merriweather.variable} ${robotoFlex.variable} ${inter.variable} bg-primary-dracula`}
+                suppressHydrationWarning
+            >
                 <StyledComponentsRegistry>
                     <Providers>
                         {/* <ProgressBar /> */}
-                        <div className="dark:bg-primary-charcoal md:bg-teal-400 dark:bg-opacity-80 rounded-2xl font-karla text-center min-h-screen flex flex-col max-w-[80vw] md:max-w-[70vw] my-0 mx-auto">
-                            <div className="flex flex-col justify-center">
-                                <Header className=" flex flex-row items-center justify-center mx-auto my-2 gap-4" />
-                                {/* <Navbar /> */}
+                        <div className="bg-neutral-300 dark:bg-primary-charcoal">
+                            <div className="dark:bg-primary-charcoal md:bg-teal-400 rounded-2xl font-karla text-center min-h-screen flex flex-col max-w-[80vw] md:max-w-[70vw] my-0 mx-auto">
+                                <div className="flex flex-col justify-center">
+                                    <Header className=" flex flex-row items-center justify-center mx-auto my-2 gap-4" />
+                                    {/* <Navbar /> */}
+                                </div>
+                                {/* CONTACT */}
+                                <div className="flex-1 flex flex-col sm:flex-row">
+                                    <main className="flex-1">
+                                        {children}
+                                        {/* ABOUT */}
+                                        {/* PROJECTS */}
+                                        {/* RESUME */}
+                                    </main>
+                                    <nav className="order-first sm:w-32">{/* <h1>stuff</h1> */}</nav>
+                                    <aside className="sm:w-32">{/* <h1>more stuff</h1> */}</aside>
+                                </div>
+                                <Footer className="my-2" />
                             </div>
-                            {/* CONTACT */}
-                            <div className="flex-1 flex flex-col sm:flex-row">
-                                <main className="flex-1">
-                                    {children}
-                                    {/* ABOUT */}
-                                    {/* PROJECTS */}
-                                    {/* RESUME */}
-                                </main>
-                                <nav className="order-first sm:w-32">{/* <h1>stuff</h1> */}</nav>
-                                <aside className="sm:w-32">{/* <h1>more stuff</h1> */}</aside>
-                            </div>
-                            <Footer className="my-2" />
                         </div>
                     </Providers>
                 </StyledComponentsRegistry>
