@@ -21,13 +21,13 @@ const PopoverElem = (props) => {
         }, 2000);
     };
 
-    const { theme } = useTheme();
-    let isDark;
-    if (theme === "dark") {
-        isDark = true;
-    } else {
-        isDark = false;
-    }
+    // const { theme } = useTheme();
+    // let isDark;
+    // if (theme === "dark") {
+    //     isDark = true;
+    // } else {
+    //     isDark = false;
+    // }
 
     const [mounted, setMounted] = useState(false);
 
@@ -40,10 +40,7 @@ const PopoverElem = (props) => {
         <Popover.Root>
             <Popover.Trigger asChild>
                 <button
-                    variant={`${isDark ? "darkColors" : "lightColors"}`}
-                    className={`flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 bg-dracula-blue bg-opacity-70 p-1 object-contain hover:transform hover:rotate-12 hover:shadow-2xl ${
-                        isDark ? "bg-dracula-purple hover:bg-dracula-green" : "bg-paper-subalt hover:bg-dracula-orange"
-                    }`}
+                    className={`flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 bg-opacity-70 p-1 object-contain hover:transform hover:rotate-12 hover:shadow-2xl ${"bg-dracula-pink"}`}
                     aria-label="open popover"
                 >
                     <Image src="/assets/email.svg" title="email" alt="Email Icon" width={40} height={40} />
@@ -65,11 +62,11 @@ const PopoverElem = (props) => {
                             target="_blank"
                             rel="noreferrer noopener"
                             title="Email"
-                            className={`flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 bg-dracula-blue bg-opacity-70 p-1 object-contain hover:transform hover:rotate-12 hover:shadow-2xl ${
-                                isDark
-                                    ? "bg-dracula-purple hover:bg-dracula-green"
-                                    : "bg-paper-subalt hover:bg-dracula-orange"
-                            }`}
+                            className={`flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 bg-opacity-70 p-1 object-contain hover:transform hover:rotate-12 hover:shadow-2xl ${"bg-dracula-pink hover:bg-dracula-green"}`}
+                            //     isDark
+                            //         ? "bg-dracula-purple hover:bg-dracula-green"
+                            //         : "bg-dracula-blue hover:bg-dracula-orange"
+                            // }`}
                         >
                             <Image src="/assets/paper-plane-radix.svg" alt="paper plane Icon" width={30} height={30} />
                         </Link>
@@ -84,11 +81,7 @@ const PopoverElem = (props) => {
                             height={40}
                             title="Copy Email Address"
                             onClick={handleCopy}
-                            className={`flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 bg-dracula-blue bg-opacity-70 p-1 object-contain hover:transform hover:rotate-12 hover:shadow-2xl ${
-                                isDark
-                                    ? "bg-dracula-purple hover:bg-dracula-green"
-                                    : "bg-paper-subalt hover:bg-dracula-orange"
-                            }`}
+                            className={`flex flex-col flex-wrap items-center justify-center rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 bg-dracula-blue bg-opacity-70 p-1 object-contain hover:transform hover:rotate-12 hover:shadow-2xl ${"bg-dracula-pink hover:bg-dracula-green"}`}
                         />
                         {copySuccess && <div className="text-green-500 p-2">Copied!</div>}
                         {/* end popover */}

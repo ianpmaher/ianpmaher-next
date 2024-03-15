@@ -13,9 +13,17 @@ export default function Home() {
         <main className="" id="top">
             <section className= "mx-auto my-0 ">
                 <Landing />
+            </section>
+            <section className="mx-auto my-0">
                 <About />
+            </section>
+            <section className="mx-auto my-0">
                 <GridIcons />
+            </section>
+            <section className="mx-auto my-0">
                 <Projects />
+            </section>
+            <section className="mx-auto my-0">
                 <Resume />
             </section>
             
