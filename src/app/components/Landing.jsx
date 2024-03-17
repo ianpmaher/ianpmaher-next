@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Seal from "./Seal";
 import Cat from "./Cat";
 import Dog from "./Dog";
