@@ -2,8 +2,11 @@
 
 import Image from "next/image";
 import IconCard from "./IconCard";
+import { motion } from "framer-motion";
 
 const Resume = (props) => {
+
+    // framer motion
     return (
         <section className="flex flex-col items-center justify-center mx-auto my-0">
             {/* grid container */}
