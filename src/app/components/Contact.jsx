@@ -48,7 +48,7 @@ const Contact = (props) => {
                 >
                     <Image src="/assets/email.svg" alt="email me!" width={50} height={50} />
                 </Link> */}
-            <PopoverElem darkMode="darkMode" />
+            <PopoverElem  />
             {/* </IconCard> */}
             <IconCard variant={`${isDark ? "darkColors" : "lightColors"}`}>
                 <Link
