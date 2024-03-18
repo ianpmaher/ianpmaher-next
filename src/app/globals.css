@@ -14,6 +14,19 @@
     }
 }
 
+.sections-container {
+    height: screen;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.section {
+    height: screen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 /* .App {
     background-image: url("../../public/assets/slice3.svg");
 } */
@@ -21,7 +34,11 @@
 @media screen and (max-width: 768px) {
     .App {
         /* background-size: 150%; */
-        background: radial-gradient(circle at 100%, rgba(82,84,164,1) 10%, rgba(247,160,130,1) 40%, rgba(178,166,215,1) 55%);
-
-    }   
+        background: radial-gradient(
+            circle at 100%,
+            rgba(82, 84, 164, 1) 10%,
+            rgba(247, 160, 130, 1) 40%,
+            rgba(178, 166, 215, 1) 55%
+        );
+    }
 }

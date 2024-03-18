@@ -11,7 +11,7 @@ import Landing from "./components/Landing";
 export default function Home() {
     return (
         <main className="" id="top">
-            <section className= "mx-auto my-0 ">
+            <section className= "mx-auto my-0  ">
                 <Landing />
             </section>
             <section className="mx-auto my-0">
