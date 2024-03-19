@@ -31,6 +31,16 @@
     background-image: url("../../public/assets/slice3.svg");
 } */
 
+.stock-ticker {
+    overflow: hidden;
+    position: relative;
+}
+
+.stock-ticker-inner {
+    display: flex;
+    white-space: nowrap;
+}
+
 @media screen and (max-width: 768px) {
     .App {
         /* background-size: 150%; */
