@@ -4,6 +4,7 @@ let moodScreenshot = require("../../public/assets/moodScreenshot.png");
 // let placeholder = require("../../assets/placeholder.png");
 let pawsipad = require("../../public/assets/pawsiPad.webp");
 let simplyScholars = require("../../public/assets/roughSimplyScholars.png");
+let gtaSmall = require("../../public/assets/gtaBEST.png");
 
 const projectsList =
 
@@ -48,7 +49,7 @@ const projectsList =
         "tags": ["JavaScript", "Fetch API", "HTML", "CSS", "Netlify", "Git"],
         "github": "https://github.com/ianpmaher/gta",
         "live": "https://grand-theft-autocorrect.netlify.app/",
-        "image": gtaScreenshot,
+        "image": gtaSmall,
         // "image": "https://user-images.githubusercontent.com/120536234/260235684-673eb284-84fd-416d-96b5-d84da3da786d.png"
     },
     {

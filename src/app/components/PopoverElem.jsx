@@ -43,7 +43,7 @@ const PopoverElem = (props) => {
                     className={`flex flex-col flex-wrap items-center justify-center rounded-`}
                     aria-label="open popover"
                 >
-                    <IconCard variant={`${isDark ? "darkColors" : "lightColors"}`}>
+                    <IconCard className="bg-dracula-green hover:bg-dracula-orange dark:bg-dracula-yellow dark:hover:bg-dracula-green" variant={`${isDark ? "darkColors" : "lightColors"}`}>
                         <Image src="/assets/email.svg" title="email" alt="Email Icon" width={40} height={40} />
                     </IconCard>
                 </button>
@@ -69,12 +69,12 @@ const PopoverElem = (props) => {
                         //         : "bg-dracula-blue hover:bg-dracula-orange"
                         // }`}
                     >
-                        <IconCard variant={`${isDark ? "darkColors" : "lightColors"}`}>
+                    <IconCard className="bg-dracula-green hover:bg-dracula-orange dark:bg-dracula-yellow dark:hover:bg-dracula-green" variant={`${isDark ? "darkColors" : "lightColors"}`}>
                             <Image src="/assets/paper-plane-radix.svg" alt="paper plane Icon" width={30} height={30} />
                         </IconCard>
                     </Link>
 
-                    <IconCard variant={`${isDark ? "darkColors" : "lightColors"}`} aria-haspopup="true">
+                    <IconCard className="bg-dracula-green hover:bg-dracula-orange dark:bg-dracula-yellow dark:hover:bg-dracula-green" variant={`${isDark ? "darkColors" : "lightColors"}`} aria-haspopup="true">
                         {/* <Button variant="primary"> */}
                         {/* for some reason needed to make the onClick in the image itself? */}
                         <Image

@@ -5,6 +5,9 @@ import { motion } from "framer-motion";
 import Seal from "./Seal";
 import Cat from "./Cat";
 import Dog from "./Dog";
+import Hiking from "./Hiking1";
+import Hiking1 from "./Hiking1";
+import Laptop from "./Laptop";
 
 const Landing = (props) => {
 
@@ -15,7 +18,7 @@ const Landing = (props) => {
     };
 
     return (
-        <div className=" ">
+        <div className="">
             <motion.h1
                 initial="hidden"
                 animate="visible"
@@ -23,10 +26,14 @@ const Landing = (props) => {
                 transition={{ duration: 3 }}
                 className="text-3xl md:text-5xl"
             >
-            <div className="flex flex-row justify-normal items-center">
+            <div className="flex flex-row justify-normal items-baseline">
                 <Seal />
                 <Cat />
                 <Dog />
+            </div>
+            <div className="flex flex-row justify-normal items-baseline">
+                <Hiking1 />
+                <Laptop />
             </div>
             </motion.h1>
         </div>

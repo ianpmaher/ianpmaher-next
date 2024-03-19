@@ -23,11 +23,11 @@ const Contact = (props) => {
     return (
         // <section className="flex gap-3 items-center justify-center md:flex-row flex-col">
         <section
-            className={`flex gap-1 items-center justify-center ${
+            className={`flex gap-1 items-center justify-center shadow-xl ${
                 isFooter ? "md:flex-row flex-row" : "md:flex-row flex-col"
             }`}
         >
-            <IconCard variant={`${isDark ? "darkColors" : "lightColors"}`}>
+            <IconCard className="bg-dracula-pink hover:bg-dracula-orange dark:bg-dracula-blue dark:hover:bg-dracula-green" variant={`${isDark ? "darkColors" : "lightColors"}`}>
                 <Link
                     href="https://www.github.com/ianpmaher"
                     target="_blank"
@@ -50,7 +50,7 @@ const Contact = (props) => {
                 </Link> */}
             <PopoverElem  />
             {/* </IconCard> */}
-            <IconCard variant={`${isDark ? "darkColors" : "lightColors"}`}>
+            <IconCard className="bg-dracula-blue hover:bg-dracula-orange dark:bg-dracula-purple dark:hover:bg-dracula-green" variant={`${isDark ? "darkColors" : "lightColors"}`}>
                 <Link
                     href="https://www.linkedin.com/in/ianmaher/"
                     target="_blank"
@@ -61,7 +61,7 @@ const Contact = (props) => {
                     <Image src="/assets/linkedin.svg" alt="LinkedIn logo" width={40} height={40} />
                 </Link>
             </IconCard>
-            <IconCard variant={`${isDark ? "darkColors" : "lightColors"}`}>
+            <IconCard className="bg-dracula-purple hover:bg-dracula-orange dark:bg-dracula-pink dark:hover:bg-dracula-green" variant={`${isDark ? "darkColors" : "lightColors"}`}>
                 <Link
                     href="https://drive.google.com/file/d/13oKE953LCTEGSpENEqnH6HEVO0NNi_HU/view?usp=sharing"
                     target="_blank"
