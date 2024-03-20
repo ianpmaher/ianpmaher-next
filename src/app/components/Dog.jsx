@@ -31,7 +31,7 @@ const Dog = (props) => {
 
     return (
         <div className="flex justify-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-40 ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60%" height="60%" viewBox="0 0 495 456" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="90%" height="60%" viewBox="0 0 495 456" fill="none">
                 <path
                     className="fill-dracula-sub dark:fill-dracula-purple"
                     fillRule="evenodd"

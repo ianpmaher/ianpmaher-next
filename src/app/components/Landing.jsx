@@ -8,13 +8,13 @@ import Dog from "./Dog";
 import Hiking from "./Hiking1";
 import Hiking1 from "./Hiking1";
 import Laptop from "./Laptop";
+import Books from "./Books";
 
 const Landing = (props) => {
-
     // framer motion
     const variants = {
         hidden: { opacity: 0 },
-        visible: { opacity: 1 }
+        visible: { opacity: 1 },
     };
 
     return (
@@ -24,17 +24,18 @@ const Landing = (props) => {
                 animate="visible"
                 variants={variants}
                 transition={{ duration: 3 }}
-                className="text-3xl md:text-5xl"
+                className="text-3xl md:text-5xl flex flex-col gap-20"
             >
-            <div className="flex flex-row justify-normal items-baseline">
-                <Seal />
-                <Cat />
-                <Dog />
-            </div>
-            <div className="flex flex-row justify-normal items-baseline">
-                <Hiking1 />
-                <Laptop />
-            </div>
+                <div className="flex flex-row justify-normal items-baseline">
+                    <Seal />
+                    <Cat />
+                    <Dog />
+                </div>
+                <div className="flex flex-row justify-normal items-baseline">
+                    <Books />
+                    <Hiking1 />
+                    <Laptop />
+                </div>
             </motion.h1>
         </div>
     );

@@ -28,8 +28,8 @@ const Hiking1 = (props) => {
     // const isDarkMode = theme === "dark";
 
     return (
-        <div className="flex justify-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-40 ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="473" viewBox="0 0 1024 473" fill="none">
+        <div className="flex justify-center items-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-40 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="60%" viewBox="0 0 1024 473" fill="none">
                 <path
                     className="fill-emerald-900 dark:fill-dracula-orange"
                     fillRule="evenodd"
