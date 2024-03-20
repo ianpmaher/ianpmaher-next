@@ -24,7 +24,7 @@ const Contact = (props) => {
         // <section className="flex gap-3 items-center justify-center md:flex-row flex-col">
         <section
             className={`flex gap-1 items-center justify-center shadow-xl ${
-                isFooter ? "md:flex-row flex-row" : "md:flex-row flex-col"
+                isFooter ? "md:flex-row flex-row" : "md:flex-row flex-row"
             }`}
         >
             <IconCard className="bg-dracula-pink hover:bg-dracula-orange dark:bg-dracula-blue dark:hover:bg-dracula-green" variant={`${isDark ? "darkColors" : "lightColors"}`}>
