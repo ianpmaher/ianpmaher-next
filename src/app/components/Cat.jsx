@@ -29,7 +29,7 @@ const Cat = (props) => {
 
     return (
         <div className="flex justify-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-40 ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="105%" height="50%" viewBox="0 0 608 765" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="50%" viewBox="0 0 608 765" fill="none">
                 <path
                     // fill={svgColor}
                     className="fill-emerald-900 dark:fill-dracula-orange"
