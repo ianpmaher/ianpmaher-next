@@ -7,38 +7,62 @@ const FirstName = (props) => {
     const [mounted, setMounted] = useState(false);
     // animation for OUTLINE
    
-    const zerothAnimation = {
+    const zeroAnimation = {
         hidden: { pathLength: 0, opacity: 0.5 },
         visible: {
             pathLength: 1,
             opacity: 1,
-            transition: { pathLength: { duration: 1, delay: 0 }, opacity: { duration: 0.5 } },
+            transition: { pathLength: { duration: 1.25, delay: 0 }, opacity: { duration: 0.5 } },
         },
     };
-    const iAnimation = {
+    const oneAnimation = {
         hidden: { pathLength: 0, opacity: 0 },
         visible: {
             pathLength: 1,
             opacity: 1,
-            transition: { pathLength: { duration: 1, delay: 0.5 }, opacity: { duration: 0.5 } },
+            transition: { pathLength: { duration: 1.25, delay: 0.5 }, opacity: { duration: 0.5 } },
         },
     };
-    const aAnimation = {
+    const twoAnimation = {
         hidden: { pathLength: 0, opacity: 0 },
         visible: {
             pathLength: 1,
             opacity: 1,
-            transition: { pathLength: { duration: 1, delay: 1 }, opacity: { duration: 0.5, delay: 1 } },
+            transition: { pathLength: { duration: 1.25, delay: 1 }, opacity: { duration: 0.5, delay: 1 } },
         },
     };
-    const nAnimation = {
+    const threeAnimation = {
         hidden: { pathLength: 0, opacity: 0 },
         visible: {
             pathLength: 1,
             opacity: 1,
             transition: {
-                pathLength: { duration: 1, delay: 2 },
+                pathLength: { duration: 1.25, delay: 1.5 },
+                opacity: { duration: 0.5, delay: 1.5 },
+                // fill: { duration: 0.5, delay: 2 },
+            },
+        },
+    };
+    const fourAnimation = {
+        hidden: { pathLength: 0, opacity: 0 },
+        visible: {
+            pathLength: 1,
+            opacity: 1,
+            transition: {
+                pathLength: { duration: 1.25, delay: 2 },
                 opacity: { duration: 0.5, delay: 2 },
+                // fill: { duration: 0.5, delay: 2 },
+            },
+        },
+    };
+    const fiveAnimation = {
+        hidden: { pathLength: 0, opacity: 0 },
+        visible: {
+            pathLength: 1,
+            opacity: 1,
+            transition: {
+                pathLength: { duration: 1.25, delay: 2.25 },
+                opacity: { duration: 0.5, delay: 2.25 },
                 // fill: { duration: 0.5, delay: 2 },
             },
         },
@@ -65,7 +89,7 @@ const FirstName = (props) => {
                 >
                     {/* i */}
                     <motion.path
-                        variants={zerothAnimation}
+                        variants={zeroAnimation}
                         className="stroke-paper-text dark:stroke-dracula-text"
                         strokeWidth="2"
                         strokeLinecap="round"
@@ -77,7 +101,7 @@ const FirstName = (props) => {
                     ></motion.path>
                     {/* a */}
                     <motion.path
-                        variants={iAnimation}
+                        variants={oneAnimation}
                         className="stroke-paper-text dark:stroke-dracula-text"
                         strokeWidth="2"
                         strokeLinecap="round"
@@ -89,7 +113,7 @@ const FirstName = (props) => {
                     ></motion.path>
                     {/* n */}
                     <motion.path
-                        variants={iAnimation}
+                        variants={twoAnimation}
                         className="stroke-paper-text dark:stroke-dracula-text"
                         strokeWidth="2"
                         strokeLinecap="round"
@@ -101,7 +125,7 @@ const FirstName = (props) => {
                     ></motion.path>
                     {/* m */}
                     <motion.path
-                        variants={aAnimation}
+                        variants={zeroAnimation}
                         className="stroke-paper-text dark:stroke-dracula-text"
                         strokeWidth="2"
                         strokeLinecap="round"
@@ -113,7 +137,7 @@ const FirstName = (props) => {
                     ></motion.path>
                     {/* a */}
                     <motion.path
-                        variants={nAnimation}
+                        variants={fourAnimation}
                         className="stroke-paper-text dark:stroke-dracula-text"
                         strokeWidth="2"
                         strokeLinecap="round"
@@ -125,7 +149,7 @@ const FirstName = (props) => {
                     ></motion.path>
                     {/* h */}
                     <motion.path
-                        variants={nAnimation}
+                        variants={fiveAnimation}
                         className="stroke-paper-text dark:stroke-dracula-text"
                         strokeWidth="2"
                         strokeLinecap="round"
@@ -137,7 +161,7 @@ const FirstName = (props) => {
                     ></motion.path>
                     {/* e */}
                     <motion.path
-                        variants={nAnimation}
+                        variants={fiveAnimation}
                         className="stroke-paper-text dark:stroke-dracula-text"
                         strokeWidth="2"
                         strokeLinecap="round"
@@ -149,7 +173,7 @@ const FirstName = (props) => {
                     ></motion.path>
                     {/* r */}
                     <motion.path
-                        variants={nAnimation}
+                        variants={fiveAnimation}
                         className="stroke-paper-text dark:stroke-dracula-text"
                         strokeWidth="2"
                         strokeLinecap="round"
