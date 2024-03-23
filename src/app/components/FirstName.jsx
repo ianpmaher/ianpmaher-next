@@ -20,7 +20,7 @@ const FirstName = (props) => {
         visible: {
             pathLength: 1,
             opacity: 1,
-            transition: { pathLength: { duration: 1.25, delay: 0.5 }, opacity: { duration: 0.5 } },
+            transition: { pathLength: { duration: 1.25, delay: 0.25 }, opacity: { duration: 0.5 } },
         },
     };
     const twoAnimation = {
@@ -28,7 +28,7 @@ const FirstName = (props) => {
         visible: {
             pathLength: 1,
             opacity: 1,
-            transition: { pathLength: { duration: 1.25, delay: 1 }, opacity: { duration: 0.5, delay: 1 } },
+            transition: { pathLength: { duration: 1.25, delay: 0.5 }, opacity: { duration: 0.5, delay: 0.5 } },
         },
     };
     const threeAnimation = {
@@ -37,8 +37,8 @@ const FirstName = (props) => {
             pathLength: 1,
             opacity: 1,
             transition: {
-                pathLength: { duration: 1.25, delay: 1.5 },
-                opacity: { duration: 0.5, delay: 1.5 },
+                pathLength: { duration: 1.25, delay: .75 },
+                opacity: { duration: 0.5, delay: 0.75 },
                 // fill: { duration: 0.5, delay: 2 },
             },
         },
@@ -49,8 +49,8 @@ const FirstName = (props) => {
             pathLength: 1,
             opacity: 1,
             transition: {
-                pathLength: { duration: 1.25, delay: 2 },
-                opacity: { duration: 0.5, delay: 2 },
+                pathLength: { duration: 1.25, delay: 1 },
+                opacity: { duration: 0.5, delay: 1 },
                 // fill: { duration: 0.5, delay: 2 },
             },
         },
@@ -61,8 +61,8 @@ const FirstName = (props) => {
             pathLength: 1,
             opacity: 1,
             transition: {
-                pathLength: { duration: 1.25, delay: 2.25 },
-                opacity: { duration: 0.5, delay: 2.25 },
+                pathLength: { duration: 1.25, delay: 1.25 },
+                opacity: { duration: 0.5, delay: 1.25 },
                 // fill: { duration: 0.5, delay: 2 },
             },
         },
@@ -125,7 +125,7 @@ const FirstName = (props) => {
                     ></motion.path>
                     {/* m */}
                     <motion.path
-                        variants={zeroAnimation}
+                        variants={twoAnimation}
                         className="stroke-paper-text dark:stroke-dracula-text"
                         strokeWidth="2"
                         strokeLinecap="round"
@@ -137,7 +137,7 @@ const FirstName = (props) => {
                     ></motion.path>
                     {/* a */}
                     <motion.path
-                        variants={fourAnimation}
+                        variants={threeAnimation}
                         className="stroke-paper-text dark:stroke-dracula-text"
                         strokeWidth="2"
                         strokeLinecap="round"
@@ -149,7 +149,7 @@ const FirstName = (props) => {
                     ></motion.path>
                     {/* h */}
                     <motion.path
-                        variants={fiveAnimation}
+                        variants={threeAnimation}
                         className="stroke-paper-text dark:stroke-dracula-text"
                         strokeWidth="2"
                         strokeLinecap="round"
@@ -161,7 +161,7 @@ const FirstName = (props) => {
                     ></motion.path>
                     {/* e */}
                     <motion.path
-                        variants={fiveAnimation}
+                        variants={fourAnimation}
                         className="stroke-paper-text dark:stroke-dracula-text"
                         strokeWidth="2"
                         strokeLinecap="round"
