@@ -1,22 +1,42 @@
 import Seal from "../components/Seal";
 import Cat from "./Cat";
 import Dog from "./Dog";
+import CardBase from "./CardBase";
 
-const aboutMe = "Hi! I'm a software engineer with a background in education and a passion for learning.";
-const aboutMe2 =
-    "I'm a graduate of General Assembly's Software Engineering Immersive Bootcamp, and I'm always learning something new!";
-const aboutMe3 =
-    "I love to find creative solutions for novel problems, individually and especially within a team environment.";
+const aboutMe = "Hi! I'm a software engineer, educator, and I'm passionate about learning more every day.";
+const aboutMe2 = "I'm excited to continue growing as a developer and a person.";
+const aboutMe3 = "I love to find creative solutions for novel problems, individually and collaboratively.";
+const aboutMe4 = "General Assembly Software Engineering Immersive Graduate.";
+const aboutMe5 = "Boston University B.A. & Providence College M.Ed.";
+const aboutMe6 = "Lover of dogs, cats, fiction, and coffee.";
 
 const About = (props) => {
     return (
         <div className="flex flex-col justify-center items-center gap-1 p-0.5">
-            <div className="bg-slate-100 md:bg-slate-100 dark:bg-opacity-10 text-black dark:text-white rounded-2xl text-base md:text-lg w-[80vw] md:w-[60vw] ">
-                <p className="p-2">{aboutMe}</p>
-                <p className="p-2">{aboutMe2}</p>
-                <p className="p-2">{aboutMe3}</p>
+            <div className="flex p-0.5">
+                <CardBase variant="text" className="">
+                    {aboutMe}
+                </CardBase>
+                <CardBase variant="text" className=""></CardBase>
+                <CardBase variant="text" className=""></CardBase>
+                <CardBase variant="text" className="">
+                    {aboutMe2}
+                </CardBase>
+                <CardBase variant="text" className="">
+                    {aboutMe3}
+                </CardBase>
+                <CardBase variant="text" className=""></CardBase>
+                <CardBase variant="text" className=""></CardBase>
+                <CardBase variant="text" className="">
+                    {aboutMe4}
+                </CardBase>
+                <CardBase variant="text" className="">
+                    {aboutMe5}
+                </CardBase>
+                <CardBase variant="text" className="">
+                    {aboutMe6}
+                </CardBase>
             </div>
-            
         </div>
     );
 };

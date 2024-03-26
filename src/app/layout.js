@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
                         {/* <ProgressBar /> */}
                         {/* <div className="bg-slate-300 dark:bg-dracula-subalt"> */}
                         <div className="bg-gradientlight dark:bg-slice dark:bg-fixed dark:bg-origin-border dark:bg-bottom dark:bg-cover py-1 ">
-                            <div className="dark:bg-dracula-bg bg-paper-bg rounded-2xl text-paper-text dark:text-dracula-text font-karla text-center min-h-screen flex flex-col max-w-[80vw] md:max-w-[65vw] my-0 mx-auto">
+                            <div className="dark:bg-dracula-bg bg-paper-bg bg-opacity-60 rounded-2xl text-paper-text dark:text-dracula-text font-karla text-center min-h-screen flex flex-col max-w-[80vw] md:max-w-[65vw] my-0 mx-auto">
                                 <div className="flex flex-col justify-center ">
                                     <Header className=" flex flex-row items-center justify-center mx-auto my-2 gap-4" />
                                     {/* <Navbar /> */}
