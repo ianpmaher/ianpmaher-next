@@ -24,146 +24,96 @@ const figmaIcon = "/assets/figma.svg";
 
 const GridIcons = (props) => {
     const cardImages = [
-        jsIcon,
-        cssIcon,
-        // htmlIcon,
-        reactIcon,
-        nextIcon,
-        nodeIcon,
-        expressIcon,
-        mongoIcon,
-        postgresIcon,
-        gitIcon,
-        githubIcon,
-        tailwindCssIcon,
-        materialUiIcon,
-        pythonIcon,
-        djangoIcon,
-        figmaIcon,
+        {
+            src: jsIcon,
+            alt: "JavaScript",
+        },
+        {
+            src: cssIcon,
+            alt: "CSS",
+        },
+        {
+            src: reactIcon,
+            alt: "React",
+        },
+        {
+            src: nextIcon,
+            alt: "Next.js",
+        },
+        {
+            src: nodeIcon,
+            alt: "Node",
+        },
+        {
+            src: expressIcon,
+            alt: "Express",
+        },
+        {
+            src: mongoIcon,
+            alt: "MongoDB",
+        },
+        {
+            src: postgresIcon,
+            alt: "PostgreSQL",
+        },
+        {
+            src: gitIcon,
+            alt: "Git",
+        },
+        {
+            src: githubIcon,
+            alt: "GitHub",
+        },
+        {
+            src: tailwindCssIcon,
+            alt: "Tailwind CSS",
+        },
+        {
+            src: materialUiIcon,
+            alt: "Material UI",
+        },
+        {
+            src: pythonIcon,
+            alt: "Python",
+        },
+        {
+            src: djangoIcon,
+            alt: "Django",
+        },
+        {
+            src: figmaIcon,
+            alt: "Figma",
+        },
     ];
 
     return (
         // <section className="mx-auto my-0 w-[50vw]">
         // <section className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:w-[70vw] sm:h-[70%] lg:w-full h-full p-3 list-none place-content-center place-items-center mx-auto my-0 object-cover">
-        <section className="mx-auto my-0 flex items-center ">
+        <section className="mx-auto my-0 py-10 flex items-center ">
             {/* {cardImages.map((cardImages) => { */}
             <StockTicker>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages[0]}
-                    className=" flex flex-col flex-wrap items-center justify-center"
-                >
-                    <Image src={cardImages[0]} alt="javascript" title="javascript" width={65} height={65} />
-                </IconCard>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center "
-                >
-                    <Image src={cardImages[1]} alt="CSS icon" title="CSS" width={65} height={65} />
-                </IconCard>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center "
-                >
-                    <Image src={cardImages[2]} alt="React icon" title="React" width={80} height={80} />
-                </IconCard>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center"
-                >
-                    <Image src={cardImages[3]} alt="NextJS" title="Next" width={80} height={80} />
-                </IconCard>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center"
-                >
-                    <Image src={cardImages[4]} alt="Node.js icon" title="Node" width={100} height={100} />
-                </IconCard>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center"
-                >
-                    <Image src={cardImages[5]} alt="Express icon" title="Express" width={80} height={80} />
-                </IconCard>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center"
-                >
-                    <Image src={cardImages[6]} alt="MongoDB icon" title="MongoDB" width={90} height={90} />
-                </IconCard>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center"
-                >
-                    <Image src={cardImages[7]} alt="PostgreSQL icon" title="Postgres SQL" width={100} height={100} />
-                </IconCard>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center"
-                >
-                    <Image src={cardImages[8]} alt="Git icon" title="git" width={80} height={80} />
-                </IconCard>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center"
-                >
-                    <Image src={cardImages[9]} alt="GitHub icon" title="GitHub " width={80} height={80} />
-                </IconCard>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center"
-                >
-                    <Image src={cardImages[10]} alt="Tailwind CSS" title="Tailwind CSS" width={100} height={100} />
-                </IconCard>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center"
-                >
-                    <Image src={cardImages[11]} alt="Material UI icon" title="Material UI" width={100} height={100} />
-                </IconCard>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center"
-                >
-                    <Image src={cardImages[12]} alt="Python icon" title="Python" width={80} height={80} />
-                </IconCard>
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center"
-                >
-                    <Image src={cardImages[13]} alt="Django icon" title="Django" width={80} height={80} />
-                </IconCard>
-                {/* <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center"
+                {cardImages.map((cardImages) => (
+                    <IconCard
+                        variant="secondary"
+                        key={cardImages}
+                        className=" flex flex-col flex-wrap items-center justify-center"
+                        title={cardImages.alt}
                     >
-                    <Image src={cardImages[14]} alt="Django icon" title="Django" width={80} height={80} />
-                </IconCard> */}
-                <IconCard
-                    variant="secondary"
-                    key={cardImages}
-                    className=" flex flex-col flex-wrap items-center justify-center"
-                >
-                    <Image src="/assets/figma.svg" alt="Figma icon" title="Figma" width={80} height={80} />
-                </IconCard>
-
-                {/* </section> */}
+                        <Image
+                            src={cardImages.src}
+                            alt={cardImages.alt}
+                            title={cardImages.alt}
+                            width={75}
+                            height={75}
+                            className="hover:transform hover:scale-125 transition-all duration-300 ease-in-out"
+                        />
+                    </IconCard>
+                ))}
             </StockTicker>
-            <span className="sr-only">Icons: React, JavaScript, CSS, Tailwind, Next.JS, Express, Python, Django, PostgreSQL, MongoDB, Material UI, Git, Github</span>
+            <span className="sr-only">
+                Icons: React, JavaScript, CSS, Tailwind, Next.JS, Express, Python, Django, PostgreSQL, MongoDB, Material
+                UI, Git, Github
+            </span>
         </section>
     );
 };
