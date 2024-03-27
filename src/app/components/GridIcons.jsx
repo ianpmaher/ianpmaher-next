@@ -9,7 +9,7 @@ const cssIcon = "/assets/css-3.svg";
 const htmlIcon = "/assets/html-5.svg";
 const jsIcon = "/assets/javascript.svg";
 const reactIcon = "/assets/react.svg";
-const nextIcon = "/assets/nextjs.svg";
+const nextIcon = "/assets/next.svg";
 const nodeIcon = "/assets/nodejs.svg";
 const expressIcon = "/assets/express.svg";
 const mongoIcon = "/assets/mongodb.svg";
@@ -21,6 +21,7 @@ const materialUiIcon = "/assets/material-ui.svg";
 const pythonIcon = "/assets/python.svg";
 const djangoIcon = "/assets/django.svg";
 const figmaIcon = "/assets/figma.svg";
+const strapiIcon = "/assets/strapi.svg";
 
 const GridIcons = (props) => {
     const cardImages = [
@@ -84,6 +85,10 @@ const GridIcons = (props) => {
             src: figmaIcon,
             alt: "Figma",
         },
+        {
+            src: strapiIcon,
+            alt: "Strapi",
+        },
     ];
 
     return (
@@ -112,7 +117,7 @@ const GridIcons = (props) => {
             </StockTicker>
             <span className="sr-only">
                 Icons: React, JavaScript, CSS, Tailwind, Next.JS, Express, Python, Django, PostgreSQL, MongoDB, Material
-                UI, Git, Github
+                UI, Git, Github, Strapi.js
             </span>
         </section>
     );
