@@ -5,6 +5,7 @@ import Image from "next/image";
 import IconCard from "./IconCard";
 import Carousel from "./Carousel";
 import StockTicker from "./StockTicker";
+const placeholder = "/assets/placeholder.svg";
 const cssIcon = "/assets/css-3.svg";
 const htmlIcon = "/assets/html-5.svg";
 const jsIcon = "/assets/javascript.svg";
@@ -111,6 +112,8 @@ const GridIcons = (props) => {
                             width={75}
                             height={75}
                             className="hover:transform hover:scale-125 transition-all duration-300 ease-in-out"
+                            placeholder="blur"
+                            blurDataURL="data: [image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==]" // 64x64 base64 encoded}
                         />
                     </IconCard>
                 ))}

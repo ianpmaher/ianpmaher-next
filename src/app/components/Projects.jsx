@@ -18,6 +18,8 @@ const Projects = (props) => {
                     <Image
                         src={project.image}
                         alt={project.title}
+                        placeholder="blur"
+                        blurDataURL="data: [image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==]" // 64x64 base64 encoded}
                         className="hover:scale-150 transition-all duration-1000 ease-in-out hover:shadow-2xl md:max-h-96 md:w-auto w-full"
                     />
                 </div>
