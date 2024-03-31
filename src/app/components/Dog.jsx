@@ -29,8 +29,9 @@ const Dog = (props) => {
                 viewBox="0 0 644 595"
                 fill="transparent"
                 transition={{ duration: 2, ease: "easeInOut" }}
-                initial="hidden"
-                animate="visible"
+                initial="visible"
+                // initial="hidden"
+                // animate="visible"
             >
                 <motion.path
                     variants={outlineAnimation}

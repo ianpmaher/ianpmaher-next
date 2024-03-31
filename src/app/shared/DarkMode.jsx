@@ -5,25 +5,17 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 
 const DarkMode = (props) => {
-    const { theme, setTheme } = useTheme();
+    const { theme, setTheme, resolvedTheme, setPreferredTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
     // useEffect to set mounted to true https://github.com/pacocoursey/next-themes?tab=readme-ov-file#avoid-hydration-mismatch
     // use useEffect to set the theme to the user's preference
     useEffect(() => {
         setMounted(true);
-        // if (theme === "dark") {
-        //     // window.localStorage.setItem("theme", "dark");
-        //     console.log(window.localStorage.getItem("theme"));
-        //     // console.log("dark");
-        // }
-
-        // if (theme === "light") {
-        //     console.log(window.localStorage.getItem("theme"));
-        //     // document.documentElement.classList.remove("dark");
-        //     // console.log("light");
-        // }
-    }, []);
+        if (!theme) {
+            setPreferredTheme();
+        }
+    }, [setMounted, setPreferredTheme, theme]);
 
     if (!mounted) return null;
 
