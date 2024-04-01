@@ -120,7 +120,7 @@ const GridIcons = (props) => {
             </StockTicker>
             <span className="sr-only">
                 Icons: React, JavaScript, CSS, Tailwind, Next.JS, Express, Python, Django, PostgreSQL, MongoDB, Material
-                UI, Git, Github, Strapi.js
+                UI, Git, Github, Strapi.js, Figma, TypeScript
             </span>
         </section>
     );

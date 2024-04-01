@@ -1,6 +1,10 @@
+"use client";
+
 import React, { useState, useRef } from "react";
 import Ticker from "framer-motion-ticker";
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, cubicBezier } from "framer-motion";
+
+const customEase = cubicBezier(0.17, 0.67, 0.83, 0.67); // Custom easing function
 
 const StockTicker = ({ children }) => {
     const [isPlaying, setIsPlaying] = React.useState(true);
@@ -31,7 +35,7 @@ const StockTicker = ({ children }) => {
 
     return (
         <div className="stock-ticker w-full h-32 overflow-hidden relative ">
-        {/* <div className="stock-ticker w-full h-32 overflow-hidden relative" ref={tickerRef} onClick={handleClick}> */}
+            {/* <div className="stock-ticker w-full h-32 overflow-hidden relative" ref={tickerRef} onClick={handleClick}> */}
             {/* <motion.div
                 className="stock-ticker-inner flex whitespace-nowrap absolute top-0 left-0 w-max h-full"
                 animate={controls}
@@ -45,17 +49,17 @@ const StockTicker = ({ children }) => {
                 }}
             > */}
             <div className="stock-ticker-inner flex whitespace-nowrap absolute top-0 left-0 w-max h-full">
-
-            <Ticker
-                duration={45}
-                onMouseEnter={() => setIsPlaying(false)}
-                onMouseLeave={() => setIsPlaying(true)}
-                isPlaying={isPlaying}
+                <Ticker
+                    duration={30}
+                    onMouseEnter={() => setIsPlaying(false)}
+                    onMouseLeave={() => setIsPlaying(true)}
+                    isPlaying={isPlaying}
+                    
                 >
-                {children}
-                {children}
-            </Ticker>
-                </div>
+                    {children}
+                    {/* {children} */}
+                </Ticker>
+            </div>
             {/* </motion.div> */}
         </div>
     );
