@@ -44,7 +44,7 @@ const PopoverElem = (props) => {
                     aria-label="open popover"
                 >
                     <IconCard className="bg-dracula-green hover:bg-dracula-orange dark:bg-dracula-yellow dark:hover:bg-dracula-green" variant={`${isDark ? "darkColors" : "lightColors"}`}>
-                        <Image src="/assets/email.svg" title="email" alt="Email Icon" width={40} height={40} />
+                        <Image src="/assets/email.svg" title="email" alt="Email Icon" width={40} height={40} priority />
                     </IconCard>
                 </button>
             </Popover.Trigger>

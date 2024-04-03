@@ -35,7 +35,7 @@ const Contact = (props) => {
                     title="GitHub"
                     className={` rounded-2xl`}
                 >
-                    <Image src="/assets/github-icon.svg" alt="GitHub logo" width={40} height={40} />
+                    <Image src="/assets/github-icon.svg" alt="GitHub logo" width={40} height={40} priority />
                 </Link>
             </IconCard>
             {/* <IconCard variant="primary"> */}
@@ -58,7 +58,7 @@ const Contact = (props) => {
                     title="LinkedIn"
                     className=" rounded-2xl"
                 >
-                    <Image src="/assets/linkedin.svg" alt="LinkedIn logo" width={40} height={40} />
+                    <Image src="/assets/linkedin.svg" alt="LinkedIn logo" width={40} height={40} priority />
                 </Link>
             </IconCard>
             <IconCard className="bg-dracula-purple hover:bg-dracula-orange dark:bg-dracula-pink dark:hover:bg-dracula-green" variant={`${isDark ? "darkColors" : "lightColors"}`}>
@@ -69,7 +69,7 @@ const Contact = (props) => {
                     title="Resume"
                     className=" rounded-2xl"
                 >
-                    <Image src="/assets/document.svg" alt="text document image" width={40} height={40} />
+                    <Image src="/assets/document.svg" alt="text document image" width={40} height={40} priority />
                 </Link>
             </IconCard>
         </section>
