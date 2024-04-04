@@ -12,6 +12,7 @@ const projectsList =
     {
         "id": 1,
         "title": "PawsOn.Life",
+        "slug": "pawsonlife",
         "description": "Developed in an Agile team environment, PawsOn.Life is a full-stack web application that allows users to search for hiking trails in their area via Google Maps API. Users can review trails as being pet-friendly. Users can also create an account and save trails to their favorites list.",
         "tags": ["MERN", "React", "MongoDB", "Google Maps API", "Express", "Node", "Agile development", "RESTful API", "MVC", "Material UI", "Heroku", "Netlify", "Git"],
         "github": "https://github.com/ianpmaher/pawsOnLifeFrontEnd",
@@ -24,6 +25,7 @@ const projectsList =
     {
         "id": 2,
         "title": "Mood Ring",
+        "slug": "moodring",
         "description": "A self-help app for healthier habits and safer schools. Full Stack CRUD application utilizing the 7 RESTful routes, Express.js, MongoDB, Mongoose, Embedded JavaScript, and node.js.",
         "tags": ["MVC", "MongoDB", "Express", "Node", "EJS", "CSS", "JavaScript", "Heroku", "Netlify", "Git"],
         "github": "https://github.com/ianpmaher/moodring",
@@ -35,6 +37,7 @@ const projectsList =
     {
         "id": 3,
         "title": "Simply Scholars",
+        "slug": "simplyscholars",
         "description": "A full-stack web application utilizing the Next.js & Strapi.js stack. This is a platform for the non-tech-savvy to build and maintain their own scholarship websites and databases. Providing customizability and ease of use, Simply Scholars is a tool for scholarship organizations to reach more students.",
         "tags": ["Next.js", "Strapi", "Tailwind", "Postgres", "Authorization", "Dynamic Routing"],
         "github": "https://github.com/ianpmaher/simply-scholars",
@@ -45,6 +48,7 @@ const projectsList =
     {
         "id": 5,
         "title": "Grand Theft Autocorrect",
+        "slug": "gta",
         "description": "A typing test game utilizing JavaScript, Fetch API, and dynamic DOM manipulation.",
         "tags": ["JavaScript", "Fetch API", "HTML", "CSS", "Netlify", "Git"],
         "github": "https://github.com/ianpmaher/gta",
@@ -55,6 +59,7 @@ const projectsList =
     {
         "id": 4,
         "title": "Study Italian",
+        "slug": "studyitalian",
         "description": "A full-stack web application to help language lovers learn Italian! Users can translate to and from Italian, quiz themselves on words, with more features to come.",
         "tags": ["React", "API", "Express", "MongoDB", "Netlify", "Heroku"],
         "github": "https://github.com/ianpmaher/italian",
