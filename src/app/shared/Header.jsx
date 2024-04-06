@@ -10,17 +10,20 @@ const Header = (props) => {
                 <h1 className=" text-3xl md:text-5xl">Ian Maher</h1>
                 <h2 className=" text-2xl md:text-3xl">Full Stack Developer & Education Advocate</h2>
             </div> */}
-            <div className="relative top-3 mx-auto my-0 flex md:flex-row justify-between gap-2">
-                <div className="flex items-center">
+            <div className="absolute top-3 mx-auto my-0 flex md:flex-col justify-around gap-2">
+                <div className="flex justify-center items-center gap-4">
                     <Link href="/" className="">
                         <IconCard variant="text">home</IconCard>
                     </Link>
+                    <Link href="/blog" className="">
+                        <IconCard variant="text">blog</IconCard>
+                    </Link>
                 </div>
-                <div className="mx-auto my-0 flex md:flex-row gap-2">
+                <div className="mx-auto my-0 flex md:flex-row gap-3">
                     <Contact />
-                    {/* <span className="relative top-0"> */}
-                    <DarkMode />
-                    {/* </span> */}
+                    <span className="relative top-0">
+                        <DarkMode />
+                    </span>
                 </div>
             </div>
         </header>

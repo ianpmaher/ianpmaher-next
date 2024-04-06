@@ -23,7 +23,7 @@ const Contact = (props) => {
     return (
         // <section className="flex gap-3 items-center justify-center md:flex-row flex-col">
         <section
-            className={`flex gap-1 items-center justify-center shadow-xl ${
+            className={`flex gap-2 items-center justify-center shadow-xl ${
                 isFooter ? "md:flex-row flex-row" : "md:flex-row flex-row"
             }`}
         >

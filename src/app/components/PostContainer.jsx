@@ -16,7 +16,7 @@ import Markdown from "react-markdown";
 
 export default function PostContainer(props) {
     return (
-        <article className="mx-auto my-16 w-full max-w-[65vw]">
+        <article className="mx-auto my-1">
             <h1 className="text-4xl font-bold text-center">Title</h1>
             <div className="text-center my-4">
                 <p className="text-gray-500">asd</p>

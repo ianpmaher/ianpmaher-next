@@ -1,9 +1,9 @@
 const Layout = ({ children }) => {
     return (
-        <div className="flex flex-col items-center justify-center h-screen w-screen my-0 mx-auto">
-            {children}
+        <div className="flex items-center justify-center h-full w-full my-0 mx-auto ">
+            <div className="w">{children}</div>
         </div>
-    )
-}
+    );
+};
 
 export default Layout;
