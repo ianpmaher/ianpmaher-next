@@ -61,7 +61,7 @@ const PopoverElem = (props) => {
                         href="mailto:ianpmaher@gmail.com"
                         aria-label="send email"
                         target="_blank"
-                        rel="noreferrer noopener"
+                        // rel="noreferrer noopener"
                         title="Email"
                         className={`flex flex-col flex-wrap items-center justify-center rounded-2xl`}
                         //     isDark

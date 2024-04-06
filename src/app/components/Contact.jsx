@@ -31,7 +31,7 @@ const Contact = (props) => {
                 <Link
                     href="https://www.github.com/ianpmaher"
                     target="_blank"
-                    rel="noreferrer noopener"
+                    rel=""
                     title="GitHub"
                     className={` rounded-2xl`}
                 >
@@ -54,7 +54,7 @@ const Contact = (props) => {
                 <Link
                     href="https://www.linkedin.com/in/ianmaher/"
                     target="_blank"
-                    rel="noreferrer noopener"
+                    // rel="noreferrer noopener"
                     title="LinkedIn"
                     className=" rounded-2xl"
                 >
@@ -65,7 +65,7 @@ const Contact = (props) => {
                 <Link
                     href="https://drive.google.com/file/d/13oKE953LCTEGSpENEqnH6HEVO0NNi_HU/view?usp=sharing"
                     target="_blank"
-                    rel="noreferrer noopener"
+                    // rel="noreferrer noopener"
                     title="Resume"
                     className=" rounded-2xl"
                 >

@@ -9,6 +9,7 @@ const IconCard = ({ variant, description, children, className }) => {
         container: "rounded-2xl bg-[#4A4C60] shadow-xl p-2 flex flex-col items-center justify-center",
         darkColors: "bg-opacity-70 hover:bg-opacity-100 hover:scale-110 hover:transform hover:rotate-12 hover:shadow-2xl p-1",
         lightColors: " bg-opacity-70 hover:bg-opacity-100 hover:scale-110 hover:transform hover:rotate-12 hover:shadow-2xl p-1",
+        text: "text-2xl md:text-3xl",
     };
     
     return (
