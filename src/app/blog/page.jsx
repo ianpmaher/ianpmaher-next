@@ -1,12 +1,14 @@
-import PostContainer from "../components/PostContainer";
+import Container from "../components/Container";
 
 const BlogPage = () => {
+    // don't need to specify public folder in path because 
+    // public directory is the root directory for the server
+    const paths = [ "/posts/article1.md"]
+
     return (
-        <div className="mx-auto my-0 min-h-[50vh] flex flex-col items-center justify-center">
-            <div className="flex flex-col justify-center items-center ">
-                <div className="absolute right-0 left-0">
-                    <PostContainer />
-                </div>
+        <div className="mx-auto my-0 min-h-[80vh] flex flex-col items-center justify-center">
+            <div className="">
+                <Container paths={paths} />
             </div>
         </div>
     );

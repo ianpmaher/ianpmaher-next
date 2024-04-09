@@ -4,22 +4,25 @@ import { useEffect, useState } from "react";
 import parseMarkdown from "@/lib/markdownutils";
 import MarkdownContainer from "./MarkdownContainer";
 
-export default function PostContainer(props) {
+const PostContainer = ({ path }) => {
     const [content, setContent] = useState("");
 
     useEffect(() => {
-        const fetchMarkdown = async () => {
-            const md = await parseMarkdown("/posts/article1.md");
-            setContent(md);
+        const fetchContent = async () => {
+            const markdown = await parseMarkdown(path);
+            setContent(markdown);
         };
-        fetchMarkdown();
-    }, []);
+
+        fetchContent();
+    }, [path]);
 
     return (
-        <article className="mx-auto ">
-            <div className="prose mx-auto h-fit w-fit">
-                <MarkdownContainer>{content}</MarkdownContainer>
+        <article className="">
+            <div className="prose mx-auto my-0">
+                <MarkdownContainer content={content} />
             </div>
         </article>
     );
 }
+
+export default PostContainer;
