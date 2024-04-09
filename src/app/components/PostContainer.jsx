@@ -16,8 +16,8 @@ export default function PostContainer(props) {
     }, []);
 
     return (
-        <article className="mx-auto">
-            <div className="prose mx-auto">
+        <article className="mx-auto ">
+            <div className="prose mx-auto h-fit w-fit">
                 <MarkdownContainer>{content}</MarkdownContainer>
             </div>
         </article>

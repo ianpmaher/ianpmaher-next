@@ -2,10 +2,11 @@ import PostContainer from "../components/PostContainer";
 
 const BlogPage = () => {
     return (
-        <div>
+        <div className="mx-auto my-0 min-h-[50vh] flex flex-col items-center justify-center">
             <div className="flex flex-col justify-center items-center ">
-                <h1>Blog</h1>
-                <PostContainer />
+                <div className="absolute right-0 left-0">
+                    <PostContainer />
+                </div>
             </div>
         </div>
     );

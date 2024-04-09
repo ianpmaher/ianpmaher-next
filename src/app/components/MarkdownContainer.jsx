@@ -12,7 +12,7 @@ export default function MarkdownContainer({ children }) {
 
     return (
         <article className="">
-            <div className="prose ">
+            <div className="prose text-xl ">
                 {content && <Markdown>{content}</Markdown>}
             </div>
         </article>
