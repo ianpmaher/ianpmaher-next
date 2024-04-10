@@ -17,12 +17,10 @@ const PostContainer = ({ path }) => {
     }, [path]);
 
     return (
-        <article className="">
-            <div className="prose mx-auto my-0">
-                <MarkdownContainer content={content} />
-            </div>
+        <article className="prose mx-auto my-0">
+            <MarkdownContainer content={content} />
         </article>
     );
-}
+};
 
 export default PostContainer;
