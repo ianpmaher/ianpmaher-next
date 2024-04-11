@@ -7,7 +7,7 @@ import { motion, useAnimation, cubicBezier } from "framer-motion";
 const customEase = cubicBezier(0.17, 0.67, 0.83, 0.67); // Custom easing function
 
 const StockTicker = ({ children }) => {
-    const [isPlaying, setIsPlaying] = React.useState(true);
+    const [isPlaying, setIsPlaying] = useState(true);
     // const tickerRef = useRef(null);
     // const controls = useAnimation();
 

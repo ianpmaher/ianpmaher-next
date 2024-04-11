@@ -7,7 +7,6 @@ import Carousel from "./Carousel";
 import StockTicker from "./StockTicker";
 const placeholder = "/assets/placeholder.svg";
 const cssIcon = "/assets/css-3.svg";
-const htmlIcon = "/assets/html-5.svg";
 const jsIcon = "/assets/javascript.svg";
 const reactIcon = "/assets/react.svg";
 const nextIcon = "/assets/next.svg";
@@ -23,6 +22,8 @@ const pythonIcon = "/assets/python.svg";
 const djangoIcon = "/assets/django.svg";
 const figmaIcon = "/assets/figma.svg";
 const strapiIcon = "/assets/strapi.svg";
+const pythonNew = "/assets/python-new.svg";
+const styledComponentsIcon = "/assets/styled-components.png";
 
 const GridIcons = (props) => {
     const cardImages = [
@@ -89,6 +90,10 @@ const GridIcons = (props) => {
         {
             src: strapiIcon,
             alt: "Strapi",
+        },
+        {
+            src: styledComponentsIcon,
+            alt: "styled-components",
         },
     ];
 
