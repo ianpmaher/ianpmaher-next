@@ -50,7 +50,7 @@ const StockTicker = ({ children }) => {
             > */}
             <div className="stock-ticker-inner flex whitespace-nowrap absolute top-0 left-0 w-max h-full">
                 <Ticker
-                    duration={30}
+                    duration={60}
                     onMouseEnter={() => setIsPlaying(false)}
                     onMouseLeave={() => setIsPlaying(true)}
                     isPlaying={isPlaying}

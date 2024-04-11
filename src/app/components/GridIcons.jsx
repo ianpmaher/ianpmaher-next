@@ -24,6 +24,8 @@ const figmaIcon = "/assets/figma.svg";
 const strapiIcon = "/assets/strapi.svg";
 const pythonNew = "/assets/python-new.svg";
 const styledComponentsIcon = "/assets/styled-components.png";
+const nodejsIcon = "/assets/node.svg";
+const linuxIcon = "/assets/linuxIcon.svg";
 
 const GridIcons = (props) => {
     const cardImages = [
@@ -44,8 +46,8 @@ const GridIcons = (props) => {
             alt: "Next.js",
         },
         {
-            src: nodeIcon,
-            alt: "Node",
+            src: nodejsIcon,
+            alt: "styled-components",
         },
         {
             src: expressIcon,
@@ -95,6 +97,10 @@ const GridIcons = (props) => {
             src: styledComponentsIcon,
             alt: "styled-components",
         },
+        {
+            src: linuxIcon,
+            alt: "Linux / Bash ",
+        },
     ];
 
     return (
@@ -114,8 +120,9 @@ const GridIcons = (props) => {
                             src={cardImages.src}
                             alt={cardImages.alt}
                             title={cardImages.alt}
-                            width={75}
-                            height={75}
+                            // loader={ ({src}) => src }
+                            width={55}
+                            height={55}
                             className="hover:transform hover:scale-125 transition-all duration-300 ease-in-out"
                             placeholder="blur"
                             blurDataURL="data: [image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==]" // 64x64 base64 encoded}
@@ -125,7 +132,7 @@ const GridIcons = (props) => {
             </StockTicker>
             <span className="sr-only">
                 Icons: React, JavaScript, CSS, Tailwind, Next.JS, Express, Python, Django, PostgreSQL, MongoDB, Material
-                UI, Git, Github, Strapi.js, Figma, TypeScript
+                UI, Git, Github, Strapi.js, Figma, TypeScript, Node.js, styled-components, Linux
             </span>
         </section>
     );

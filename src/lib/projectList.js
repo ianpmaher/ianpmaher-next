@@ -1,10 +1,9 @@
 let italianOnPhone = require("../../public/assets/italianOnPhone.png");
-let gtaScreenshot = require("../../public/assets/gtaResize.png");
-let moodScreenshot = require("../../public/assets/moodScreenshot.png");
+let moodScreenshot = require("../../public/assets/moodRating.webp");
 // let placeholder = require("../../assets/placeholder.png");
 let pawsipad = require("../../public/assets/pawsiPad.webp");
-let simplyScholars = require("../../public/assets/roughSimplyScholars.png");
-let gtaSmall = require("../../public/assets/gtaBEST.png");
+let simplyScholars = require("../../public/assets/roughSimplyScholars.webp");
+let gtaSmall = require("../../public/assets/gtaBEST.webp");
 
 const projectsList =
 
