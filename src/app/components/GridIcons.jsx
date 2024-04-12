@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import React from "react";
 import Image from "next/image";
@@ -121,8 +121,8 @@ const GridIcons = (props) => {
                             alt={cardImages.alt}
                             title={cardImages.alt}
                             // loader={ ({src}) => src }
-                            width={55}
-                            height={55}
+                            width={65}
+                            height={65}
                             className="hover:transform hover:scale-125 transition-all duration-300 ease-in-out"
                             placeholder="blur"
                             blurDataURL="data: [image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==]" // 64x64 base64 encoded}

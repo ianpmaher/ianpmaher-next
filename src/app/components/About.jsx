@@ -30,7 +30,7 @@ const About = (props) => {
                 <p>Currently learning:</p>
                 <div className="">
                     <IconCard variant="learning">
-                        <Image src={typeScriptIcon} alt="TypeScript" title="TypeScript" width={100} height={100} className="hover:transform hover:scale-125 transition-all duration-300 ease-in-out" />
+                        <Image src={typeScriptIcon} alt="TypeScript" title="TypeScript" width={80} height={80} className="hover:transform hover:scale-125 transition-all duration-300 ease-in-out" />
                     </IconCard>
                 </div>
             </CardBase>
