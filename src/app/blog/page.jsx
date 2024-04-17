@@ -1,15 +1,22 @@
-import Container from "../components/Container";
+import Link from "next/link";
+import { getAllBlogPosts } from "@/lib/posts";
 
-const BlogPage = () => {
-    // don't need to specify public folder in path because
-    // public directory is the root directory for the server
-    const paths = ["/posts/article1.md"];
+export default async function BlogPage() {
+    const blogPosts = await getAllBlogPosts();
 
     return (
-        <section className=" grid place-content-center ">
-            <Container paths={paths} />
-        </section>
+        <div>
+            <h1>Blog</h1>
+            <ul>
+                {blogPosts.map((post) => (
+                    <li key={post.slug}>
+                        <Link href={`/blog/${post.slug}`}>
+                            <h2>{post.title}</h2>
+                            <p>{post.excerpt}</p>
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
-};
-
-export default BlogPage;
+}
