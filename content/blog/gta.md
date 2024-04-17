@@ -6,11 +6,6 @@ tags: [programming, typing game, mechanical keyboards]
 ---
 
 **Hi, my name is Ian** and I wanted to write and share a bit about my journey in programming.
-...
-
-
-**Hi, my name is Ian** and I wanted to write and share a bit about my journey in programming.  
-
 
 Recently I’ve been spending a few hours a night reading my old code and refactoring it. This week, I’ve been improving one of my favorite projects: **Grand Theft Autocorrect**.  
 
