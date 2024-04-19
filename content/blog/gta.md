@@ -1,6 +1,6 @@
 ---
 title: "First post: GTA, programming"
-date: 2022-10-01
+date: 2024-01-01
 author: Ian Maher
 tags: [programming, typing game, mechanical keyboards]
 ---

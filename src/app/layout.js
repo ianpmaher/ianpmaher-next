@@ -65,7 +65,7 @@ export default function RootLayout({ children }) {
                                 </div>
                                 {/* CONTACT */}
                                 <div className="flex-1 flex flex-col sm:flex-row">
-                                    <main className="flex-"> {/* change to flex-1 if add actual nav or aside elements to maintain holy grail  */}
+                                    <main className="flex-1"> {/* change to flex-1 if add actual nav or aside elements to maintain holy grail  */}
                                         {children}
                                         {/* ABOUT */}
                                         {/* PROJECTS */}

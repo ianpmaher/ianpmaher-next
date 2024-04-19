@@ -23,7 +23,7 @@ export default function Home() {
             <section className="mx-auto my-0">
                 <Projects />
             </section>
-            <section className="mx-auto my-0 min-h-screen">
+            <section className="mx-auto my-0">
                 <Resume />
             </section>
             
