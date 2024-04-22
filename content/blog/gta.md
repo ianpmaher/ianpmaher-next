@@ -9,6 +9,7 @@ tags: [programming, typing game, mechanical keyboards]
 
 Recently I’ve been spending a few hours a night reading my old code and refactoring it. This week, I’ve been improving one of my favorite projects: **Grand Theft Autocorrect**.  
 
+![GTA screenshot](https://f005.backblazeb2.com/file/ianpmaher/gtaBEST.png)
 
 **Grand Theft Autocorrect** is a typing game, in the vein of classics like _The Typing of the Dead_, _TypeRacer_, _10FastFingers_, and _MonkeyType_. Thematically, the game of course pays homage to GTA (Vice City). You need to type faster than the cops for each of the 10 levels, earning a new, fancier car in the process. But you lose health for every typo, so be careful or you’ll see the _Wasted_ graphic we all know and love.    
   

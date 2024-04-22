@@ -17,6 +17,8 @@ The Next.js framework allows for *Static Site Generation*, and that’s effectiv
 
 Reflecting on my bootcamp at **GENERAL ASSEMBLY**, I think it was incredibly easy to take the “classroom” for granted. The structure of lectures, homework, and projects is so motivating and meaningful in itself: you have someone to hold you accountable, and you have friends to study with. I still have these connections, and I have plenty of motivation from GA still. (See the pic for a flattering comment **GORE** made about my use of styled-components. I still think about it when I need to feel better about my technical prowess.)
 
+![Gore styled-components](https://f005.backblazeb2.com/file/ianpmaher/gorecomment.jpeg)
+
 Learning to code on your own is overwhelming. There is a bewildering amount of choice. Is it better to learn through videos or through more interactive programs? Should I keep plugging away at old projects, or should I try to get involved in open source more? And how would I go about doing that?
 
 I'm trying to get better at JavaScript / TypeScript and Python, to really hone my analytical problem-solving skills. It will lend itself to learning an entirely new language should the need or interest arise for something like C# and .NET, PHP, or Ruby on Rails.
