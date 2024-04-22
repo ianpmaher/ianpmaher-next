@@ -25,7 +25,7 @@ I'm trying to get better at JavaScript / TypeScript and Python, to really hone m
 
 ## The Rhode Island API
 
-![RI Logo]()
+![RI Logo](https://f005.backblazeb2.com/file/ianpmaher/rilogo_smalljpg.jpg)
 
 In the meantime, along with learning more about Next.js, I’ve spent the past week creating what I hope is the only Rhode Island-focused API. It’s still in its infancy, but the RI API will allow developers to access fun facts about the Ocean State, as well as measure distances, areas, and other metrics in Rhode Island-derived units. When large enough landmasses warrant comparison, Rhode Island is often used for this purpose. Icebergs? Sure. Luxembourg? About half the size of the smallest state.
 
