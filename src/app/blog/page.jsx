@@ -5,9 +5,9 @@ export default async function BlogPage() {
     const blogPosts = await getAllBlogPosts();
 
     return (
-        <div className="mx-auto my-0">
+        <div className="mx-auto my-0 p-12 md:p-0">
             {/* <h1 className="">Blog</h1> */}
-            <ul className="flex gap-10">
+            <ul className="flex flex-col md:flex-row gap-2 md:gap-10">
                 {blogPosts.map((post) => (
                     <li className="p-4 outline rounded-xl hover:shadow-xl hover:bg-fuchsia-800" key={post.slug}>
                         <Link href={`/blog/${post.slug}`}>
