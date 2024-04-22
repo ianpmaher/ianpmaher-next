@@ -4,7 +4,8 @@ const nextConfig = {
         styledComponents: true,
     },
     images: {
-        domains: ["http.cat"],
+        domains: ["http.cat", "f005.backblazeb2.com"],
+        
     },
 };
 

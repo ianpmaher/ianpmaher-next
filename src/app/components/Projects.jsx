@@ -18,6 +18,8 @@ const Projects = (props) => {
                     <Image
                         src={project.image}
                         alt={project.title}
+                        width={900}
+                        height={900}
                         placeholder="blur"
                         // priority
                         blurDataURL="data: [image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==]" // 64x64 base64 encoded}

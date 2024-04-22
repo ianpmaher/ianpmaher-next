@@ -9,9 +9,6 @@ const placeholder = "/assets/placeholder.svg";
 const cssIcon = "/assets/css-3.svg";
 const jsIcon = "/assets/javascript.svg";
 const reactIcon = "/assets/react.svg";
-const nextIcon = "/assets/next.svg";
-const nodeIcon = "/assets/nodejs.svg";
-const expressIcon = "/assets/express.svg";
 const mongoIcon = "/assets/mongodb.svg";
 const postgresIcon = "/assets/postgresql.svg";
 const gitIcon = "/assets/git-icon.svg";
@@ -42,23 +39,23 @@ const GridIcons = (props) => {
             alt: "React",
         },
         {
-            src: nextIcon,
+            src: "https://f005.backblazeb2.com/file/ianpmaher/next.svg",
             alt: "Next.js",
         },
         {
-            src: nodejsIcon,
-            alt: "styled-components",
+            src: "https://f005.backblazeb2.com/file/ianpmaher/node.svg",
+            alt: "node.js",
         },
         {
-            src: expressIcon,
+            src: "https://f005.backblazeb2.com/file/ianpmaher/express.svg",
             alt: "Express",
         },
         {
-            src: mongoIcon,
+            src: "https://f005.backblazeb2.com/file/ianpmaher/mongodb.svg",
             alt: "MongoDB",
         },
         {
-            src: postgresIcon,
+            src: "https://f005.backblazeb2.com/file/ianpmaher/postgresql.svg",
             alt: "PostgreSQL",
         },
         {

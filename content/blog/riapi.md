@@ -23,6 +23,8 @@ I'm trying to get better at JavaScript / TypeScript and Python, to really hone m
 
 ## The Rhode Island API
 
+![RI Logo]()
+
 In the meantime, along with learning more about Next.js, I’ve spent the past week creating what I hope is the only Rhode Island-focused API. It’s still in its infancy, but the RI API will allow developers to access fun facts about the Ocean State, as well as measure distances, areas, and other metrics in Rhode Island-derived units. When large enough landmasses warrant comparison, Rhode Island is often used for this purpose. Icebergs? Sure. Luxembourg? About half the size of the smallest state.
 
 Singapore is listed at 283.5 square miles, and so Singapore is about 1/5 the area of America’s smallest state.

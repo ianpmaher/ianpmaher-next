@@ -1,10 +1,3 @@
-let italianOnPhone = require("../../public/assets/italianOnPhone.png");
-let moodScreenshot = require("../../public/assets/moodRating.webp");
-// let placeholder = require("../../assets/placeholder.png");
-let pawsipad = require("../../public/assets/pawsiPad.webp");
-let simplyScholars = require("../../public/assets/roughSimplyScholars.webp");
-let gtaSmall = require("../../public/assets/gtaBEST.webp");
-
 const projectsList =
 
 [
@@ -17,7 +10,7 @@ const projectsList =
         "github": "https://github.com/ianpmaher/pawsOnLifeFrontEnd",
         "github2": "https://github.com/ianpmaher/pawsOnLifeBackEnd",
         "live": "https://pawson.life/",
-        "image": pawsipad,
+        "image": "https://f005.backblazeb2.com/file/ianpmaher/pawsiPad.webp",
         // "screenshot": pawsScreenshot, // Discott, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
         // "screenshot": "https://user-images.githubusercontent.com/120536234/282807646-28fd01fc-7a91-420c-8b23-1c3466654ecd.png"
     },
@@ -29,7 +22,7 @@ const projectsList =
         "tags": ["MVC", "MongoDB", "Express", "Node", "EJS", "CSS", "JavaScript", "Heroku", "Netlify", "Git"],
         "github": "https://github.com/ianpmaher/moodring",
         "live": "https://still-sierra-16854-4298cf6fca1b.herokuapp.com/logs/",
-        "image": moodScreenshot,
+        "image": "https://f005.backblazeb2.com/file/ianpmaher/moodScreenshot.webp",
         // "image": "https://user-images.githubusercontent.com/120536234/270083620-4e5ba78d-720d-4852-9ce4-ee688015c14d.png",
         "screenshot": "https://user-images.githubusercontent.com/120536234/270083592-2c66d8d6-2e0a-4e70-bd8e-1ddcaa97a358.png"
     },
@@ -42,7 +35,7 @@ const projectsList =
         "github": "https://github.com/ianpmaher/simply-scholars",
         "github2": "https://github.com/ianpmaher/simply-scholars-backend",
         "live": "https://simply-scholars.vercel.app/",
-        "image": simplyScholars,
+        "image": "https://f005.backblazeb2.com/file/ianpmaher/roughSimplyScholars.webp",
     },
     {
         "id": 5,
@@ -52,7 +45,7 @@ const projectsList =
         "tags": ["JavaScript", "Fetch API", "HTML", "CSS", "Netlify", "Git"],
         "github": "https://github.com/ianpmaher/gta",
         "live": "https://grand-theft-autocorrect.netlify.app/",
-        "image": gtaSmall,
+        "image": "https://f005.backblazeb2.com/file/ianpmaher/gtaBEST.png",
         // "image": "https://user-images.githubusercontent.com/120536234/260235684-673eb284-84fd-416d-96b5-d84da3da786d.png"
     },
     {
@@ -63,7 +56,7 @@ const projectsList =
         "tags": ["React", "API", "Express", "MongoDB", "Netlify", "Heroku"],
         "github": "https://github.com/ianpmaher/italian",
         "live": "https://main--darling-rabanadas-f9d73b.netlify.app/",
-        "image": italianOnPhone,
+        "image": "https://f005.backblazeb2.com/file/ianpmaher/italianOnPhone.png",
         "screenshot": "",
     },
 ]
