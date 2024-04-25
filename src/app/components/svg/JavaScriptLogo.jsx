@@ -1,6 +1,6 @@
 const JavaScriptLogo = (props) => {
     return (
-        <div className="flex justify-center items-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-40 ">
+        <div className="flex justify-center items-center my-0 mx-auto min-h-10 max-h-20 min-w-10 max-w-20 ">
             <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
                 <path d="M0 0H256V256H0V0Z" fill="#F7DF1E" />
                 <path

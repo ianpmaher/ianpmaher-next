@@ -1,6 +1,6 @@
 const TailwindCSS = (props) => {
     return (
-        <div className="flex justify-center items-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-40 ">
+        <div className="flex justify-center items-center my-0 mx-auto min-h-10 max-h-20 min-w-10 max-w-20 ">
             <svg xmlns="http://www.w3.org/2000/svg" width="113" height="68" viewBox="0 0 113 68" fill="none">
                 <g clip-path="url(#clip0_29_75)">
                     <path
