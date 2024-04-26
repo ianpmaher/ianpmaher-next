@@ -1,8 +1,8 @@
 const Strapi = (props) => {
     return (
-        <div className="flex justify-center items-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-40 ">
+        <div className="flex justify-center items-center my-0 mx-auto min-h-10 max-h-20 min-w-10 max-w-20 ">
             <svg xmlns="http://www.w3.org/2000/svg" width="129" height="129" viewBox="0 0 129 129" fill="none">
-                <g clip-path="url(#clip0_29_67)">
+                <g clipPath="url(#clip0_29_67)">
                     <path
                         d="M0.682617 44.6807C0.682617 23.7111 0.682617 13.2263 7.197 6.71189C13.7114 0.19751 24.1962 0.19751 45.1658 0.19751H84.5165C105.487 0.19751 115.971 0.19751 122.485 6.71189C129 13.2263 129 23.7111 129 44.6807V84.0314C129 105.001 129 115.485 122.485 122C115.971 128.514 105.487 128.514 84.5165 128.514H45.1658C24.1962 128.514 13.7114 128.514 7.197 122C0.682617 115.485 0.682617 105.001 0.682617 84.0314V44.6807Z"
                         fill="#4945FF"

@@ -1,6 +1,6 @@
 const Figma = (props) => {
     return (
-        <div className="flex justify-center items-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-40 ">
+        <div className="flex justify-center items-center my-0 mx-auto min-h-10 max-h-16 min-w-10 max-w-16 ">
             <svg xmlns="http://www.w3.org/2000/svg" width="308" height="475" viewBox="0 0 308 475" fill="none">
                 <path
                     d="M154.097 237.5C154.097 193.916 188.552 158.615 231.02 158.615C273.489 158.615 307.944 193.882 307.944 237.5C307.944 281.084 273.523 316.385 231.02 316.385C188.586 316.385 154.097 281.118 154.097 237.5Z"
