@@ -71,8 +71,8 @@ export default function RootLayout({ children }) {
                                         {/* PROJECTS */}
                                         {/* RESUME */}
                                     </main>
-                                    <nav className="order-first sm:w-32">{/* <h1>stuff</h1> */}</nav>
-                                    <aside className="sm:w-32">{/* <h1>more stuff</h1> */}</aside>
+                                    <nav className="order-first sm:w-14">{/* <h1>stuff</h1> */}</nav>
+                                    <aside className="sm:w-14">{/* <h1>more stuff</h1> */}</aside>
                                 </div>
                                 <Footer className="my-2" />
                             </div>

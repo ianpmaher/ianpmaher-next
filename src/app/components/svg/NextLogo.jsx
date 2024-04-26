@@ -1,6 +1,6 @@
 const NextLogo = (props) => {
     return (
-        <div className="flex justify-center items-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-40 ">
+        <div className="flex justify-center items-center my-0 mx-auto min-h-10 max-h-20 min-w-10 max-w-20 ">
             <svg xmlns="http://www.w3.org/2000/svg" width="394" height="80" viewBox="0 0 394 80" fill="none">
                 <path
                     d="M262 0H330.5V12.7H303.3V79.3H289.7V12.7H262V0ZM149 0V12.7H94V33.1H138.3V45.7H94V66.7H149V79.3H80.5V0H149.2H149ZM183.3 0H165.5L229.3 79.4H247.2L215.2 39.7L247.2 0.1H229.3L206.3 28.7L183.3 0.1V0ZM201.6 56.7L192.6 45.7L165.5 79.4H183.3L201.6 56.7Z"
