@@ -19,8 +19,8 @@ const PythonLogo = (props) => {
                         y2="19955.7"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stop-color="#387EB8" />
-                        <stop offset="1" stop-color="#366994" />
+                        <stop stopColor="#387EB8" />
+                        <stop offset="1" stopColor="#366994" />
                     </linearGradient>
                     <linearGradient
                         id="paint1_linear_29_34"
@@ -30,8 +30,8 @@ const PythonLogo = (props) => {
                         y2="16818.4"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stop-color="#FFE052" />
-                        <stop offset="1" stop-color="#FFC331" />
+                        <stop stopColor="#FFE052" />
+                        <stop offset="1" stopColor="#FFC331" />
                     </linearGradient>
                 </defs>
             </svg>
