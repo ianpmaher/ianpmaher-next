@@ -16,6 +16,17 @@ const projectsList =
     },
     {
         "id": 2,
+        "title": "Simply Scholars",
+        "slug": "simplyscholars",
+        "description": "A full-stack web application utilizing the Next.js & Strapi.js stack. This is a platform for the non-tech-savvy to build and maintain their own scholarship websites and databases. Providing customizability and ease of use, Simply Scholars is a tool for scholarship organizations to reach more students.",
+        "tags": ["Next.js", "Strapi", "Tailwind", "Postgres", "Authorization", "Dynamic Routing"],
+        "github": "https://github.com/ianpmaher/simply-scholars",
+        "github2": "https://github.com/ianpmaher/simply-scholars-backend",
+        "live": "https://simply-scholars.vercel.app/",
+        "image": "https://f005.backblazeb2.com/file/ianpmaher/roughSimplyScholars.webp",
+    },
+    {
+        "id": 3,
         "title": "Mood Ring",
         "slug": "moodring",
         "description": "A self-help app for healthier habits and safer schools. Full Stack CRUD application utilizing the 7 RESTful routes, Express.js, MongoDB, Mongoose, Embedded JavaScript, and node.js.",
@@ -25,17 +36,6 @@ const projectsList =
         "image": "https://f005.backblazeb2.com/file/ianpmaher/moodScreenshot.webp",
         // "image": "https://user-images.githubusercontent.com/120536234/270083620-4e5ba78d-720d-4852-9ce4-ee688015c14d.png",
         "screenshot": "https://user-images.githubusercontent.com/120536234/270083592-2c66d8d6-2e0a-4e70-bd8e-1ddcaa97a358.png"
-    },
-    {
-        "id": 3,
-        "title": "Simply Scholars",
-        "slug": "simplyscholars",
-        "description": "A full-stack web application utilizing the Next.js & Strapi.js stack. This is a platform for the non-tech-savvy to build and maintain their own scholarship websites and databases. Providing customizability and ease of use, Simply Scholars is a tool for scholarship organizations to reach more students.",
-        "tags": ["Next.js", "Strapi", "Tailwind", "Postgres", "Authorization", "Dynamic Routing"],
-        "github": "https://github.com/ianpmaher/simply-scholars",
-        "github2": "https://github.com/ianpmaher/simply-scholars-backend",
-        "live": "https://simply-scholars.vercel.app/",
-        "image": "https://f005.backblazeb2.com/file/ianpmaher/roughSimplyScholars.webp",
     },
     {
         "id": 5,
@@ -59,6 +59,16 @@ const projectsList =
         "image": "https://f005.backblazeb2.com/file/ianpmaher/italianOnPhone.png",
         "screenshot": "",
     },
+    {
+        "id": 6,
+        "title": "RI API",
+        "slug": "ri-api",
+        "description": "A RESTful API for Rhode Island data. Quantify anything in terms of RI data. Fun facts, statistics, and more!",
+        "tags": ["API", "Node", "Express", "Git", "Markdown"],
+        "github": "https://github.com/ianpmaher/ri-api",
+        "live": "https://radiant-wildwood-30276-73f4e705b27f.herokuapp.com/",
+        "image": "https://f005.backblazeb2.com/file/ianpmaher/epic+ri+wave+(1).png"
+    }
 ]
 
 export default projectsList;
