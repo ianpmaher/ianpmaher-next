@@ -28,4 +28,4 @@ In revisiting this project, pruning away unused HTML classes and rewriting a gre
 In recent days I redid quite a bit of the general styling and feel of the website. I added a speedometer so the user can see their words-per-minute score in real time, with a needle moving just like a real one in a getaway car. The site is better now from a UX standpoint, at least from desktop. I still have a laundry list of things to tweak, and I’ll keep updating it, because it reminds me just how fun and educational these projects really are.  
 
 
-Here is the deployment if you want to try it out: [https://lnkd.in/gRJJiUqR](https://lnkd.in/gRJJiUqR).
+Here is the deployment if you want to try it out: [https://grand-theft-autocorrect.netlify.app/](https://grand-theft-autocorrect.netlify.app/).
