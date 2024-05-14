@@ -9,12 +9,12 @@ export default async function BlogPage() {
             {/* <h1 className="">Blog</h1> */}
             <ul className="flex flex-col md:flex-row gap-2 md:gap-10">
                 {blogPosts.map((post) => (
-                    <li className="p-4 outline rounded-xl hover:shadow-xl hover:bg-fuchsia-800" key={post.slug}>
-                        <Link href={`/blog/${post.slug}`}>
+                    <Link href={`/blog/${post.slug}`} key={post.slug}>
+                        <li className="p-4 outline rounded-xl hover:shadow-xl hover:bg-fuchsia-800" key={post.slug}>
                             <h2 className=" font-bold underline">{post.title}</h2>
                             <p>{post.excerpt}</p>
-                        </Link>
-                    </li>
+                        </li>
+                    </Link>
                 ))}
             </ul>
         </div>
