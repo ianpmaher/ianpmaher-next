@@ -19,7 +19,9 @@ You can find dishes from many different cultures scattered throughout the state.
 
 The first place I looked, naturally, was Yelp. I am familiar enough with the Yelp Fusion API, and at first I wanted to employ this as a quick(er) solution. However, I found that what I wanted was a bit simpler. At least for now, I want my RI-API endpoint to feature a great many restaurants, and I am _just_ doing the backend. If I were also creating a frontend, I would definitely utilize Yelp to make each entry look and feel like a "real" website.
 
-I happened upon an amazing thing: VisitRhodeIsland.com. [This link here](https://www.visitrhodeisland.com/food-drink/restaurants/) does itself use Yelp. It's decent enough, but as a reinventor of many wheels, I wanted to make my *own* list. 
+I happened upon an amazing thing: [VisitRhodeIsland.com](https://www.visitrhodeisland.com/food-drink/restaurants/), which does use Yelp. It's decent enough, but as a reinventor of many wheels, I wanted to make my *own* list. 
+
+![restaurants](https://f005.backblazeb2.com/file/ianpmaher/riwebsite.png)
 
 # 🖥️ Web scraping as concept and as tool 🤖 
 
@@ -34,15 +36,22 @@ I've toyed around with the Python solutions for web scraping as well, and they s
 
 **Puppeteer** is a great npm library. You can automate all sorts of browser interactions, such as navigating pages and clicking elements. You are even able to view the actual page as it is loaded and manipulated (if headless=false). It's pretty incredible and I've barely scratched the surface. 
 
-All webscraping begins with Developer Tools and inspecting the structure of the page. For RI-API, I wanted to take the MANY pages of results found on the VisitRhodeIsland.com website and extract their values. The restaurants listed are all on different pages. Normally this would still be fine, but the website is some Single Page Application, and the pagination of the results does not change the URL you're accessing. I did *not* want to manually click through each page, and copy the names by hand. Let's write a program instead!
+All webscraping begins with Developer Tools and inspecting the structure of the page. For RI-API, I wanted to take the MANY pages of results found on the VisitRhodeIsland.com website and extract their values. The restaurants listed are all on different pages. 
+
+![pagination](https://f005.backblazeb2.com/file/ianpmaher/paginationissue.png)
+
+Normally this would still be fine, but the website is some Single Page Application, and the pagination of the results does not change the URL you're accessing. I did *not* want to manually click through each page, and copy the names by hand. Let's write a program instead!
 
 ![imports](https://f005.backblazeb2.com/file/ianpmaher/scraperFunc.png)
 
 Puppeteer loads the webpage, and Cheerio gets to work. According to my instructions, the html tree is parsed down to the results, and the restaurant names are pushed into an array for safekeeping. 
 
+![try block](https://f005.backblazeb2.com/file/ianpmaher/scraperTry.png)
+![target](https://f005.backblazeb2.com/file/ianpmaher/targetvalue.png)
+
 And now Puppeteer looks for the "next page" button on the website (which was rather involved). If it exists, Puppeteer clicks it; Puppeteer waits for the page to load; and Cheerio gets to work once again.
 
-![try block](https://f005.backblazeb2.com/file/ianpmaher/scraperTry.png)
+
 
 ![catch block](https://f005.backblazeb2.com/file/ianpmaher/scraperCatch.png)
 
