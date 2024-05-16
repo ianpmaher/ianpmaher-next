@@ -11,11 +11,10 @@ const Resume = (props) => {
             {/* grid container */}
             <div className="flex flex-wrap gap-2 flex-row items-center justify-center md:mx-auto md:my-0 md:list-none">
                 <CardBase variant="text">
-                    I am a creative and process-driven full stack software developer with enthusiasm for building
-                    accessible designs and constructing technical solutions with the user in mind.
+                    I would love to chat! I am currently seeking a full-time position in software development.
                 </CardBase>
 
-                <CardBase variant="text">
+                {/* <CardBase variant="text">
                     I leverage my experience as an educator and guidance counselor to my present work, with
                     a focus on communication and an ability to work with people of all backgrounds.
                 </CardBase>
@@ -23,7 +22,7 @@ const Resume = (props) => {
                     I thrive in a collaborative environment and am enthusiastic about projects centered on lifelong
                     learning and inclusion.
                 </CardBase >
-                <span />
+                <span /> */}
             </div>
         </section>
     );
