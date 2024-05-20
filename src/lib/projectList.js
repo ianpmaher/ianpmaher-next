@@ -16,6 +16,16 @@ const projectsList =
     },
     {
         "id": 2,
+        "title": "RI API",
+        "slug": "ri-api",
+        "description": "A RESTful API for Rhode Island data. Quantify anything in terms of RI data. Fun facts, statistics, and more!",
+        "tags": ["API", "Node", "Express", "Git", "Markdown"],
+        "github": "https://github.com/ianpmaher/ri-api",
+        "live": "https://radiant-wildwood-30276-73f4e705b27f.herokuapp.com/",
+        "image": "https://f005.backblazeb2.com/file/ianpmaher/epic+ri+wave+(1).png"
+    },
+    {
+        "id": 2,
         "title": "Simply Scholars",
         "slug": "simplyscholars",
         "description": "A full-stack web application utilizing the Next.js & Strapi.js stack. This is a platform for the non-tech-savvy to build and maintain their own scholarship websites and databases. Providing customizability and ease of use, Simply Scholars is a tool for scholarship organizations to reach more students.",
@@ -49,7 +59,7 @@ const projectsList =
         // "image": "https://user-images.githubusercontent.com/120536234/260235684-673eb284-84fd-416d-96b5-d84da3da786d.png"
     },
     {
-        "id": 4,
+        "id": 6,
         "title": "Study Italian",
         "slug": "studyitalian",
         "description": "A full-stack web application to help language lovers learn Italian! Users can translate to and from Italian, quiz themselves on words, with more features to come.",
@@ -59,16 +69,7 @@ const projectsList =
         "image": "https://f005.backblazeb2.com/file/ianpmaher/italianOnPhone.png",
         "screenshot": "",
     },
-    {
-        "id": 6,
-        "title": "RI API",
-        "slug": "ri-api",
-        "description": "A RESTful API for Rhode Island data. Quantify anything in terms of RI data. Fun facts, statistics, and more!",
-        "tags": ["API", "Node", "Express", "Git", "Markdown"],
-        "github": "https://github.com/ianpmaher/ri-api",
-        "live": "https://radiant-wildwood-30276-73f4e705b27f.herokuapp.com/",
-        "image": "https://f005.backblazeb2.com/file/ianpmaher/epic+ri+wave+(1).png"
-    }
+    
 ]
 
 export default projectsList;
