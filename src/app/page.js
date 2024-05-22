@@ -6,12 +6,12 @@ import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import About from "./components/About";
 import Landing from "./components/Landing";
-
+import ScrollDiv from "./components/ScrollDiv";
 
 export default function Home() {
     return (
         <main className="" id="top">
-            <section className= "mx-auto my-0 min-h-screen flex flex-col items-center justify-center">
+            <section className="mx-auto my-0 min-h-screen flex flex-col items-center justify-center">
                 <Landing />
             </section>
             <section className="mx-auto my-0 ">
@@ -26,7 +26,9 @@ export default function Home() {
             <section className="mx-auto my-0">
                 <Resume />
             </section>
-            
+            <div className="">
+                <ScrollDiv className=" " />
+            </div>
         </main>
     );
 }

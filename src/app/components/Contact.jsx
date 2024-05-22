@@ -63,7 +63,7 @@ const Contact = (props) => {
             </IconCard>
             <IconCard className="bg-dracula-purple hover:bg-dracula-orange dark:bg-dracula-pink dark:hover:bg-dracula-green" variant={`${isDark ? "darkColors" : "lightColors"}`}>
                 <Link
-                    href="https://drive.google.com/file/d/13oKE953LCTEGSpENEqnH6HEVO0NNi_HU/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1FcxNzgddaByS1WAKvpqYainUFDJ4F19P/view?usp=sharing"
                     target="_blank"
                     // rel="noreferrer noopener"
                     title="Resume"
