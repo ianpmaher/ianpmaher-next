@@ -19,6 +19,8 @@ export function getAllBlogPosts() {
         return {
             slug: fileName.replace(".md", ""),
             ...data,
+            date: data.date,
+            tags: data.tags,
         };
     });
 }

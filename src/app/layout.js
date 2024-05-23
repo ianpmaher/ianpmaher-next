@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
                     <Providers>
                         {/* <ProgressBar /> */}
                         {/* <div className="bg-slate-300 dark:bg-dracula-subalt"> */}
-                        <div className="bg-gradientlight md:dark:bg-slice bg-fixed dark:bg-origin-border md:dark:bg-bottom dark:bg-cover pt-1 pb-24 dark:bg-phonedark">
+                        <div className="bg-gradientlight md:dark:bg-slice bg-fixed dark:bg-origin-border md:dark:bg-bottom dark:bg-cover pt-1 pb-8 md:pb-20 dark:bg-phonedark">
                             <div className="dark:bg-dracula-bg bg-paper-bg bg-opacity-90 rounded-2xl text-paper-text dark:text-dracula-text font-karla text-center min-h-screen flex flex-col max-w-[80vw] my-0 mx-auto">
                                 <div className="flex flex-col justify-center ">
                                     <Header className=" flex flex-col items-center justify-center mx-auto my-2 gap-4" />
