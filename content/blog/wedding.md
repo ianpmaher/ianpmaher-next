@@ -19,7 +19,7 @@ Taking care of yourself is always number one: I'm happy to say I've been hitting
 * assorted Philip K. Dick novels and whatever else is on my Kindle
 * Maybe *Libra* or *Underworld* by Don Delillo, finally.
 
-#### Automation
+### Automation
 At work I've been trying to sneak in ways to automate work as much as possible. It's a creative endeavor in itself, truly: what are the most repetitive, computer-based tasks that I do, and are these tasks able to be programmed? 
 * Emails: to spin up a rough draft, _sans_ any confidential info of course
 * Queries: On a daily basis, I navigate our school database, and making direct SQL queries would save a whole lot of tedium when generating reports (attendance, grades, credits, etc.)
