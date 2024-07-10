@@ -5,6 +5,7 @@ import Header from "./shared/Header";
 import Navbar from "./components/NavBar";
 import Footer from "./shared/Footer";
 import Providers from "./Providers";
+import { Analytics } from "@vercel/analytics/react"
 
 // https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 const inter = Inter({
@@ -67,6 +68,7 @@ export default function RootLayout({ children }) {
                                 <div className="flex-1 flex flex-col sm:flex-row">
                                     <main className="flex-1"> {/* change to flex-1 if add actual nav or aside elements to maintain holy grail  */}
                                         {children}
+                                        <Analytics />
                                         {/* ABOUT */}
                                         {/* PROJECTS */}
                                         {/* RESUME */}
