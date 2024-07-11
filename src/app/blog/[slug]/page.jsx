@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import { getPostData } from "@/lib/posts";
 import { ScrollDiv } from "@/app/components/ScrollDiv";
 import Image from "next/image";
+import Link from "next/link";
 
 const renderers = {
     // react-markdown changed this to "components"
@@ -55,6 +56,11 @@ export default async function BlogPostPage({ params }) {
                     {postData.content}
                 </ReactMarkdown>
             </div>
+            <Link href="/blog">
+                <div className="flex items-center justify-center w-1/6 h-16 outline hoverbox mx-auto my-0 rounded-full">
+                    <p className="text-xl">Back to blog</p>
+                </div>
+            </Link>
         </div>
     );
 }
