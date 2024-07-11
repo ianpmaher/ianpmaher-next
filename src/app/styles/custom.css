@@ -1,0 +1,50 @@
+/* styles/custom.css */
+
+.hoverbox:hover {
+    content: "";
+    /* pointer-events: none; */
+    opacity: 0.9;
+    transition: background-color color 1s ease-in-out;
+    animation: colorChange 21s infinite;
+}
+
+@keyframes colorChange {
+    0%,
+    100% {
+        background-color: #2c357f;
+        color: #ffffff; /* white */
+    }
+    12% {
+        background-color: #4f63f6;
+        color: #ffffff; /* white */
+    }
+    14% {
+        background-color: #5ecbf7;
+        color: #000000; /* black */
+    }
+    26% {
+        background-color: #ed8097;
+        color: #ffffff; /* white */
+    }
+    38% {
+        background-color: #774bf4;
+        color: #ffffff; /* white */
+    }
+    50% {
+        background-color: #7fefc6;
+        color: #000000; /* black */
+    }
+    62% {
+        background-color: #2740f5;
+        color: #ffffff; /* white */
+    }
+    74% {
+        background-color: #f4d75f;
+        color: #000000; /* black */
+    }
+    86% {
+        background-color: #2c357f;
+        color: #ffffff; /* white */
+    }
+}
+
