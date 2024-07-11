@@ -21,9 +21,9 @@ export function TypingWords(props) {
                         setDisplayedText("");
                         setJ(0);
                         setI(i === textArr.length - 1 ? 0 : i + 1);
-                    }, 1000);
+                    }, 1000); // NUMBER TO PAUSE BETWEEN WORDS
                 }
-            }, 200);
+            }, 150); // NUMBER TO PAUSE BETWEEN LETTERS
 
             return () => {
                 clearInterval(typingEffect);
