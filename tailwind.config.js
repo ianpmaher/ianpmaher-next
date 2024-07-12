@@ -22,7 +22,8 @@ module.exports = {
                     "radial-gradient(circle at 100%, rgba(82,84,164,1) 10%, rgba(247,160,130,1) 40%, rgba(178,166,215,1) 55%)",
                 slice: "url(/assets/slice3.svg)",
                 phonedark: "linear-gradient(70deg, rgb(38,42,80) 10%, rgb(46,53,123) 80%)",
-                rainbow: "linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)",
+                rainbow: "linear-gradient(to bottom right, red 0%, orange 20%, yellow 30%, green 50%, blue 70%, indigo 80%, violet 100%)",
+                cannedgradient: "linear-gradient(70deg, #4F63F6 10%, #2740F5 30%, #7FEFC6 50%, #5ECBF7 70%, #ED8097 90%)",
                 
             },
             colors: {
