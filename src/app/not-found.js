@@ -4,7 +4,7 @@ import Button from "./components/Button";
 
 export default function NotFound() {
     return (
-        <section className="">
+        <section className="bg-rainbow">
             <div className="text-center mx-auto my-16 min-w-full min-h-full">
                 <div className="my-0 mx-auto flex flex-col w-[65vw] justify-center items-center text-center">
                     <h1>404 - Page Not Found</h1>

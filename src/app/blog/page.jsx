@@ -18,7 +18,7 @@ export default async function BlogPage() {
                     return (
                         <div
                             key={post.slug}
-                            className={`${colSpan} cursor-pointer border-4 border-solid dark:border-white border-paper-main p-2 dark:hover:bg-dracula-purple hover:bg-dracula-purple transition-all duration-200 ease-in rounded-md overflow-scroll text-paper-main bg-dracula-blue dark:text-paper-bg dark:bg-paper-main `}
+                            className={`${colSpan} cursor-pointer border-4 border-solid dark:border-white border-paper-main p-2 dark:hover:bg-dracula-purple hover:bg-dracula-purple transition-all duration-200 ease-in rounded-md overflow-hidden text-paper-main bg-dracula-blue dark:text-paper-bg dark:bg-paper-main `}
                         >
                             <Link href={`/blog/${post.slug}`}>
                                 <h2 className="font-bold underline">{post.title}</h2>
@@ -28,7 +28,7 @@ export default async function BlogPage() {
                             </Link>
                             <div>
                                 {post.tags.map((tag, index) => (
-                                    <Link href={`/blog/${post.slug}`} key={index}>
+                                    <Link href={`/blog/${post.slug}`} key={index} className=" underline even:decoration-dracula-green odd:decoration-dracula-orange underline-offset-4 ">
                                         <span className=" text-lg md:text-lg mx-1 rounded-sm shadow-xl ">
                                             {tag}
                                         </span>
