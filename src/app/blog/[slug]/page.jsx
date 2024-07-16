@@ -15,11 +15,17 @@ const renderers = {
         return children;
     },
     // This custom renderer changes how strong text is rendered
-    strong: ({ children }) => <strong style={{ fontSize: "1.4rem" }}>{children}</strong>,
+    // strong: ({ children }) => <strong style={{ fontSize: "1.4rem" }}>{children}</strong>,
     // This custom renderer changes how emphasis text is rendered
-    em: ({ children }) => <em style={{ fontSize: "1.3rem" }}>{children}</em>,
+    // em: ({ children }) => <em style={{ fontSize: "1.1rem" }}>{children}</em>,
     // This custom renderer changes how paragraphs are rendered
-    paragraph: ({ children }) => <p style={{ color: "orange" }}>{children}</p>,
+
+    blockquote: ({ children }) => (
+        <blockquote className="border-l-4 border-gray-300 font-serif pl-4 my-2">{children}</blockquote>
+    ),
+    ul: ({ children }) => <ul className="list-disc list-inside">{children}</ul>,
+    ol: ({ children }) => <ol className="list-decimal list-inside">{children}</ol>,
+    li: ({ children }) => <li className="my-1">{children}</li>,
     // images rendered with placeholder
     img: ({ src, alt }) => {
         return (
@@ -47,11 +53,11 @@ export default async function BlogPostPage({ params }) {
             <h1 className="text-4xl font-bold mb-4 prose">{postData.title}</h1>
             <h5 className="text-xl font-bold mb-4 prose">{dateFormatted}</h5>
             {/* <div dangerouslySetInnerHTML={{ __html: postData.content }} /> */}
-            <div className="prose lg:prose-xl text-justify whitespace-pre-line">
+            <div className="prose lg:prose-xl text-justify">
                 <ScrollDiv />
                 <ReactMarkdown
                     components={renderers}
-                    className=" text-lg prose lg:prose-xl prose-p:text-md prose-a:underline prose-a:font-mono prose-a:text-xl prose-li:list-disc hover:prose-a:text-blue-700 prose-h1:text-3xl prose-h3:text-xl prose-img:w-full prose-img:h-full md:prose-img:max-w-fit md:prose-img:h-3/4 prose-img:px-8 touch-pinch-zoom active:prose-img:scale-110 whitespace-break-spaces "
+                    className=" text-md prose lg:prose-xl prose-p:text-md prose-a:underline prose-a:font-mono prose-a:text-xl prose-li:list-disc hover:prose-a:text-blue-700 prose-h1:text-3xl prose-h3:text-xl prose-img:w-full prose-img:h-full md:prose-img:max-w-fit md:prose-img:h-3/4 prose-img:px-8 touch-pinch-zoom active:prose-img:scale-110 whitespace-pre-line prose-blockquote: "
                 >
                     {postData.content}
                 </ReactMarkdown>
