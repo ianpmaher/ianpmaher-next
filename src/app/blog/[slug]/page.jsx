@@ -25,7 +25,7 @@ const renderers = {
     ),
     ul: ({ children }) => <ul className="list-disc list-inside">{children}</ul>,
     ol: ({ children }) => <ol className="list-decimal list-inside">{children}</ol>,
-    li: ({ children }) => <li className="my-1">{children}</li>,
+    li: ({ children }) => <li className="my-0">{children}</li>,
     // images rendered with placeholder
     img: ({ src, alt }) => {
         return (
@@ -57,7 +57,7 @@ export default async function BlogPostPage({ params }) {
                 <ScrollDiv />
                 <ReactMarkdown
                     components={renderers}
-                    className=" text-md prose lg:prose-xl prose-p:text-md prose-a:underline prose-a:font-mono prose-a:text-xl prose-li:list-disc hover:prose-a:text-blue-700 prose-h1:text-3xl prose-h3:text-xl prose-img:w-full prose-img:h-full md:prose-img:max-w-fit md:prose-img:h-3/4 prose-img:px-8 touch-pinch-zoom active:prose-img:scale-110 whitespace-pre-line prose-blockquote: "
+                    className=" text-md prose lg:prose-xl prose-p:text-md prose-a:underline prose-a:font-mono prose-a:text-xl prose-li:list-disc hover:prose-a:text-blue-700 prose-h1:text-3xl prose-h3:text-xl prose-img:w-full prose-img:h-full md:prose-img:max-w-[40vw] md:prose-img:max-h-auto prose-img:px-2 touch-pinch-zoom active:prose-img:scale-110 whitespace-pre-line prose-blockquote: "
                 >
                     {postData.content}
                 </ReactMarkdown>
