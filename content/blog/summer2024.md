@@ -13,6 +13,8 @@ tags: [wedding, bali, summer, ai, apocalypse, python]
 Bali is a long way from Rhode Island. It took ~ 24 hours of total travel time, both ways. 
 Boston --> Hong Kong --> Denpasar
 
+![pic of us](https://f005.backblazeb2.com/file/ianpmaher/IMG_1941+(1).png)
+
 The first breezy 14 hour flight featured not one, but two crying babies. You want to be annoyed, but you mainly feel bad for the parents. But seriously, who brings a *baby* baby on an international flight?
 
 Bali is unique in so many ways. The majority of its population is Hindu, so that alone sets it apart from the rest of Indonesia, which is over 85% Muslim. Our guide for much of the trip recounted the influence of Dutch colonialism, which was far more of an economic agent than cultural or religious. Indonesia has the fourth highest population in the world at 280 million; Bali has around five million. 
