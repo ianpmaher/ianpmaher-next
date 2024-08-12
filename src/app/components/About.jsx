@@ -16,7 +16,7 @@ const aboutMeArray = [
 
 const About = (props) => {
     return (
-        <div className="flex flex-col md:flex-row justify-center items-center gap-1 p-0">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-12">
             <CardBase variant="text" className="flex-col p-2">
                 {aboutMeArray.map((item, index) => {
                     return (
@@ -25,8 +25,10 @@ const About = (props) => {
                         </span>
                     );
                 })}
-                <div className="relative h-full w-full">
-                    <div className="absolute">
+            </CardBase>
+            <CardBase variant="typingText" className="p-28 w-28 h-28 flex justify-center items-center">
+                <div className="h-full w-full relative">
+                    <div className=" absolute top-0 right-0">
                         <TypingWords />
                     </div>
                 </div>

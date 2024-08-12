@@ -9,7 +9,7 @@ export function TypingWords(props) {
     const [j, setJ] = React.useState(0);
 
     React.useEffect(() => {
-        const textArr = ["software engineering", "ancient history", "computer hardware", "hiking", "dogs", "coffee"];
+        const textArr = ["software engineering", "ancient history", "computer hardware", "hiking", "dogs", "coffee", "data science", "travel"];
         if (i < textArr.length) {
             const typingEffect = setInterval(() => {
                 if (j < textArr[i].length) {
@@ -32,7 +32,7 @@ export function TypingWords(props) {
     }, [i, j]);
 
     return (
-        <h1 className="text-center font-display text-xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-xl md:leading-[5rem]">
+        <h1 className="text-start font-display text-xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-xl md:leading-[2rem]">
             {displayedText ? displayedText : ""}
         </h1>
     );
