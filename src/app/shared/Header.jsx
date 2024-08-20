@@ -18,6 +18,9 @@ const Header = (props) => {
                     <Link href="/blog" className="">
                         <IconCard variant="text">blog</IconCard>
                     </Link>
+                    <Link href="/keyboards" className="">
+                        <IconCard variant="text">keyboards</IconCard>
+                    </Link>
                 </div>
                 <div className="mx-auto my-0 flex md:flex-row gap-3">
                     <Contact />
