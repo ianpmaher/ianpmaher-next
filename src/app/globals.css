@@ -42,6 +42,11 @@
     white-space: nowrap;
 }
 
+.center-center {
+    max-width: max-content;
+    margin-inline: auto;
+  }
+
 @media screen and (max-width: 768px) {
     .App {
         /* background-size: 150%; */

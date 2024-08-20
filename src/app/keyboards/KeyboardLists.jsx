@@ -12,8 +12,19 @@ export default async function KeyboardsList() {
       <h1 className="text-2xl font-bold my-4">Mechanical Keyboards</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {keyboards.map((keyboard) => (
-          <div key={keyboard._id} className=" shadow-dracula-purple shadow-xl rounded-lg p-4 hover:shadow-dracula-green duration-200 transition-all">
-            <Image src={keyboard.images[0]} alt={keyboard.model} className="w-ful object-contain rounded hover:scale-110 transition-all duration-200" width={500} height={500} />
+          <div
+            key={keyboard._id}
+            className=" shadow-dracula-purple shadow-xl rounded-lg p-4 hover:shadow-dracula-green duration-200 transition-all"
+          >
+            <Image
+              src={keyboard.images[0]}
+              alt={keyboard.model}
+              className="w-ful object-contain rounded hover:scale-110 transition-all duration-200"
+              width={500}
+              height={500}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==" // 64x64 base64 encoded}
+            />
             <h2 className="text-lg font-semibold mt-2">
               {keyboard.brand} {keyboard.model}
             </h2>
