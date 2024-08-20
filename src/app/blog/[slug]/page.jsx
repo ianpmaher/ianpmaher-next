@@ -52,7 +52,11 @@ export default async function BlogPostPage({ params }) {
         <div className="px-4 md:px-2 py-12">
             <h1 className="text-4xl font-bold mb-4 prose">{postData.title}</h1>
             <h5 className="text-xl font-bold mb-4 prose">{dateFormatted}</h5>
-            {/* <div dangerouslySetInnerHTML={{ __html: postData.content }} /> */}
+            <Link href="/blog">
+                <div className="flex items-center justify-center w-1/6 h-16 outline hoverbox mx-auto my-0 rounded-full">
+                    <p className="text-xl">Back to blog</p>
+                </div>
+            </Link>
             <div className="prose lg:prose-xl text-justify">
                 <ScrollDiv />
                 <ReactMarkdown
