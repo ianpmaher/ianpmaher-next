@@ -3,6 +3,7 @@ import IconCard from "../components/IconCard";
 import DarkMode from "./DarkMode";
 import Link from "next/link";
 import Navbar from "../components/NavBar";
+import NewNavMenu from "./NewNavMenu";
 
 const Header = (props) => {
     return (
@@ -30,7 +31,8 @@ const Header = (props) => {
                     </span>
                 </div>
             </div>
-            <Navbar />
+            {/* <Navbar /> */}
+            {/* <NewNavMenu className="fixed top-[5vh] flex flex-col gap- md:text-lg" /> */}
         </header>
     );
 };

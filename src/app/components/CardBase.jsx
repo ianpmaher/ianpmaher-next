@@ -8,6 +8,8 @@ const CardBase = ({ variant, children, className }) => {
             " bg-opacity-70 hover:bg-opacity-100 hover:scale-110 hover:transform hover:rotate-12 hover:shadow-2xl p-1",
         typingText:
             "text-paper-text bg-slate-200 shadow-lg dark:bg-black dark:text-dracula-text rounded-2xl",
+        menu:
+            "text-paper-text bg-slate-200 shadow-lg dark:bg-black dark:text-dracula-text rounded-2xl md:text-lg cursor-pointer max-w-fit",
     };
 
     return <div className={`${baseStyle} ${variantStyle[variant]} ${className}`}>{children}</div>;
