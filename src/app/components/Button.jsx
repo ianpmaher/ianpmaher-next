@@ -1,4 +1,4 @@
-const Button = ({ variant, children }) => {
+const Button = ({ variant, children, className }) => {
     const baseStyle = "";
     const variantStyle = {
         primary:
@@ -10,7 +10,7 @@ const Button = ({ variant, children }) => {
     };
 
     return (
-        <button className={`${baseStyle} ${variantStyle[variant]}`}>
+        <button className={`${baseStyle} ${variantStyle[variant]} ${className}`}>
             {children}
         </button>
     )

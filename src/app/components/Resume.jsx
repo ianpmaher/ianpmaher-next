@@ -7,7 +7,7 @@ const Resume = (props) => {
 
     // framer motion
     return (
-        <section className="flex flex-col items-center justify-center mx-auto my-0">
+        <section id="resume" className="flex flex-col items-center justify-center mx-auto my-0">
             {/* grid container */}
             <div className="flex flex-wrap gap-2 flex-row items-center justify-center md:mx-auto md:my-0 md:list-none">
                 <CardBase variant="text">
