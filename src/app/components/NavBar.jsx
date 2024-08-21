@@ -133,25 +133,25 @@ const Navbar = () => {
             {/* DESKTOP Navbar */}
             {isDesktop && (
                 // <div className="flex flex-row items-center justify-center flex-wrap ">
-                <div className="fixed left-0 mx-2 my-1 flex flex-col gap-2">
+                <div className=" fixed left-0 top-[15vh] md:left-0 md:mx-2 md:my-1 flex flex-col gap-2 md:text-lg ">
                     {/* <FlexContainer> */}
-                    <Button variant="primary" aria-label="scroll to header section"  className="px-2 py-1 rounded-md text-xl">
+                    <Button variant="primary" aria-label="scroll to header section"  className="px-1 md:px-2 py-1 rounded-md md:text-xl">
                         <Link to="top" smooth={true} duration={100}>
                         🔝
                         </Link>
                     </Button>
 
-                    <Button variant="primary" aria-label="scroll to About section"  className="px-2 py-1 rounded-md">
+                    <Button variant="primary" aria-label="scroll to About section"  className="px-1 md:px-2 py-1 rounded-md">
                         <Link to="about" smooth={true} duration={100}>
                             About
                         </Link>
                     </Button>
-                    <Button variant="primary" aria-label="scroll to Projects section" className="px-2 py-1 rounded-md">
+                    <Button variant="primary" aria-label="scroll to Projects section" className="px-1 md:px-2 py-1 rounded-md">
                         <Link to="projects" smooth={true} duration={1000}>
                         Projects
                         </Link>
                     </Button>
-                    <Button variant="primary" aria-label="scroll to Resume section" className="px-2 py-1 rounded-md">
+                    <Button variant="primary" aria-label="scroll to Resume section" className="px-1 md:px-2 py-1 rounded-md">
                         <Link to="resume" smooth={true} duration={1000}>
                         Resume
                         </Link>
@@ -161,7 +161,7 @@ const Navbar = () => {
             )}
             {/* MOBILE Navbar */}
             {!isDesktop && (
-                <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center justify-between w-full ">
                     {/* <Link
                         to="home"
                         smooth={true}
