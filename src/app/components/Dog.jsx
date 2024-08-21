@@ -21,7 +21,7 @@ const Dog = (props) => {
     if (!mounted) return null;
 
     return (
-        <div className="flex justify-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-40 ">
+        <div className="flex justify-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-40  hover:rotate-180 hover:scale-125 transition-all duration-500">
             <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100%"

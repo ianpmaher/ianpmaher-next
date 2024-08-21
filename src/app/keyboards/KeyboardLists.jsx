@@ -6,7 +6,6 @@ export default async function KeyboardsList() {
   const db = client.db("mechanicalKeyboards");
 
   const keyboards = await db.collection("mechanicalKeyboards").find({}).toArray();
-  console.log(keyboards);
 
   return (
     <div className="container mx-auto px-4">
@@ -20,7 +19,7 @@ export default async function KeyboardsList() {
             <Image
               src={keyboard.images[0]}
               alt={keyboard.model}
-              className="w-ful object-contain rounded hover:scale-110 transition-all duration-200"
+              className="w-full object-contain rounded hover:scale-110 transition-all duration-200"
               width={500}
               height={500}
               placeholder="blur"

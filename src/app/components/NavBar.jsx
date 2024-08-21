@@ -29,7 +29,7 @@ const navMotion = {
         y: "100%",
         opacity: 0,
         transition: {
-            duration: 0.3,
+            duration: 0.2,
             staggerChildren: 0.15,
             ease: "easeInOut",
         },
@@ -39,7 +39,7 @@ const navMotion = {
         y: 0,
         opacity: 1,
         transition: {
-            duration: 0.3,
+            duration: 0.2,
             when: "beforeChildren",
             staggerChildren: 0.15,
             ease: "easeInOut",
@@ -50,7 +50,7 @@ const navMotion = {
         y: "100%",
         opacity: 0,
         transition: {
-            duration: 0.3,
+            duration: 0.2,
             ease: "easeInOut",
             when: "afterChildren",
             staggerChildren: 0.15,
@@ -67,7 +67,7 @@ const navItemMotion = {
         opacity: 0,
         y: 50,
         transition: {
-            duration: 0.3,
+            duration: 0.2,
             ease: "easeInOut",
         },
     },
@@ -76,7 +76,7 @@ const navItemMotion = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.3,
+            duration: 0.2,
             ease: "easeInOut",
         },
     },
@@ -85,7 +85,7 @@ const navItemMotion = {
         opacity: 0,
         y: 50,
         transition: {
-            duration: 0.3,
+            duration: 0.2,
             ease: "easeInOut",
         },
     },
@@ -132,19 +132,26 @@ const Navbar = () => {
         >
             {/* DESKTOP Navbar */}
             {isDesktop && (
-                <div className="flex flex-row items-center justify-center flex-wrap ">
+                // <div className="flex flex-row items-center justify-center flex-wrap ">
+                <div className="fixed left-0 mx-2 my-1 flex flex-col gap-2">
                     {/* <FlexContainer> */}
-                    <Button variant="primary" aria-label="scroll to About section">
+                    <Button variant="primary" aria-label="scroll to header section"  className="px-2 py-1 rounded-md text-xl">
+                        <Link to="top" smooth={true} duration={100}>
+                        🔝
+                        </Link>
+                    </Button>
+
+                    <Button variant="primary" aria-label="scroll to About section"  className="px-2 py-1 rounded-md">
                         <Link to="about" smooth={true} duration={100}>
                             About
                         </Link>
                     </Button>
-                    <Button variant="primary" aria-label="scroll to Projects section">
+                    <Button variant="primary" aria-label="scroll to Projects section" className="px-2 py-1 rounded-md">
                         <Link to="projects" smooth={true} duration={1000}>
                         Projects
                         </Link>
                     </Button>
-                    <Button variant="primary" aria-label="scroll to Resume section">
+                    <Button variant="primary" aria-label="scroll to Resume section" className="px-2 py-1 rounded-md">
                         <Link to="resume" smooth={true} duration={1000}>
                         Resume
                         </Link>
