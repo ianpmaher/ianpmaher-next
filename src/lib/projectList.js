@@ -25,7 +25,7 @@ const projectsList =
         "image": "https://f005.backblazeb2.com/file/ianpmaher/epic+ri+wave+(1).png"
     },
     {
-        "id": 2,
+        "id": 4,
         "title": "Simply Scholars",
         "slug": "simplyscholars",
         "description": "A full-stack web application utilizing the Next.js & Strapi.js stack. This is a platform for the non-tech-savvy to build and maintain their own scholarship websites and databases. Providing customizability and ease of use, Simply Scholars is a tool for scholarship organizations to reach more students.",
