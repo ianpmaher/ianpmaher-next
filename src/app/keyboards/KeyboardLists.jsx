@@ -6,6 +6,7 @@ export default async function KeyboardsList() {
   const db = client.db("mechanicalKeyboards");
 
   const keyboards = await db.collection("mechanicalKeyboards").find({}).toArray();
+  console.log(keyboards);
 
   return (
     <div className="container mx-auto px-4">
@@ -28,8 +29,12 @@ export default async function KeyboardsList() {
             <h2 className="text-lg font-semibold mt-2">
               {keyboard.brand} {keyboard.model}
             </h2>
-            <p className="">{keyboard.switchType}</p>
-            <p className=" font-bold mt-2">${keyboard.price}</p>
+            <p className=" font-bold mt-2">
+              <span className="text-sm font-thin font-mono after:mr-1">switches:</span>
+              {keyboard.switchType}
+            </p>
+            {/* <p className=" font-bold mt-2">${keyboard.price}</p> */}
+            <p className="mt-1 text-md text-justify">{keyboard.description}</p>
           </div>
         ))}
       </div>
