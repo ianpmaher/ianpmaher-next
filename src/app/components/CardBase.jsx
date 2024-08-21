@@ -9,7 +9,7 @@ const CardBase = ({ variant, children, className }) => {
         typingText:
             "text-paper-text bg-slate-200 shadow-lg dark:bg-black dark:text-dracula-text rounded-2xl",
         menu:
-            "text-paper-text bg-slate-200 shadow-lg dark:bg-black dark:text-dracula-text rounded-2xl md:text-lg cursor-pointer max-w-fit",
+            "text-paper-text bg-slate-200 shadow-lg dark:bg-black dark:text-dracula-text rounded-2xl md:text-md cursor-pointer max-w-fit",
     };
 
     return <div className={`${baseStyle} ${variantStyle[variant]} ${className}`}>{children}</div>;

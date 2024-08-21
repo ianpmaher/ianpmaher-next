@@ -33,7 +33,7 @@ const Contact = (props) => {
                     target="_blank"
                     rel=""
                     title="GitHub"
-                    className={` rounded-2xl`}
+                    className={`rounded-2xl`}
                 >
                     <Image src="/assets/github-icon.svg" alt="GitHub logo" width={40} height={40} priority />
                 </Link>
@@ -56,7 +56,7 @@ const Contact = (props) => {
                     target="_blank"
                     // rel="noreferrer noopener"
                     title="LinkedIn"
-                    className=" rounded-2xl"
+                    className="rounded-2xl"
                 >
                     <Image src="/assets/linkedin.svg" alt="LinkedIn logo" width={40} height={40} priority />
                 </Link>
@@ -67,7 +67,7 @@ const Contact = (props) => {
                     target="_blank"
                     // rel="noreferrer noopener"
                     title="Resume"
-                    className=" rounded-2xl"
+                    className="rounded-2xl"
                 >
                     <Image src="/assets/document.svg" alt="text document image" width={40} height={40} priority />
                 </Link>
