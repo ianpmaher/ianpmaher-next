@@ -10,7 +10,7 @@ export default async function KeyboardsList() {
   return (
     <div className="container mx-auto px-4">
       <h1 className="text-2xl font-bold my-4">Mechanical Keyboards</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
         {keyboards.map((keyboard) => (
           <div
             key={keyboard._id}
@@ -19,7 +19,7 @@ export default async function KeyboardsList() {
             <Image
               src={keyboard.images[0]}
               alt={keyboard.model}
-              className="w-full object-contain rounded hover:scale-110 transition-all duration-200"
+              className="object-contain rounded hover:scale-110 transition-all duration-200"
               width={500}
               height={500}
               placeholder="blur"
