@@ -70,7 +70,7 @@ const DarkMode = (props) => {
                     </svg>
                 )}
                 {/* slider */}
-                <span className="slider absolute top-0 right-0 bottom-0 left-0 cursor-pointer "></span>
+                <span className="slider absolute top-0 right-0 bottom-0 left-0 cursor-pointer"></span>
             </label>
         </div>
     );
