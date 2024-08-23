@@ -12,8 +12,8 @@ import NewNavMenu from "./shared/NewNavMenu";
 export default function Home() {
   return (
     <main className="" id="top">
-      <div className="relative">
-        <NewNavMenu className="absolute" />
+      <div className="z-[1] flex justify-center">
+        <NewNavMenu className="fixed sm:top-auto sm:left-4 left-0 top-1" />
       </div>
       <section className="mx-auto my-0 min-h-screen flex flex-col items-center justify-center">
         <Landing />
