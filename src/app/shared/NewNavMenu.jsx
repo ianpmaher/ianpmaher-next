@@ -2,9 +2,6 @@
 
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import Link from "next/link";
-import Button from "../components/Button";
-import Image from "next/image";
-import IconCard from "../components/IconCard";
 import CardBase from "../components/CardBase";
 import { usePathname } from "next/navigation";
 

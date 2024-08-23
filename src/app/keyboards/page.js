@@ -5,7 +5,7 @@ const KeyboardPage = (props) => {
     <div>
       <h1>Mechanical Keyboards</h1>
       <p>They click and clack.</p>
-      <p>They thock.</p>
+      <p className="sick-animation">They thock.</p>
       <KeyboardsList />
     </div>
   );

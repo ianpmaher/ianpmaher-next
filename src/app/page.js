@@ -21,7 +21,7 @@ export default function Home() {
       <section className="mx-auto my-0 ">
         <About />
       </section>
-      <section className="mx-auto my-0">
+      <section className="mx-auto my-0 kitten">
         <GridIcons />
       </section>
       <section className="mx-auto my-0">
