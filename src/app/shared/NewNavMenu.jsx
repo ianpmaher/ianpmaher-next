@@ -11,8 +11,8 @@ const NewNavMenu = (props) => {
   return (
     <NavigationMenu.Root className={props.className} delayDuration={100}>
       <NavigationMenu.List className="mx-6 sm:mx-12">
-        <NavigationMenu.Item className={` ${pathname === "/" ? "max-w-fit" : ""}`}>
-          <NavigationMenu.Trigger className="max-w-fit" aria-label="open context sub-menu" >
+        <NavigationMenu.Item className={` ${pathname === "/" ? "md:max-w-fit" : ""}`}>
+          <NavigationMenu.Trigger className="md:max-w-1/2" aria-label="open context sub-menu" >
             <Link href="/" className={`link ${pathname === "/" ? "active" : ""}`} title="sub menu" aria-label="sub menu for navigation on page">
               <svg width="45" height="45" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8/12 md:w-full scale-90" aria-label="sub menu for navigation on page">
                 <path
@@ -31,7 +31,7 @@ const NewNavMenu = (props) => {
                 <CardBase
                   variant="menu"
                   aria-label="scroll to header section"
-                  className="px-1 md:px-2 py-1 rounded-md md:text-xl"
+                  className="md:px-2 p-1 rounded-md md:text-xl"
                   title="scroll to header section"
                 >
                   🔝
@@ -39,12 +39,12 @@ const NewNavMenu = (props) => {
               </NavigationMenu.Link>
             </Link>{" "}
             <Link href="/#projects" className={`link ${pathname === "/" ? "active" : ""}`}>
-              <CardBase variant="menu" aria-label="scroll to Projects section" className="px-1 md:px-2 py-1 rounded-md">
+              <CardBase variant="menu" aria-label="scroll to Projects section" className="md:px-2 p-1 rounded-md">
                 Projects
               </CardBase>
             </Link>
             <Link href="/#resume" className={`link ${pathname === "/" ? "active" : ""}`}>
-              <CardBase variant="menu" aria-label="scroll to Resume section" className="px-1 md:px-2 py-1 rounded-md">
+              <CardBase variant="menu" aria-label="scroll to Resume section" className="md:px-2 p-1 rounded-md">
                 Resume
               </CardBase>
             </Link>

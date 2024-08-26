@@ -54,6 +54,10 @@
   background-size: cover;
 }
 
+.hidden {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .App {
     /* background-size: 150%; */
