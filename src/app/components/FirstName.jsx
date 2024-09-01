@@ -75,7 +75,7 @@ const FirstName = (props) => {
 
     return (
         <div className="flex flex-row justify-center items-center my-0 mx-auto">
-            <div className="flex justify-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-50 ">
+            <div className="flex justify-center my-1 mx-auto min-h-10 max-h-40 min-w-10 max-w-50 p:10 md:p-0 ">
                 <motion.svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="100%"
