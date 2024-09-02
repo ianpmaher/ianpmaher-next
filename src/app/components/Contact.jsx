@@ -8,38 +8,35 @@ import Image from "next/image";
 import PopoverElem from "./PopoverElem";
 
 const Contact = (props) => {
-    // conditional rendering, if user is on mobile and if Contact is in the footer, flex row, else flex column
+  // conditional rendering, if user is on mobile and if Contact is in the footer, flex row, else flex column
 
-    const { theme } = useTheme();
-    let isDark;
-    if (theme === "dark") {
-        isDark = true;
-    } else {
-        isDark = false;
-    }
+  const { theme } = useTheme();
+  let isDark;
+  if (theme === "dark") {
+    isDark = true;
+  } else {
+    isDark = false;
+  }
 
-    const isFooter = props.location === "footer";
+  const isFooter = props.location === "footer";
 
-    return (
-        // <section className="flex gap-3 items-center justify-center md:flex-row flex-col">
-        <section
-            className={`flex gap-2 items-center justify-center shadow-xl ${
-                isFooter ? "md:flex-row flex-row" : "md:flex-row flex-row"
-            }`}
-        >
-            <IconCard className="bg-dracula-pink hover:bg-dracula-orange dark:bg-dracula-blue dark:hover:bg-dracula-green" variant={`${isDark ? "darkColors" : "lightColors"}`}>
-                <Link
-                    href="https://www.github.com/ianpmaher"
-                    target="_blank"
-                    rel=""
-                    title="GitHub"
-                    className={`rounded-2xl`}
-                >
-                    <Image src="/assets/github-icon.svg" alt="GitHub logo" width={40} height={40} priority />
-                </Link>
-            </IconCard>
-            {/* <IconCard variant="primary"> */}
-            {/* <Link
+  return (
+    // <section className="flex gap-3 items-center justify-center md:flex-row flex-col">
+    <section
+      className={`flex gap-2 items-center justify-center shadow-xl ${
+        isFooter ? "md:flex-row flex-row" : "md:flex-row flex-row"
+      }`}
+    >
+      <IconCard
+        className="bg-dracula-pink hover:bg-dracula-orange dark:bg-dracula-blue dark:hover:bg-dracula-green"
+        variant={`${isDark ? "darkColors" : "lightColors"}`}
+      >
+        <Link href="https://www.github.com/ianpmaher" target="_blank" rel="" title="GitHub" className={`rounded-2xl`}>
+          <Image src="/assets/github-icon.svg" alt="GitHub logo" width={40} height={40} priority />
+        </Link>
+      </IconCard>
+      {/* <IconCard variant="primary"> */}
+      {/* <Link
                     href="mailto:ianpmaher@gmail.com"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -48,32 +45,38 @@ const Contact = (props) => {
                 >
                     <Image src="/assets/email.svg" alt="email me!" width={50} height={50} />
                 </Link> */}
-            <PopoverElem  />
-            {/* </IconCard> */}
-            <IconCard className="bg-dracula-blue hover:bg-dracula-orange dark:bg-dracula-purple dark:hover:bg-dracula-green" variant={`${isDark ? "darkColors" : "lightColors"}`}>
-                <Link
-                    href="https://www.linkedin.com/in/ianmaher/"
-                    target="_blank"
-                    // rel="noreferrer noopener"
-                    title="LinkedIn"
-                    className="rounded-2xl"
-                >
-                    <Image src="/assets/linkedin.svg" alt="LinkedIn logo" width={40} height={40} priority />
-                </Link>
-            </IconCard>
-            <IconCard className="bg-dracula-purple hover:bg-dracula-orange dark:bg-dracula-pink dark:hover:bg-dracula-green" variant={`${isDark ? "darkColors" : "lightColors"}`}>
-                <Link
-                    href="https://drive.google.com/file/d/1FfiqwxfnFPtieYFm4NxGEeHaCLEV-FoX/view?usp=sharing"
-                    target="_blank"
-                    // rel="noreferrer noopener"
-                    title="Resume"
-                    className="rounded-2xl"
-                >
-                    <Image src="/assets/document.svg" alt="text document image" width={40} height={40} priority />
-                </Link>
-            </IconCard>
-        </section>
-    );
+      <PopoverElem />
+      {/* </IconCard> */}
+      <IconCard
+        className="bg-dracula-blue hover:bg-dracula-orange dark:bg-dracula-purple dark:hover:bg-dracula-green"
+        variant={`${isDark ? "darkColors" : "lightColors"}`}
+      >
+        <Link
+          href="https://www.linkedin.com/in/ianmaher/"
+          target="_blank"
+          // rel="noreferrer noopener"
+          title="LinkedIn"
+          className="rounded-2xl"
+        >
+          <Image src="/assets/linkedin.svg" alt="LinkedIn logo" width={40} height={40} priority />
+        </Link>
+      </IconCard>
+      <IconCard
+        className="bg-dracula-purple hover:bg-dracula-orange dark:bg-dracula-pink dark:hover:bg-dracula-green"
+        variant={`${isDark ? "darkColors" : "lightColors"}`}
+      >
+        <Link
+          href="https://drive.google.com/file/d/1FfiqwxfnFPtieYFm4NxGEeHaCLEV-FoX/view?usp=sharing"
+          target="_blank"
+          // rel="noreferrer noopener"
+          title="Resume"
+          className="rounded-2xl"
+        >
+          <Image src="/assets/document.svg" alt="text document image" width={40} height={40} priority />
+        </Link>
+      </IconCard>
+    </section>
+  );
 };
 
 export default Contact;

@@ -2,37 +2,36 @@
 import { useEffect, useState } from "react";
 
 export function useMediaQuery(query) {
-    const getMatches = (query) => {
-        // prevents SSR issues
-        if (typeof window !== "undefined") {
-            return window.matchMedia(query).matches;
-        }
-        return false;
-    };
-
-    const [matches, setMatches] = useState(getMatches(query));
-
-    function handleChange() {
-        setMatches(getMatches(query));
+  const getMatches = (query) => {
+    // prevents SSR issues
+    if (typeof window !== "undefined") {
+      return window.matchMedia(query).matches;
     }
+    return false;
+  };
 
-    useEffect(() => {
-        const matchMedia = window.matchMedia(query);
+  const [matches, setMatches] = useState(getMatches(query));
 
-        // will trigger at the first client-side load
-        // and if query condition changes
-        handleChange();
+  function handleChange() {
+    setMatches(getMatches(query));
+  }
 
-        // listen for query changes
-        matchMedia.addEventListener("change", handleChange);
+  useEffect(() => {
+    const matchMedia = window.matchMedia(query);
 
-        return () => {
-            // remove event listener on cleanup
-            matchMedia.removeEventListener("change", handleChange);
-        };
+    // will trigger at the first client-side load
+    // and if query condition changes
+    handleChange();
+
+    // listen for query changes
+    matchMedia.addEventListener("change", handleChange);
+
+    return () => {
+      // remove event listener on cleanup
+      matchMedia.removeEventListener("change", handleChange);
+    };
     // }, [query]);
-    });
+  });
 
-
-    return matches;
+  return matches;
 }

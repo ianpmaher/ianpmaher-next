@@ -5,22 +5,22 @@ import parseMarkdown from "@/lib/markdownutils";
 import MarkdownContainer from "./MarkdownContainer";
 
 const PostContainer = ({ path }) => {
-    const [content, setContent] = useState("");
+  const [content, setContent] = useState("");
 
-    useEffect(() => {
-        const fetchContent = async () => {
-            const markdown = await parseMarkdown(path);
-            setContent(markdown);
-        };
+  useEffect(() => {
+    const fetchContent = async () => {
+      const markdown = await parseMarkdown(path);
+      setContent(markdown);
+    };
 
-        fetchContent();
-    }, [path]);
+    fetchContent();
+  }, [path]);
 
-    return (
-        <article className="prose mx-auto my-0">
-            <MarkdownContainer content={content} />
-        </article>
-    );
+  return (
+    <article className="prose mx-auto my-0">
+      <MarkdownContainer content={content} />
+    </article>
+  );
 };
 
 export default PostContainer;
