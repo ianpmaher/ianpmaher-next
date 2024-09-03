@@ -66,7 +66,7 @@ const Contact = (props) => {
         variant={`${isDark ? "darkColors" : "lightColors"}`}
       >
         <Link
-          href="https://drive.google.com/file/d/1FfiqwxfnFPtieYFm4NxGEeHaCLEV-FoX/view?usp=sharing"
+          href="https://drive.google.com/file/d/1S3Z0SHbmL8AsLn1BVAllOvBuvpRAP8Gj/view?usp=sharing"
           target="_blank"
           // rel="noreferrer noopener"
           title="Resume"
