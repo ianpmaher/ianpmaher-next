@@ -54,10 +54,6 @@
   background-size: cover;
 }
 
-.hidden {
-  display: none;
-}
-
 @media screen and (max-width: 768px) {
   .App {
     /* background-size: 150%; */
@@ -68,4 +64,32 @@
       rgba(178, 166, 215, 1) 55%
     );
   }
+}
+
+
+@keyframes glow {
+  0% {
+    background-color: #5ECBF7; /* blue-500 */
+    box-shadow: 0 0 8px #5ECBF7, 0 0 15px #5ECBF7, 0 0 20px #5ECBF7;
+  }
+  25% {
+    background-color: #ec75c4; /* pink-400 */
+    box-shadow: 0 0 8px #ec75c4, 0 0 15px #ec75c4, 0 0 20px #ec75c4;
+  }
+  50% {
+    background-color: #34d399; /* green-400 */
+    box-shadow: 0 0 8px #34d399, 0 0 15px #34d399, 0 0 20px #34d399;
+  }
+  75% {
+    background-color: #ffb86c; /* yellow-500 */
+    box-shadow: 0 0 8px #ffb86c, 0 0 15px #ffb86c, 0 0 20px #ffb86c;
+  }
+  100% {
+    background-color: #5ECBF7; /* blue-500 */
+    box-shadow: 0 0 8px #5ECBF7, 0 0 15px #5ECBF7, 0 0 20px #5ECBF7;
+  }
+}
+
+.animate-glow {
+  animation: glow 4s linear infinite;
 }
