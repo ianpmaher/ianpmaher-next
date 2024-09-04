@@ -17,6 +17,7 @@ const initialCourse = { courseName: '', level: '', grade: '', credits: '', grade
 const GPACalculator = () => {
   const [courses, setCourses] = useState(Array(7).fill({ ...initialCourse }));
   const [gpa, setGpa] = useState(0);
+  const [copySuccess, setCopySuccess] = useState(false);
 
   const handleInputChange = (index, event) => {
     const { name, value } = event.target;
@@ -66,9 +67,19 @@ const GPACalculator = () => {
     calculateGPA(updatedCourses);
   };
 
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(gpa.toFixed(2));
+    setCopySuccess(true);
+    // set a timeout to remove the "copied" message
+    setTimeout(() => {
+      setCopySuccess(false);
+    }, 2000);
+  };
+
   return (
     <>
-      <table className="table-auto border-collapse mt-10 w-[60vw]">
+      <table className="md:table-auto border-collapse mt-10 md:w-[60vw] min-w-fit">
         <caption className="text-center text-xl">GPA Calculator</caption>
         <thead className=" text-wrap">
           <tr>
@@ -81,16 +92,16 @@ const GPACalculator = () => {
             <th className='text-red-500'>Remove Row</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='text-sm'>
           {courses.map((course, index) => (
-            <tr key={index}>
-              <td className="border border-paper-text">
+            <tr key={index} className="odd:bg-opacity-50 odd:bg-dracula-purple">
+              <td className="border border-paper-text w-1/2">
                 <input
                   type="text"
                   name="courseName"
                   value={course.courseName}
                   onChange={(event) => handleInputChange(index, event)}
-                  className="bg-green-200 hover:bg-dracula-green w-full text-black text-center focus:bg-sky-200"
+                  className="bg-paper-bg w-full md:h-auto text-black text-center focus:bg-sky-200 text-sm md:text-md text-wrap"
                 />
               </td>
               <td className="border border-paper-text">
@@ -107,20 +118,20 @@ const GPACalculator = () => {
                   onChange={(value) => handleSelectChange(index, 'grade', value)}
                 />
               </td>
-              <td className="border border-paper-text">
+              <td className="border border-paper-text w-1/12">
                 <SelectMenu
                   data={["2.5", "5", "6"]}
                   selected={course.credits.toString()}
                   onChange={(value) => handleSelectChange(index, 'credits', parseFloat(value))}
                 />
               </td>
-              <td className="border border-paper-text">
+              <td className="border border-paper-text w-1/12">
                 {course.gradePoints.toFixed(2)}
               </td>
-              <td className="border border-paper-text">
+              <td className="border border-paper-text w-1/12">
                 {course.qualityPoints.toFixed(2)}
               </td>
-              <td className="border border-paper-text">
+              <td className="border border-paper-text w-1/12">
                 <button onClick={() => removeRow(index)} className="py-1 text-red-500 hover:outline rounded-sm">
                   <MinusIcon className='h-5 w-5 center-center' />
                 </button>
@@ -129,9 +140,16 @@ const GPACalculator = () => {
           ))}
         </tbody>
       </table>
-      <button onClick={addRow} className="mt-4 p-2 bg-green-500 text-white">Add Row</button>
-      <div className="mt-4 text-lg">
-        Your GPA is: {gpa.toFixed(2)}
+      <button onClick={addRow} className="hover:ring-2 hover:ring-green-800 mt-4 p-2 bg-green-500 text-white rounded-lg">Add Row</button>
+      <div className="mt-4 text-lg" title="click to copy to clipboard" onClick={handleCopy}>
+        Your GPA is: &nbsp;
+        <span className=" text-xl" >
+          
+        {gpa.toFixed(2)}
+        {copySuccess && <div className="text-green-500 p-2">Copied!</div>}
+
+        </span>
+
       </div>
     </>
   );

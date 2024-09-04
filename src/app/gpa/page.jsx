@@ -1,10 +1,9 @@
-import GPATable from "../components/GPAThings/GPACalculator";
+import GPACalculator from "../components/GPAThings/GPACalculator";
 
 const GPAPage = () => {
   return (
-    <div className="mx-auto my-0 ">
-      <h1>GPA Calculator</h1>
-      <GPATable  />
+    <div className="mx-auto my-0 center-center">
+      <GPACalculator  />
     </div>
   );
 };
