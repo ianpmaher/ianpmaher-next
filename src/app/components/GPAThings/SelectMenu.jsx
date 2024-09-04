@@ -5,7 +5,7 @@ const SelectMenu = ({ data, selected, onChange }) => {
     <Select.Root value={selected} onValueChange={onChange}>
       <Select.Trigger
         aria-label="Select an item"
-        className="inline-flex items-center justify-between text-sm font-medium text-gray-900 bg-white border border-gray-300 rounded-md shadow-sm cursor-default focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+        className="inline-flex items-center justify-between text-sm font-medium text-gray-900 bg-white border border-gray-300 rounded-md shadow-sm cursor-default focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-1"
       >
         <Select.Value />
         <Select.Icon>
@@ -30,7 +30,7 @@ const SelectMenu = ({ data, selected, onChange }) => {
           <Select.ScrollUpButton />
           <Select.Viewport>
             {data.map((item) => (
-              <Select.Item key={item} value={item}>
+              <Select.Item key={item} value={item} className="active:ring focus:bg-sky-200">
                 <Select.ItemText className="text-sm text-gray-900">
                   {item}
                 </Select.ItemText>
