@@ -1,34 +1,6 @@
 const projectsList = [
   {
     id: 1,
-    title: "PawsOn.Life",
-    slug: "pawsonlife",
-    description:
-      "Developed in an Agile team environment, PawsOn.Life is a full-stack web application that allows users to search for hiking trails in their area via Google Maps API. Users can review trails as being pet-friendly. Users can also create an account and save trails to their favorites list.",
-    tags: [
-      "MERN",
-      "React",
-      "MongoDB",
-      "Google Maps API",
-      "Express",
-      "Node",
-      "Agile development",
-      "RESTful API",
-      "MVC",
-      "Material UI",
-      "Heroku",
-      "Netlify",
-      "Git",
-    ],
-    github: "https://github.com/ianpmaher/pawsOnLifeFrontEnd",
-    github2: "https://github.com/ianpmaher/pawsOnLifeBackEnd",
-    live: "https://pawson.life/",
-    image: "https://f005.backblazeb2.com/file/ianpmaher/pawsiPad.webp",
-    // "screenshot": pawsScreenshot, // Discott, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
-    // "screenshot": "https://user-images.githubusercontent.com/120536234/282807646-28fd01fc-7a91-420c-8b23-1c3466654ecd.png"
-  },
-  {
-    id: 2,
     title: "RI API",
     slug: "ri-api",
     description:
@@ -37,6 +9,17 @@ const projectsList = [
     github: "https://github.com/ianpmaher/ri-api",
     live: "https://radiant-wildwood-30276-73f4e705b27f.herokuapp.com/",
     image: "https://f005.backblazeb2.com/file/ianpmaher/epic+ri+wave+(1).png",
+  },
+  {
+    id: 2,
+    title: "GPA Calculator",
+    slug: "gpa",
+    description:
+      "A GPA calculator for students to keep track of their grades. Utilizes React, React Router, and Material-UI.",
+    tags: ["React", "Tailwind CSS", "React Router", "Radix-UI", "Google API"],
+    github: "https://github.com/ianpmaher/gpa",
+    live: "https://case-gpa.vercel.app/",
+    image: "https://f005.backblazeb2.com/file/ianpmaher/gpa_calculator_screenshot.png",
   },
   {
     id: 4,
@@ -74,6 +57,34 @@ const projectsList = [
     live: "https://grand-theft-autocorrect.netlify.app/",
     image: "https://f005.backblazeb2.com/file/ianpmaher/gtaBEST.png",
     // "image": "https://user-images.githubusercontent.com/120536234/260235684-673eb284-84fd-416d-96b5-d84da3da786d.png"
+  },
+  {
+    id: 6,
+    title: "PawsOn.Life",
+    slug: "pawsonlife",
+    description:
+      "Developed in an Agile team environment, PawsOn.Life is a full-stack web application that allows users to search for hiking trails in their area via Google Maps API. Users can review trails as being pet-friendly. Users can also create an account and save trails to their favorites list.",
+    tags: [
+      "MERN",
+      "React",
+      "MongoDB",
+      "Google Maps API",
+      "Express",
+      "Node",
+      "Agile development",
+      "RESTful API",
+      "MVC",
+      "Material UI",
+      "Heroku",
+      "Netlify",
+      "Git",
+    ],
+    github: "https://github.com/ianpmaher/pawsOnLifeFrontEnd",
+    github2: "https://github.com/ianpmaher/pawsOnLifeBackEnd",
+    live: "https://pawson.life/",
+    image: "https://f005.backblazeb2.com/file/ianpmaher/pawsiPad.webp",
+    // "screenshot": pawsScreenshot, // Discott, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+    // "screenshot": "https://user-images.githubusercontent.com/120536234/282807646-28fd01fc-7a91-420c-8b23-1c3466654ecd.png"
   },
   {
     id: 6,
