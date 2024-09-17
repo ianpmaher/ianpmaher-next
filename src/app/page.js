@@ -8,10 +8,12 @@ import About from "./components/About";
 import Landing from "./components/Landing";
 import ScrollDiv from "./components/ScrollDiv";
 import NewNavMenu from "./shared/NewNavMenu";
+import CursorColorChanger from "./shared/CursorColorChanger";
 
 export default function Home() {
   return (
-    <main className="" id="top">
+    <main className="cursor-none" id="top">
+      <CursorColorChanger />
       <div className="z-[1] flex justify-center hidden sm:block">
         <NewNavMenu className="fixed sm:top-auto sm:left-4 left-0 top-1" />
       </div>
