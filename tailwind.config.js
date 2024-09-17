@@ -27,6 +27,14 @@ module.exports = {
         cannedgradient: "linear-gradient(70deg, #4F63F6 10%, #2740F5 30%, #7FEFC6 50%, #5ECBF7 70%, #ED8097 90%)",
       },
       colors: {
+        "cooler1": {
+          dark: "#292E1E",
+          purple: "#7F0799",
+          lavender: "#9649cb",
+          blue: "#AFBBF2",
+          mint: "#D3FFF3",
+          teal: "#75F4F4",
+        },
         primary: {
           yellow: "#FFD040",
           turquoise: "rgb(105,255,255)",
