@@ -12,8 +12,7 @@ import CursorColorChanger from "./shared/CursorColorChanger";
 
 export default function Home() {
   return (
-    <main className="cursor-none" id="top">
-      <CursorColorChanger />
+    <main className="cursor-default" id="top">
       <div className="z-[1] flex justify-center hidden sm:block">
         <NewNavMenu className="fixed sm:top-auto sm:left-4 left-0 top-1" />
       </div>
