@@ -4,6 +4,7 @@ import DarkMode from "./DarkMode";
 import Link from "next/link";
 import Navbar from "../components/NavBar";
 import NewNavMenu from "./NewNavMenu";
+import ThemeMode from "./ThemeMode";
 
 const Header = (props) => {
   return (
@@ -27,7 +28,7 @@ const Header = (props) => {
         <div className="mx-auto my-0 flex md:flex-row gap-3">
           <Contact />
           <span className="relative top-0 self-center">
-            <DarkMode />
+            <ThemeMode />
           </span>
         </div>
       </div>

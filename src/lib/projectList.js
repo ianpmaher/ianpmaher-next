@@ -86,18 +86,18 @@ const projectsList = [
     // "screenshot": pawsScreenshot, // Discott, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
     // "screenshot": "https://user-images.githubusercontent.com/120536234/282807646-28fd01fc-7a91-420c-8b23-1c3466654ecd.png"
   },
-  {
-    id: 6,
-    title: "Study Italian",
-    slug: "studyitalian",
-    description:
-      "A full-stack web application to help language lovers learn Italian! Users can translate to and from Italian, quiz themselves on words, with more features to come.",
-    tags: ["React", "API", "Express", "MongoDB", "Netlify", "Heroku"],
-    github: "https://github.com/ianpmaher/italian",
-    live: "https://main--darling-rabanadas-f9d73b.netlify.app/",
-    image: "https://f005.backblazeb2.com/file/ianpmaher/italianOnPhone.png",
-    screenshot: "",
-  },
+  // {
+  //   id: 7,
+  //   title: "Study Italian",
+  //   slug: "studyitalian",
+  //   description:
+  //     "A full-stack web application to help language lovers learn Italian! Users can translate to and from Italian, quiz themselves on words, with more features to come.",
+  //   tags: ["React", "API", "Express", "MongoDB", "Netlify", "Heroku"],
+  //   github: "https://github.com/ianpmaher/italian",
+  //   live: "https://main--darling-rabanadas-f9d73b.netlify.app/",
+  //   image: "https://f005.backblazeb2.com/file/ianpmaher/italianOnPhone.png",
+  //   screenshot: "",
+  // },
 ];
 
 export default projectsList;
