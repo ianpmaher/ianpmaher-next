@@ -20,7 +20,10 @@ Seems simple enough, right? Well it is, but it's also tedious. The Student Infor
 
 **It takes roughly 10 minutes to do the arithmetic by hand, and I tired of the tedium.**
 
+![absolute inefficiency](https://f005.backblazeb2.com/file/ianpmaher/IMG_6123.webp)
+
 **The goal: make GPA calculations so efficient and easy that students can do it themselves.**
+
 ---
 
 ### Coming up with the formula
@@ -37,12 +40,15 @@ Once the table was defined, I used a formula to calculate each student's GPA bas
 
 This formula uses `VLOOKUP` to match the student's letter grade to the weighted GPA for that course level (AP, Honors, etc.), then multiplies the result by the number of credits for the course. It allowed students to simply input their class level, grade, and credits for each course, and the formula would take care of the rest.
 
+Students need to input these data for each entry: name of the course, final grade, credits earned. Then the formula takes care of the rest:
+![Google Sheets](https://f005.backblazeb2.com/file/ianpmaher/sheets1.webp)
+
 ---
 
 ### Creating a web app for accessibility
-While the Google Sheets solution worked well for students who were familiar with spreadsheets, I realized it wasn't the most accessible solution for everyone. Many students weren't comfortable with spreadsheet software and found the process of making a copy of the sheet and editing it to be a hassle. Plus, there was always the risk that someone would accidentally delete the formula, leaving them frustrated and confused.
+While the Google Sheets solution worked well for students who were familiar with spreadsheets, I realized it wasn't the most *accessible* solution for everyone. Many students weren't comfortable with spreadsheet software and found the process of making a copy of the sheet and editing it to be a hassle. Plus, there was always the risk that someone would accidentally delete the formula, leaving them frustrated and confused.
 
-To solve this problem, I decided to take it a step further by building a dedicated web page for students to calculate their GPA. This approach would allow me to lock down the calculations, preventing students from accidentally messing with any of the underlying logic while providing a more user-friendly interface.
+To solve this problem, I decided to build a dedicated web page for students to calculate their GPA. This approach would allow me to lock down the calculations, preventing students from accidentally messing with any of the underlying logic while providing a more user-friendly interface.
 
 The web page would essentially mimic the functionality of the Google Sheet but would offer a cleaner, more interactive experience for students who may not be tech-savvy. I used a combination of front-end technologies like React to create dynamic forms where students could select their course level, enter their grades, and see their GPA instantly. 
 
@@ -50,6 +56,17 @@ This also meant I could handle the GPA calculation on the backend, ensuring the 
 
 ---
 
-You can continue your post from here, perhaps elaborating on how you built the web page, the challenges you faced during development, or any feedback you received from students using the tool.
+### The Stack
+- React.js 
+- Vite
+- react-pdf
+- react-csv-importer
+- react-paraparse
+- Handsontable _@handsontable/react_
 
-Let me know if you'd like me to expand on specific sections!
+As you can see, multiple node packages and libraries for a bunch of different things. Initally, I planned and executed an entirely custom solution. Tables in traditional html are really not as obnoxious as they seem, and dynamically coding the formula was easy. Here are the utility functions I've used:
+![utils.js](https://f005.backblazeb2.com/file/ianpmaher/gpafiletree.webp)
+
+
+### First drafts...
+Here is a visual of 

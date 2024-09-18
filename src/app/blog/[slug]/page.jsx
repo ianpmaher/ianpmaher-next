@@ -22,7 +22,7 @@ const renderers = {
   // This custom renderer changes how paragraphs are rendered
 
   blockquote: ({ children }) => (
-    <blockquote className="border-l-4 border-gray-300 font-mono px-4 bg-paper-bg text-paper-text ">
+    <blockquote className="border-l-4 border-gray-300 font-mono text-sm px-4 bg-paper-bg text-paper-text w-1/2 center-center">
       {children}
     </blockquote>
   ),
@@ -31,9 +31,9 @@ const renderers = {
   h3: ({ children }) => <h3 className="text-2xl font-bold">{children}</h3>,
   ul: ({ children }) => <ul className="list-disc list-inside p-0 m-0">{children}</ul>,
   ol: ({ children }) => <ol className="list-decimal list-inside">{children}</ol>,
-  li: ({ children }) => <li className="my-0 p-0">{children}</li>,
+  li: ({ children }) => <li className="my-0 p-0 leading-3">{children}</li>,
   p: ({ children }) => (
-    <p className="my- first-line:tracking-widest first-letter:uppercase first-letter:text- first-letter:float-let first-letter:font-bold">
+    <p className="my- first-line:tracking-wide first-letter:uppercase first-letter:text- first-letter:float-let first-letter:font-bold">
       {children}
     </p>
   ),
@@ -43,17 +43,25 @@ const renderers = {
   // images rendered with placeholder
   img: ({ src, alt }) => {
     return (
-      <Image
-        src={src}
-        alt={alt}
-        width={800}
-        height={800}
-        placeholder="blur"
-        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==" // 64x64 base64 encoded}
-        className="md:w-full md:h-full hover:scale-125 duration-1000 transition-all ease-in-out center-center"
-      />
+      <span className="max-w-40 overflow-scroll">
+        <Image
+          src={src}
+          alt={alt}
+          width={800}
+          height={800}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==" // 64x64 base64 encoded}
+          className="md:w-full md:h-1/2 hover:scale-125 duration-1000 transition-all ease-in-out center-center overflow-scroll "
+        />
+      </span>
     );
   },
+  details: ({ children }) => (
+    <details className="border-l-4 border-gray-300 font-mono text-sm px-4 bg-paper-bg text-paper-text w-1/2 center-center">
+      {children}
+    </details>
+  ),
 };
 
 export default async function BlogPostPage({ params }) {
@@ -75,7 +83,7 @@ export default async function BlogPostPage({ params }) {
         <ScrollDiv />
         <ReactMarkdown
           components={renderers}
-          className="text-md prose lg:prose-xl prose-p:text-md prose-p:leading-normal prose-a:underline prose-a:font-mono prose-a:text-xl prose-li:list-disc hover:prose-a:text-blue-700 prose-h3:text-center prose-h3:outline prose-h3:outline-sky-400 prose-img:w-full prose-img:h-full md:prose-img:max-w-[40vw] md:prose-img:max-h-auto prose-img:px-2 touch-pinch-zoom active:prose-img:scale-110 whitespace-pre-line prose-p:first-letter:capitalize first-line:tracking-widest prose-ul:leading-tight"
+          className="text-md prose lg:prose-xl prose-p:text-md prose-p:leading-normal prose-a:underline prose-a:font-mono prose-a:text-xl prose-li:list-disc hover:prose-a:text-blue-700 prose-h3:text-center prose-h3:outline prose-h3:outline-sky-400 prose-img:w-full prose-img:h- md:prose-img:max-w-[40vw] md:prose-img:h-fit prose-img:px-2 touch-pinch-zoom active:prose-img:scale-110 whitespace-pre-line prose-p:first-letter:capitalize first-line:tracking-normal prose-ul:leading-tight"
         >
           {postData.content}
         </ReactMarkdown>
