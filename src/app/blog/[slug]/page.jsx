@@ -4,6 +4,7 @@ import { getPostData } from "@/lib/posts";
 import { ScrollDiv } from "@/app/components/ScrollDiv";
 import Image from "next/image";
 import Link from "next/link";
+import rehypeRaw from "rehype-raw";
 
 const renderers = {
   // react-markdown changed this to "components"
@@ -31,7 +32,7 @@ const renderers = {
   h3: ({ children }) => <h3 className="text-2xl font-bold">{children}</h3>,
   ul: ({ children }) => <ul className="list-disc list-inside p-0 m-0">{children}</ul>,
   ol: ({ children }) => <ol className="list-decimal list-inside">{children}</ol>,
-  li: ({ children }) => <li className="my-0 p-0 leading-3">{children}</li>,
+  li: ({ children }) => <li className="my-0 p-0 leading-normal">{children}</li>,
   p: ({ children }) => (
     <p className="my- first-line:tracking-wide first-letter:uppercase first-letter:text- first-letter:float-let first-letter:font-bold">
       {children}
@@ -43,16 +44,17 @@ const renderers = {
   // images rendered with placeholder
   img: ({ src, alt }) => {
     return (
-      <span className="max-w-40 overflow-scroll">
+      <span className="max-w- overflow-scroll block center-center hover:scale-150 hover:shadow-2xl transition-all ease-in-out duration-700">
         <Image
           src={src}
           alt={alt}
           width={800}
           height={800}
           loading="lazy"
+        //   unoptimized
           placeholder="blur"
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==" // 64x64 base64 encoded}
-          className="md:w-full md:h-1/2 hover:scale-125 duration-1000 transition-all ease-in-out center-center overflow-scroll "
+          className=" md:w-full md:h-full duration-1000 transition-all ease-in-out center-center "
         />
       </span>
     );
@@ -62,6 +64,19 @@ const renderers = {
       {children}
     </details>
   ),
+  iframe: ({ src }) => {
+    return (
+      <span className="block h-[70vh]">
+        <iframe
+          src={src}
+          className="w-full h-full"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </span>
+    );
+  },
 };
 
 export default async function BlogPostPage({ params }) {
@@ -79,11 +94,12 @@ export default async function BlogPostPage({ params }) {
           <p className="text-xl">Back to blog</p>
         </div>
       </Link>
-      <div className="prose lg:prose-xl text-justify bg-black text-white rounded-lg py-3 px-12">
+      <div className="prose lg:prose-xl text-justify dark:bg-black dark:text-white bg-paper-bg text-paper-text rounded-lg py-3 px-12">
         <ScrollDiv />
         <ReactMarkdown
           components={renderers}
-          className="text-md prose lg:prose-xl prose-p:text-md prose-p:leading-normal prose-a:underline prose-a:font-mono prose-a:text-xl prose-li:list-disc hover:prose-a:text-blue-700 prose-h3:text-center prose-h3:outline prose-h3:outline-sky-400 prose-img:w-full prose-img:h- md:prose-img:max-w-[40vw] md:prose-img:h-fit prose-img:px-2 touch-pinch-zoom active:prose-img:scale-110 whitespace-pre-line prose-p:first-letter:capitalize first-line:tracking-normal prose-ul:leading-tight"
+          rehypePlugins={[rehypeRaw]}
+          className="text-md prose lg:prose-xl prose-p:text-md prose-p:leading-normal prose-a:underline prose-a:font-mono prose-a:text-xl prose-li:list-disc hover:prose-a:text-blue-700 prose-h3:text-center prose-h3:outline prose-h3:outline-sky-400 prose-img:w-full prose-img:h- md:prose-img:max-w-[40vw] md:prose-img:h-full prose-img:px-2 touch-pinch-zoom active:prose-img: whitespace-pre-line prose-p:first-letter:capitalize first-line:tracking-normal prose-ul:leading-tight"
         >
           {postData.content}
         </ReactMarkdown>
