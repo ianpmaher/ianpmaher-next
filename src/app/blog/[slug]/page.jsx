@@ -87,7 +87,7 @@ export default async function BlogPostPage({ params }) {
 
   return (
     <div className="pt-6 w-[82vw]">
-      <h1 className="text-4xl font-bold mb-4 prose">{postData.title}</h1>
+      <h1 className="text-3xl font-bold my-8 prose">{postData.title}</h1>
       <h5 className="text-xl font-bold mb-4 prose">{dateFormatted}</h5>
       <Link href="/blog" aria-label="back to blog">
         <div className="flex items-center justify-center w-1/6 h-16 outline hoverbox mx-auto my-4 rounded-full">
