@@ -44,7 +44,7 @@ const renderers = {
   // images rendered with placeholder
   img: ({ src, alt }) => {
     return (
-      <span className="max-w- overflow-scroll block center-center hover:scale-150 hover:shadow-2xl transition-all ease-in-out duration-700">
+      <span className="max-w- overflow-auto block center-center hover:scale-150 hover:shadow-2xl transition-all ease-in-out duration-700">
         <Image
           src={src}
           alt={alt}
@@ -99,7 +99,7 @@ export default async function BlogPostPage({ params }) {
         <ReactMarkdown
           components={renderers}
           rehypePlugins={[rehypeRaw]}
-          className="text-md prose lg:prose-xl prose-p:text-md prose-p:leading-normal prose-a:underline prose-a:font-mono prose-a:text-xl prose-li:list-disc hover:prose-a:text-blue-700 prose-h3:text-center prose-h3:outline prose-h3:outline-sky-400 prose-img:w-full prose-img:h- md:prose-img:max-w-[40vw] md:prose-img:h-full prose-img:px-2 touch-pinch-zoom active:prose-img: whitespace-pre-line prose-p:first-letter:capitalize first-line:tracking-normal prose-ul:leading-tight"
+          className="text-md prose lg:prose-xl prose-p:text-md prose-p:leading-normal prose-a:underline prose-a:font-mono prose-li:list-disc prose-a:text-sky-500 hover:prose-a:text-blue-700 prose-h3:text-center prose-h3:outline prose-h3:outline-sky-400 prose-img:w-full prose-img:h- md:prose-img:max-w-[40vw] md:prose-img:h-full prose-img:px-2 touch-pinch-zoom active:prose-img: whitespace-pre-line prose-p:first-letter:capitalize first-line:tracking-normal prose-ul:leading-tight"
         >
           {postData.content}
         </ReactMarkdown>

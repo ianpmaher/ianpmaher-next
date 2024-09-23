@@ -5,7 +5,7 @@ export default async function BlogPage() {
   const blogPosts = getAllBlogPosts();
 
   return (
-    <div className="mx-auto my-0 p-2 md:p-0 text-2xl">
+    <div className="mx-auto my-0 p-1 md:p-0 text-2xl">
       <div className="grid grid-cols-12 gap-4 w-fit">
         {blogPosts
           .sort((a, b) => b.date - a.date) // sort by date descending order (newest first)

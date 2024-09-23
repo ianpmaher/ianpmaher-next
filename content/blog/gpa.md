@@ -59,11 +59,11 @@ This also meant I could handle the GPA calculation on the backend, ensuring the 
 ### The Stack
 - React.js 
 - Vite
-- react-pdf
+- [react-pdf](https://react-pdf.org/)
 - react-csv-importer
-- react-paraparse
-- Handsontable _@handsontable/react_
-- Radix-UI for flavorful components 
+- [react-paraparse](https://github.com/react-papaparse)
+- [Handsontable _@handsontable/react_](https://handsontable.com/)
+- [Radix-UI for flavorful components](https://www.radix-ui.com/)
 - TailwindCSS for styling
 
 As you can see, multiple node packages and libraries for a bunch of different things. Initally, I planned and executed an entirely custom solution. Tables in traditional html are really not as obnoxious as they seem, and dynamically coding the formula was easy. Here are the utility functions I've used:
