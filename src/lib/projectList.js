@@ -8,7 +8,7 @@ const projectsList = [
     tags: ["API", "Node", "Express", "Git", "Markdown"],
     github: "https://github.com/ianpmaher/ri-api",
     live: "https://radiant-wildwood-30276-73f4e705b27f.herokuapp.com/",
-    image: "https://f005.backblazeb2.com/file/ianpmaher/epic+ri+wave+(1).png",
+    image: "https://f005.backblazeb2.com/file/ianpmaher/anchors.webp",
   },
   {
     id: 2,

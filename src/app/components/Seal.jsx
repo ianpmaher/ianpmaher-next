@@ -1,17 +1,17 @@
-"use client";
+// "use client";
 
-import { useTheme } from "next-themes";
+// import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 const Seal = (props) => {
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
   // let svgColor;
-  const [mounted, setMounted] = useState(false);
+  // const [mounted, setMounted] = useState(false);
 
   // useEffect to set mounted to true
   // this is to avoid hydration mismatch // but results in a flash of unstyled content
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
+  // useEffect(() => setMounted(true), []);
+  // if (!mounted) return null;
 
   // before I knew Tailwind had svg color utilities
   // switch (theme) {

@@ -63,11 +63,6 @@ const NewNavMenu = (props) => {
             </Link>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
-
-        <NavigationMenu.Item>
-          <NavigationMenu.Link />
-        </NavigationMenu.Item>
-
         <NavigationMenu.Item>
           <NavigationMenu.Trigger />
           <NavigationMenu.Content>

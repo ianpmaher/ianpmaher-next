@@ -1,17 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const Cat = (props) => {
-  const [mounted, setMounted] = useState(false);
   // animation for OUTLINE
   const outlineAnimation = {
-    hidden: { pathLength: 0, opacity: 0 },
+    hidden: { pathLength: 0.1 },
     visible: {
       pathLength: 1,
-      opacity: 1,
-      transition: { pathLength: { duration: 5, delay: 0 }, opacity: { duration: 0.5 } },
+      transition: { pathLength: { duration: 4, delay: 0 } },
     },
   };
   // animation for KITTY FACE
@@ -20,17 +17,12 @@ const Cat = (props) => {
     visible: {
       pathLength: 1,
       opacity: 1,
-      transition: { pathLength: { duration: 5, delay: 2 }, opacity: { duration: 0.5, delay: 2 } },
+      transition: { pathLength: { duration: 3, delay: 1 }, opacity: { duration: 0.5, delay: 1 } },
     },
   };
 
-  // useEffect to set mounted to true
-  // this is to avoid hydration mismatch // but results in a flash of unstyled content
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
-
   return (
-    <div className="flex justify-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-40 ">
+    <div className="flex justify-center my-0 mx-auto min-h-10 max-h-40 min-w-10 max-w-40">
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
         width="80%"
@@ -39,7 +31,7 @@ const Cat = (props) => {
         fill="transparent"
         initial="hidden"
         animate="visible"
-        transition={{ duration: 2, ease: "easeInOut" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
       >
         <motion.path
           variants={outlineAnimation}

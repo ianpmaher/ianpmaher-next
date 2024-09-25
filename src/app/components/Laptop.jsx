@@ -1,17 +1,17 @@
-"use client";
+// "use client";
 
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+// import { useTheme } from "next-themes";
+// import { useEffect, useState } from "react";
 
 const Laptop = (props) => {
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
   // let svgColor;
-  const [mounted, setMounted] = useState(false);
+  // const [mounted, setMounted] = useState(false);
 
   // useEffect to set mounted to true
   // this is to avoid hydration mismatch // but results in a flash of unstyled content
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
+  // useEffect(() => setMounted(true), []);
+  // if (!mounted) return null;
 
   // switch (theme) {
   //     case "dark":
