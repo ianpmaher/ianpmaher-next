@@ -9,6 +9,7 @@ import Landing from "./components/Landing";
 import ScrollDiv from "./components/ScrollDiv";
 import NewNavMenu from "./shared/NewNavMenu";
 import CursorColorChanger from "./shared/CursorColorChanger";
+import LazyParent from "./components/LazyParent";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
         <About />
       </section>
       <section className="mx-auto my-0 kitten">
-        <GridIcons />
+        <LazyParent />
       </section>
       <section className="mx-auto my-0">
         <Projects />

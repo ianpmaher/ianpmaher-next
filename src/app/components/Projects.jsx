@@ -4,6 +4,7 @@ import projectsList from "@/lib/projectList";
 import Button from "./Button";
 import Link from "next/link";
 import ProjectTags from "./ProjectTags";
+import { GitHubLogoIcon, OpenInNewWindowIcon } from "@radix-ui/react-icons";
 
 const githubIcon = "/assets/github-icon.svg";
 const newWindowIcon = "/assets/new-window.svg";
@@ -44,13 +45,14 @@ const Projects = (props) => {
             >
               <Button variant="projects">
                 Frontend
-                <Image
+                <GitHubLogoIcon className="md:w-8 md:h-8 hover:transform hover:scale-110 transition-all duration-75 ease-in-out" />
+                {/* <Image
                   src={githubIcon}
                   width={30}
                   height={30}
                   alt="github"
                   className="hover:transform hover:scale-110 transition-all duration-300 ease-in-out"
-                />
+                /> */}
               </Button>
             </Link>
             {project.github2 && (
@@ -64,13 +66,7 @@ const Projects = (props) => {
               >
                 <Button variant="projects">
                   Backend
-                  <Image
-                    src={githubIcon}
-                    width={30}
-                    height={30}
-                    alt="github icon"
-                    className="hover:transform hover:scale-110 transition-all duration-300 ease-in-out hover:blur-"
-                  />
+                  <GitHubLogoIcon className="md:w-8 md:h-8 hover:transform hover:scale-110 transition-all duration-75 ease-in-out" />
                 </Button>
               </Link>
             )}
@@ -83,14 +79,7 @@ const Projects = (props) => {
             >
               <Button variant="projects">
                 Live Site
-                <Image
-                  src={newWindowIcon}
-                  width={30}
-                  height={30}
-                  alt="open in new window"
-                  title="deployment"
-                  className="hover:transform hover:scale-110 transition-all ease-in-out duration-300"
-                />
+                <OpenInNewWindowIcon className="md:w-8 md:h-8 hover:transform hover:scale-110 transition-all duration-75 ease-in-out" title="open in new window" aria-label="open in new window" />
               </Button>
             </Link>
           </span>
