@@ -1,10 +1,9 @@
-// "use client";
-
-import React from "react";
+"use client";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import IconCard from "./IconCard";
-// import Carousel from "./Carousel";
-import StockTicker from "./StockTicker";
+import dynamic from "next/dynamic";
+
 const placeholder = "/assets/placeholder.svg";
 
 import JavaScriptLogo from "./svg/JavaScriptLogo";
@@ -27,17 +26,55 @@ import Linux from "./svg/Linux";
 const styledComponentsIcon = "/assets/styled-components.png";
 
 const GridIcons = (props) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [loadStockTicker, setLoadStockTicker] = useState(false);
+  const stockTickerRef = useRef(null);
+
+  useEffect(() => {
+    // Intersection Observer to load StockTicker component when it is in view
+    const observer = new IntersectionObserver(
+      // callback function to run when the observer is triggered
+      (entries) => {
+        // if the first entry is intersecting (in view) set loadStockTicker to true
+        if (entries[0].isIntersecting) {
+          setLoadStockTicker(true);
+          // disconnect the observer
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    // if the stockTickerRef is available, observe it
+    if (stockTickerRef.current) {
+      // observe the stockTickerRef
+      observer.observe(stockTickerRef.current);
+    }
+
+    return () => {
+      // if the stockTickerRef is available, unobserve it
+      if (stockTickerRef.current) {
+        // unobserve the stockTickerRef
+        observer.unobserve(stockTickerRef.current);
+      }
+    };
+  }, []);
+
+  const StockTicker = loadStockTicker
+    ? dynamic(() => import("./StockTicker"), {
+        ssr: false,
+        loading: () => <p>Loading...</p>,
+      })
+    : () => <p>Loading...</p>;
+
   const styledComponents = () => (
     <Image
       src={styledComponentsIcon}
       alt="styled-components"
       title="styled-components"
-      // loader={ ({src}) => src }
       width={65}
       height={65}
-      // className="hover:transform hover:scale-125 transition-all duration-300 ease-in-out"
       placeholder="blur"
-      blurDataURL="data: [image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==]" // 64x64 base64 encoded}
+      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg=="
     />
   );
 
@@ -98,10 +135,6 @@ const GridIcons = (props) => {
       src: <TailwindCSS />,
       alt: "Tailwind CSS",
     },
-    // {
-    //     src: materialUiIcon,
-    //     alt: "Material UI",
-    // },
     {
       src: <Strapi />,
       alt: "Strapi",
@@ -117,24 +150,23 @@ const GridIcons = (props) => {
   ];
 
   return (
-    // <section className="mx-auto my-0 w-[50vw]">
-    // <section className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:w-[70vw] sm:h-[70%] lg:w-full h-full p-3 list-none place-content-center place-items-center mx-auto my-0 object-cover">
     <section className="mx-auto sm:my-12 py-12 flex items-center">
-      {/* {cardImages.map((cardImages) => { */}
-      <StockTicker>
-        {cardImages.map((cardImages) => (
-          <IconCard
-            variant="secondary"
-            key={cardImages}
-            className=" flex flex-col flex-wrap items-center justify-center"
-            title={cardImages.alt}
-          >
-            <div className="hover:transform active:rotate-45 hover:scale-125 transition-all duration-300 ease-in-out object-contain">
-              {cardImages.src}
-            </div>
-          </IconCard>
-        ))}
-      </StockTicker>
+      <div ref={stockTickerRef}>
+        <StockTicker>
+          {cardImages.map((cardImage, index) => (
+            <IconCard
+              variant="secondary"
+              key={index}
+              className="flex flex-col flex-wrap items-center justify-center"
+              title={cardImage.alt}
+            >
+              <div className="hover:transform active:rotate-45 hover:scale-125 transition-all duration-300 ease-in-out object-contain">
+                {cardImage.src}
+              </div>
+            </IconCard>
+          ))}
+        </StockTicker>
+      </div>
       <span className="sr-only">
         Icons: React, JavaScript, CSS, Tailwind, Next.JS, Express, Python, Django, PostgreSQL, MongoDB, Material UI,
         Git, Github, Strapi.js, Figma, TypeScript, Node.js, styled-components, Linux
@@ -144,4 +176,3 @@ const GridIcons = (props) => {
 };
 
 export default GridIcons;
-// hover:transform hover:scale-125 transition-all duration-300 ease-in-out

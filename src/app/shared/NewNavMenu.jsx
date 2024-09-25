@@ -9,7 +9,7 @@ const NewNavMenu = (props) => {
   const pathname = usePathname();
 
   return (
-    <NavigationMenu.Root className={props.className} delayDuration={100} aria-label="open context sub-menu">
+    <NavigationMenu.Root className={props.className} aria-label="open context sub-menu">
       <NavigationMenu.List className="mx-6 sm:mx-12" aria-label="open context sub-menu">
         <NavigationMenu.Item className={` ${pathname === "/" ? "md:max-w-fit" : ""}`} aria-label="open context sub-menu">
           <NavigationMenu.Trigger className="md:max-w-1/2" aria-label="open context sub-menu">

@@ -25,7 +25,7 @@ const Landing = (props) => {
         <noscript className="sr-only">Ian Maher</noscript>
         <FirstName />
         <h2 className="text-2xl md:text-3xl m-3">
-          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.5, duration: 1.5 }}>
+          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1.5 }}>
             Full Stack Developer & Education Advocate
           </motion.span>
         </h2>
