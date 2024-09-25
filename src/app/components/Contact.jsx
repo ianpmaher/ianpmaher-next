@@ -6,6 +6,7 @@ import Link from "next/link";
 import IconCard from "./IconCard";
 import Image from "next/image";
 import PopoverElem from "./PopoverElem";
+import { FileTextIcon, GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 const Contact = (props) => {
   // conditional rendering, if user is on mobile and if Contact is in the footer, flex row, else flex column
@@ -32,7 +33,7 @@ const Contact = (props) => {
         variant={`${isDark ? "darkColors" : "lightColors"}`}
       >
         <Link href="https://www.github.com/ianpmaher" target="_blank" rel="" title="GitHub" className={`rounded-2xl`}>
-          <Image src="/assets/github-icon.svg" alt="GitHub logo" width={40} height={40} priority />
+          <GitHubLogoIcon className="md:h-10 md:w-10 h-8 w-8 text-black" />
         </Link>
       </IconCard>
       {/* <IconCard variant="primary"> */}
@@ -57,8 +58,9 @@ const Contact = (props) => {
           // rel="noreferrer noopener"
           title="LinkedIn"
           className="rounded-2xl"
+          aria-label="LinkedIn"
         >
-          <Image src="/assets/linkedin.svg" alt="LinkedIn logo" width={40} height={40} priority />
+          <LinkedInLogoIcon className="md:h-10 md:w-10 h-8 w-8 text-black" />
         </Link>
       </IconCard>
       <IconCard
@@ -71,8 +73,9 @@ const Contact = (props) => {
           // rel="noreferrer noopener"
           title="Resume"
           className="rounded-2xl"
+          aria-label="Resume"
         >
-          <Image src="/assets/document.svg" alt="text document image" width={40} height={40} priority />
+          <FileTextIcon className="md:h-10 md:w-10 h-8 w-8 text-black" />
         </Link>
       </IconCard>
     </section>

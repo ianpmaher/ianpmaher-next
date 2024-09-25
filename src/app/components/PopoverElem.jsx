@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import * as Popover from "@radix-ui/react-popover";
 import IconCard from "./IconCard";
+import { CopyIcon, EnvelopeClosedIcon, ExitIcon, PaperPlaneIcon } from "@radix-ui/react-icons";
 // I would love to make my own popover but React children error
 
 const PopoverElem = (props) => {
@@ -44,7 +45,7 @@ const PopoverElem = (props) => {
             className="bg-dracula-green hover:bg-dracula-orange dark:bg-dracula-yellow dark:hover:bg-dracula-green"
             variant={`${isDark ? "darkColors" : "lightColors"}`}
           >
-            <Image src="/assets/email.svg" title="email" alt="Email Icon" width={40} height={40} priority />
+            <EnvelopeClosedIcon className="md:h-9 md:w-9 h-7 w-7 text-black" />
           </IconCard>
         </button>
       </Popover.Trigger>
@@ -73,7 +74,7 @@ const PopoverElem = (props) => {
               className="bg-dracula-green hover:bg-dracula-orange dark:bg-dracula-yellow dark:hover:bg-dracula-green"
               variant={`${isDark ? "darkColors" : "lightColors"}`}
             >
-              <Image src="/assets/paper-plane-radix.svg" alt="paper plane Icon" width={30} height={30} />
+              <PaperPlaneIcon className="md:h-9 md:w-9 h-7 w-7 text-black" />
             </IconCard>
           </Link>
 
@@ -84,7 +85,8 @@ const PopoverElem = (props) => {
           >
             {/* <Button variant="primary"> */}
             {/* for some reason needed to make the onClick in the image itself? */}
-            <Image
+            <CopyIcon className="md:h-9 md:w-9 h-7 w-7 text-black" title="Copy Email Address" aria-label="Copy Email Address" onClick={handleCopy} />
+            {/* <Image
               src="/assets/copy-icon.svg"
               alt="copy email address"
               width={36}
@@ -92,15 +94,22 @@ const PopoverElem = (props) => {
               title="Copy Email Address"
               onClick={handleCopy}
               className={`flex flex-col flex-wrap items-center justify-center rounded-2xl `}
-            />
-            {copySuccess && <div className="text-green-500 p-2">Copied!</div>}
+            /> */}
+            {copySuccess && <div className="text-green-500 md:p-2">Copied!</div>}
             {/* end popover */}
           </IconCard>
           <Popover.Close
-            className="rounded-full inline-flex items-center justify-center bg-white text-black hover:bg-gray-300 transition-all duration-300 ease-in-out p-1 hover:scale-110 hover:opacity-90"
+            className="rounded-2xl inline-flex items-center justify-center bg-white text-black hover:bg-gray-300 transition-all duration-300 ease-in-out hover:scale-110 hover:opacity-90"
             aria-label="close popover"
           >
-            <Image src="/assets/exit.svg" alt="exit" title="close" width={30} height={30} />
+            <IconCard
+            className="bg-dracula-green hover:bg-dracula-orange dark:bg-dracula-yellow dark:hover:bg-dracula-green"
+            variant={`${isDark ? "darkColors" : "lightColors"}`}
+            aria-haspopup="true"
+          >
+
+            <ExitIcon className="md:h-9 md:w-9 h-7 w-7 text-black" />
+          </IconCard>
           </Popover.Close>
           <Popover.Arrow className=" fill-white" />
         </Popover.Content>
