@@ -5,6 +5,7 @@ import { ScrollDiv } from "@/app/components/ScrollDiv";
 import Image from "next/image";
 import Link from "next/link";
 import rehypeRaw from "rehype-raw";
+import clientPromise from "@/lib/mongodb"; // Adjust the path if necessary
 
 const renderers = {
   // react-markdown changed this to "components"
@@ -51,7 +52,7 @@ const renderers = {
           width={800}
           height={800}
           loading="lazy"
-        //   unoptimized
+          //   unoptimized
           placeholder="blur"
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==" // 64x64 base64 encoded}
           className=" md:w-full md:h-full duration-1000 transition-all ease-in-out center-center "
@@ -80,7 +81,40 @@ const renderers = {
 };
 
 export default async function BlogPostPage({ params }) {
+  const { slug } = params;
   const postData = await getPostData(params.slug);
+  if (!postData) {
+    return (
+      <div className="container mx-auto p-4">
+        <h1 className="text-3xl font-bold">Post Not Found</h1>
+        <p>This post does not exist.</p>
+        <Link href="/blog">
+          <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Back to Blog</button>
+        </Link>
+      </div>
+    );
+  }
+
+  // Connect to MongoDB and increment view count
+  let views = 0;
+  console.log("Updating view count for", slug);
+  try {
+    const client = await clientPromise;
+    const db = client.db("views"); // Use the default database
+    const collection = db.collection("views");
+
+    const result = await collection.findOneAndUpdate(
+      { page: `blog/${slug}` },
+      { $inc: { count: 1 } },
+      { upsert: true, returnDocument: "after" }
+    );
+
+    views = result.value.count;
+    console.log("View count:", views);
+  } catch (error) {
+    console.error("Error updating view count:", error);
+    // Optionally, you can set views to a default value or handle the error as needed
+  }
 
   // display date in a readable format
   const dateFormatted = postData.date.toLocaleDateString("en-US");
@@ -89,6 +123,12 @@ export default async function BlogPostPage({ params }) {
     <div className="pt-6 w-[82vw]">
       <h1 className="text-3xl font-bold my-8 prose">{postData.title}</h1>
       <h5 className="text-xl font-bold mb-4 prose">{dateFormatted}</h5>
+
+      {/* Display View Count */}
+      <p className="text-md prose mb-4">
+        This post has been viewed <span className="font-semibold">{views}</span> times.
+      </p>
+
       <Link href="/blog" aria-label="back to blog">
         <div className="flex items-center justify-center w-1/6 h-16 outline hoverbox mx-auto my-4 rounded-full">
           <p className="text-xl">Back to blog</p>
