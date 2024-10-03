@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import rehypeRaw from "rehype-raw";
 import clientPromise from "@/lib/mongodb"; // Adjust the path if necessary
+import PageViewCounter from "@/app/components/PageViewCounter";
 
 const renderers = {
   // react-markdown changed this to "components"
@@ -125,9 +126,8 @@ export default async function BlogPostPage({ params }) {
       <h5 className="text-xl font-bold mb-4 prose">{dateFormatted}</h5>
 
       {/* Display View Count */}
-      <p className="text-md prose mb-4">
-        This post has been viewed <span className="font-semibold">{views}</span> times.
-      </p>
+      {/* View Counter */}
+      <PageViewCounter page={`blog/${slug}`} />
 
       <Link href="/blog" aria-label="back to blog">
         <div className="flex items-center justify-center w-1/6 h-16 outline hoverbox mx-auto my-4 rounded-full">
