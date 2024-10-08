@@ -82,7 +82,7 @@ Here is a visual of my homebrew, sans the fancy table I would later implement th
 
 ![dark mode](https://f005.backblazeb2.com/file/ianpmaher/gpacalcnight.webp)
 
-Critiquing myself a bit, I found this to be a **MASSIVE** educational experience. Working with data is tricky, and I came away from this experience being a **_firm believer in TypeScript._** Seriously. I had to do so much debugging, and running ``tsc`` in the terminal would have saved a lot of time.
+Critiquing myself a bit, I found this to be a **MASSIVE** educational experience. Working with data is tricky, and I came away from this experience being a **_firm believer in TypeScript._** Seriously. I had to do so much debugging purely because of type mismatches. Running ``tsc`` in the terminal would have saved a lot of time. I'm talking just simple types, and there is room for complex typing with these academic calculations: arrays of numbers, arrays of arrays of numbers, and arrays of arrays of strings, and so on.
 
 I love styling and frontend. But at the same time, I came away from this process realizing that I burn my time on customizing and tailoring minute details. Sure, the colors are fun, but I did them without much regard for the user, who would rather just get on with their lives. It's a rabbithole. 
 
