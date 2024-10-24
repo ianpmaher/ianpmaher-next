@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
           {/* <div className="bg-gradientlight md:dark:bg-slice bg-fixed dark:bg-origin-border md:dark:bg-bottom dark:bg-cover pt-1 pb-8 md:pb-20 dark:bg-phonedark"> */}
           {/* <div className="bg-gradientlight bg-fixed dark:bg-origin-border md:dark:bg-bottom dark:bg-cover pb-2 md:pb-8 dark:bg-phonedark bg-center"> */}
           <div className="dark:bg-darkGradient bg-gradient-to-tr from-cooler1-teal via-cooler1-mint to-cooler1-teal text-paper-text dark:text-dracula-text pb-2 md:pb-8">
-            <div className="dark:bg-dracula- dark:bg-opacity-10 bg-paper-bg bg-opacity-0 rounded-2xl text-paper-text dark:text-dracula-text font-karla text-center min-h-screen flex flex-col max-w-[85vw] my-0 mx-auto">
+            <div className="dark:bg-dracula- dark:bg-opacity-10 bg-paper-bg bg-opacity-0 rounded-2xl text-paper-text dark:text-dracula-text font-karla text-center min-h-screen flex flex-col max-w-[95vw] my-0 mx-auto">
               <div className="flex flex-col justify-center ">
                 <Header className=" flex flex-col items-center justify-center mx-auto my-2 gap-4" />
                 {/* <Navbar /> */}
