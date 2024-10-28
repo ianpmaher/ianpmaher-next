@@ -7,9 +7,8 @@ export const BentoGrid = ({
 }) => {
   return (
     <div
-      className={`grid ${className ?? ""}`}
+      className={`md:grid flex flex-col ${className ?? ""}`}
       style={{
-        display: "grid",
         gridTemplateColumns: `repeat(${gridCols}, minmax(0, 1fr))`,
         gridTemplateRows: `repeat(${gridRows}, minmax(0, 1fr)`,
         // gridAutoRows: `${rowHeight}px`,
