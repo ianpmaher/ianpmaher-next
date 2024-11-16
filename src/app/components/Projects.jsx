@@ -102,11 +102,13 @@ const Projects = (props) => {
                 />
               </div>
               <IconCard variant="projects">
-                <h2 className="text-2xl font-bold">{project.title}</h2>
-                <div className="m-2" />
-                <p>{project.description}</p>
-                <div className="m-2" />
-                <ProjectTags tags={project.tags} />
+                <Link href={`/projects/${project.slug}`} aria-label="link to project detail" >
+                  <h2 className="text-2xl font-bold">{project.title}</h2>
+                  <div className="m-2" />
+                  <p>{project.description}</p>
+                  <div className="m-2" />
+                  <ProjectTags tags={project.tags} />
+                </Link>
                 <div className="m-2" />
                 <span className="flex flex-row items-center justify-center text-center">
                   <Link
