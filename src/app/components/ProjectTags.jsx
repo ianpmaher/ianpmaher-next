@@ -6,7 +6,7 @@ const ProjectTags = (props) => {
     );
 
     return (
-        <div className="flex flex-row flex-wrap sm:gap-0.5 items-center justify-center list-none mx-auto my-0">
+        <div className={`${props.className} flex flex-row flex-wrap sm:gap-0.5 items-center justify-center list-none mx-auto my-0`}>
             {tagsList}
         </div>
     );

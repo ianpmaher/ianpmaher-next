@@ -90,26 +90,29 @@ const Projects = (props) => {
           <BentoItem key={project.id} gridCols={project.gridCols} rowHeight={project.rowHeight}>
             <IconCard variant="container">
               <div className="w-auto h-auto mx-auto mb-1">
-                <Link href={`/projects/${project.slug}`} aria-label="link to project detail" >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={900}
-                  height={900}
-                  placeholder="blur"
-                  loading="lazy"
-                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg=="
-                  className="active:scale-150 transition-all duration-1000 ease-in-out hover:shadow-2xl md:max-h-96 md:w-auto w-full"
-                />
+                <Link href={`/projects/${project.slug}`} aria-label="link to project detail page">
+                  <IconCard variant="projects">
+                    <h2 className="text-xl font-bold italic underline">{project.title}</h2>
+                  </IconCard>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={900}
+                    height={900}
+                    placeholder="blur"
+                    loading="lazy"
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg=="
+                    className="active:scale-150 transition-all duration-1000 ease-in-out hover:shadow-2xl md:max-h-96 md:w-auto w-full"
+                  />
                 </Link>
               </div>
-              <IconCard variant="projects">
-                  <h2 className="text-2xl font-bold">{project.title}</h2>
-                  <div className="m-2" />
-                  <p>{project.description}</p>
-                  <div className="m-2" />
-                  <ProjectTags tags={project.tags} />
+
+              <IconCard variant="projects" className="">
+                {/* <h2 className="text-2xl font-bold">{project.title}</h2> */}
                 <div className="m-2" />
+                <p >{project.description}</p>
+                <div className="m-2" />
+                <ProjectTags className="hidden" tags={project.tags} />
                 <span className="flex flex-row items-center justify-center text-center">
                   <Link
                     href={project.github}
