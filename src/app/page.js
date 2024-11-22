@@ -10,6 +10,8 @@ import ScrollDiv from "./components/ScrollDiv";
 import NewNavMenu from "./shared/NewNavMenu";
 import CursorColorChanger from "./shared/CursorColorChanger";
 import LazyParent from "./components/LazyParent";
+// import PieChartComponent from "./components/PieChart";
+import LazyParentChart from "./components/LazyParentChart";
 
 export default function Home() {
   return (
@@ -23,9 +25,14 @@ export default function Home() {
       <section className="mx-auto my-0 ">
         <About />
       </section>
+      {/* react marquee component inside of LazyParent */}
+      <section className="mx-auto my-0 kitten">
+        <LazyParentChart />
+      </section>
       <section className="mx-auto my-0 kitten">
         <LazyParent />
       </section>
+      {/* PieChart */}
       <section className="mx-auto my-0 min-h-screen">
         <Projects />
       </section>
