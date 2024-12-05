@@ -54,7 +54,7 @@ const renderers = {
         //   unoptimized
           placeholder="blur"
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==" // 64x64 base64 encoded}
-          className=" md:w-full md:h-full duration-1000 transition-all ease-in-out center-center "
+          className=" md:max-w-[rem] md:w-3/4 md:-64 duration-1000 transition-all ease-in-out center-center"
         />
       </span>
     );
