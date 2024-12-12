@@ -1,6 +1,7 @@
 "use client";
 
 import CardBase from "./CardBase";
+import CardHover from "../shared/CardHover";
 import { motion } from "framer-motion";
 
 const Resume = (props) => {
@@ -12,6 +13,9 @@ const Resume = (props) => {
         <CardBase variant="text">
           I would love to chat! I am currently seeking a full-time position in software development.
         </CardBase>
+        <CardHover className="text-justify">
+
+        </CardHover>
 
         {/* <CardBase variant="text">
                     I leverage my experience as an educator and guidance counselor to my present work, with

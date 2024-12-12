@@ -26,7 +26,7 @@ const Landing = (props) => {
         <noscript className="sr-only">Ian Maher</noscript>
         <h2 className="text-3xl md:text-5xl">Ian Maher</h2>
         {/* <FirstName /> */}
-        <h3 className="text-2xl md:text-3xl m-3">Full Stack Developer & Education Advocate</h3>
+        <h3 className="text-2xl md:text-3xl m-3">Technical Writer & Frontend Developer</h3>
         {/* <h2 className=" text-2xl md:text-3xl">Full Stack Developer & Education Advocate</h2> */}
       </div>
 
