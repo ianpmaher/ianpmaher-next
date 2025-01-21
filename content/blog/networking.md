@@ -18,8 +18,12 @@ So far, while completing a Udemy prep course, I have really learned a lot.
 * I can now count from 0 to f
 * I can go from decimal to hexadecimal to binary 
 * I get IPv4 now, so my prior experience with setting up network servers has paid off
-* I really want to buy a whole bunch of loud, ancient networking gear from Cisco, rolling the dice on whether they require an active license?
 
-In all seriousness, this specific niche is really compelling. The infrastructure underlying every business, school, and agency starts and ends with devices connecting to each other and the wider Internet. I want to climb up on a ladder to connect a PoE Access Point. I want to crimp my own RJ45 Ethernet cables for fun and profit. I want to be bombarded with the sounds of a thousand fans in a data center (perhaps). 
+This specific niche is really compelling. The infrastructure underlying every business, school, and agency starts and ends with devices connecting to each other and the wider Internet. I want to climb up on a ladder to connect a PoE Access Point. I want to crimp my own RJ45 Ethernet cables for fun and profit. I want to be bombarded with the sounds of a thousand fans in a data center (perhaps). 
 
 ![spaghetti ethernet cables](https://i.imgur.com/K2edHOa.jpeg)
+
+### Baby Homelab
+My house has a combination of old and new technology...implemented poorly. The previous owners did have Fios Fiber, which I happily set up for me and my wife. The problem: the Ethernet cable coming out of the ONT (Optical Network Terminal) runs along our basement, and it literally comes up out of the floor. The installer decided to drill a hole in our beautiful floorboards to run the cables into our dining room 😣 Naturally, zero wife-approval factor, and not sustainable in the least. 
+
+What started
