@@ -36,9 +36,7 @@ export default function Home() {
       <section className="mx-auto my-0 min-h-screen">
         <Projects />
       </section>
-      <section className="mx-auto mt-64">
-        <Resume />
-      </section>
+      
       <div className="">
         <ScrollDiv className=" " />
       </div>

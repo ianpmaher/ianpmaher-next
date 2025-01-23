@@ -13,10 +13,6 @@ const Resume = (props) => {
         <CardBase variant="text">
           I would love to chat! I am currently seeking a full-time position in software development.
         </CardBase>
-        <CardHover className="text-justify">
-
-        </CardHover>
-
         {/* <CardBase variant="text">
                     I leverage my experience as an educator and guidance counselor to my present work, with
                     a focus on communication and an ability to work with people of all backgrounds.

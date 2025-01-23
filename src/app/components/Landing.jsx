@@ -24,9 +24,9 @@ const Landing = (props) => {
       <div className=" rounded-2xl px-1 md:px-3 py-4 md:py-1 w-fit">
         {/* <h1 className=" text-3xl md:text-5xl">Ian Maher</h1> */}
         <noscript className="sr-only">Ian Maher</noscript>
-        <h2 className="text-3xl md:text-5xl">Ian Maher</h2>
+        <h2 className="text-xl md:text-4xl">Ian Maher</h2>
         {/* <FirstName /> */}
-        <h3 className="text-2xl md:text-3xl m-3">Technical Writer & Frontend Developer</h3>
+        <h3 className="text-xl md:text-xl m-3">Technical Writer & Frontend Developer</h3>
         {/* <h2 className=" text-2xl md:text-3xl">Full Stack Developer & Education Advocate</h2> */}
       </div>
 
