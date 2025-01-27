@@ -22,7 +22,7 @@ const Header = (props) => {
             <IconCard variant="text">blog</IconCard>
           </Link>
           <Link href="/keyboards" className="">
-            <IconCard variant="text">keyboards</IconCard>
+            <IconCard variant="text">keebs</IconCard>
           </Link>
         </div>
         <div className="mx-auto my-0 flex md:flex-row gap-3">

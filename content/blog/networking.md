@@ -42,4 +42,4 @@ Ubiquiti makes some really impressive products, all of which are overkill for my
 - Switch Lite 8 PoE 
 - G4 Bullet (UVC-G4-Bullet)
 
-I would like to throw in an AP at some point. I plan on trying to find a way to make my free Verizon router into the AP for our network.
+I plan on trying to find a way to make my free Verizon router into the AP for our network.
