@@ -5,7 +5,7 @@ const ProjectPage = () => {
   return (
     <div>
       <h1>Projects</h1>
-      <p>Here are some of the projects Ive worked on.</p>
+      <p>Little apps or projects which may be solo or collaborative.</p>
       <ul>
         {getAllProjectData().map((project) => (
           <li key={project.slug}>
